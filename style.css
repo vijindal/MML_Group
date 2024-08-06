@@ -183,7 +183,20 @@ body{
 
     
 }
-
+.content {
+    margin: 2%;
+  }
+  .course-hr {
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+  }
+  
+  .course-list {
+    padding: 2%;
+    /* Add any desired styles for the course list here */
+  }
 
 
 
