@@ -205,26 +205,14 @@ body{
     padding:  30px;
 }
   
-  .TableGrid th, .TableGrid td {
-    border: 1px solid black;
-    padding: 5px 6px 0 10px;
-    text-align: center;
-    font-size: 11pt; /* Maintain original font size */
-    font-family: 'Times New Roman', serif;
-  }
-  .equipment-pricing-table {
-    width: 858px;
-    border-collapse: collapse;
-    border: 1px solid black;
+.TableGrid {
+    border-collapse: separate;
+    border-spacing: 2px; /* Adjust spacing as needed */
   }
   
-  .table-header {
-    font-family: "Times New Roman", serif;
-    font-size: 11pt;
-    font-weight: bold;
-    text-align: center;
-    padding: 5px 8px 0 8px;
-    border: 1px solid black;
+  .TableGrid th, .TableGrid td {
+    border: 1px solid black; /* Adjust border style and color as needed */
+    padding: 5px; /* Add padding for better visibility */
   }
 
 
