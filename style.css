@@ -202,7 +202,7 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
-    font-size: 20px; /* Adjust the value as needed */
+    font-size: 15px; /* Adjust the value as needed */
 }
 .nav-list li{
     list-style: none
