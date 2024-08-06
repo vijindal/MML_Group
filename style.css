@@ -73,31 +73,10 @@
     
 
 }
-.nav-list{
-    padding-top: 0%;
-    display: flex;
-    width: 150%;
-    background-color:darkred;
-    justify-content: center;
-    align-items: center;
 
-}
-.nav-list li{
-    list-style: none
-
-}
-.nav-list li a{
-    
-    text-decoration: none;   
-    color:whitesmoke;
-    padding:  30px;
-}
 
 .address{
     display: flex;
-    
-    
-
 }
 .leftaddress{
     
@@ -178,10 +157,6 @@ body{
     display: flex;
     margin: 2%;
     background-color: whitesmoke;
-
-    
-
-    
 }
 .content {
     margin: 2%;
@@ -197,6 +172,47 @@ body{
     padding: 2%;
     /* Add any desired styles for the course list here */
   }
+  .navbar {
+    background-color: #f0f0f0;
+    height: 100px; /* Adjust the height as needed */
+    background-color:navy;
+}
+
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img   
+   {
+    height: 40px; /* Adjust logo height as needed */
+    margin-right: 10px;
+    
+  }
+  
+  .logo-container h1 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .nav-list{
+    padding-top: 0%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Adjust the value as needed */
+}
+.nav-list li{
+    list-style: none
+
+}
+.nav-list li a{
+    text-decoration: none;   
+    color:whitesmoke;
+    padding:  30px;
+}
 
 
 
