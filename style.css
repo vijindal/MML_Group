@@ -84,12 +84,7 @@
     padding-left: 20px;
     justify-content: center;
     text-align: center;
-    color: whitesmoke;
-    
-    
-
-    
-    
+    color: whitesmoke;    
 }
 .midaddress{
     width: 33.33%;
@@ -108,7 +103,6 @@
     color: whitesmoke;    
     
 }
-
 
 
 body{
@@ -158,7 +152,7 @@ body{
 .content {
     margin: 2%;
   }
-  .course-hr {
+  .line {
     height: 2px;
     border-width: 0;
     color: gray;
