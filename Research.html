@@ -2,107 +2,155 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the research areas, ongoing and completed projects in the Materials Modeling Lab at IIT BHU.">
-  <meta name="author" content="Materials Modeling Lab, IIT BHU">
-  <title>Research Areas - Materials Modeling Lab</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Areas</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar .nav-link {
+            color: #fff;
+            margin-right: 15px;
+        }
+
+        .navbar .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 50px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        section h2 {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
-  <!-- Navigation -->
-  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">
-        <img src="image/clg_logo.jpg" alt="College Logo" style="height: 50px;">
-        <span class="ml-2">Materials Modeling Lab</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="Research.html" class="nav-link">Research</a></li>
-          <li class="nav-item"><a href="Publications.html" class="nav-link">Publications</a></li>
-          <li class="nav-item"><a href="Lab_facilities.html" class="nav-link">Lab Facilities</a></li>
-          <li class="nav-item"><a href="Teaching.html" class="nav-link">Teaching</a></li>
-          <li class="nav-item"><a href="People.html" class="nav-link">People</a></li>
-          <li class="nav-item"><a href="Openings.html" class="nav-link">Openings</a></li>
-          <li class="nav-item"><a href="Contact_Us.html" class="nav-link">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Materials Modeling Lab</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lab Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">People</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Openings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Main Content -->
-  <main class="container my-5">
-    <section class="text-center">
-      <h1>Research & Projects</h1>
-      <hr class="line my-4">
-    </section>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Research Areas and Projects</h1>
+        </div>
+    </header>
 
-    <section>
-      <h2>Research Areas</h2>
-      <p>Our research interests lie in various aspects of Computational Thermodynamics:</p>
-      <ul>
-        <li>Experimental and DFT-based thermochemical data.</li>
-        <li><em>Cluster Variation Method</em> and <em>Cluster Expansion</em>-based Gibbs energy models.</li>
-        <li>Developing algorithms and software for phase diagram assessment and optimization.</li>
-        <li>Development of CALPHAD databases and their applications in designing novel materials and processes.</li>
-      </ul>
-      <p>More specifically, we are interested in:</p>
-      <ul>
-        <li>Titanium-based systems</li>
-        <li>Binary, ternary, and multicomponent transition metal systems</li>
-        <li>Compositionally complex alloys (CCA and HEA)</li>
-      </ul>
-    </section>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Research Areas -->
+        <section>
+            <h2>Research Areas</h2>
+            <p>Our research interests lie in various aspects of Computational Thermodynamics:</p>
+            <ul>
+                <li>Experimental and DFT-based thermochemical data.</li>
+                <li><em>Cluster Variation Method</em> and <em>Cluster Expansion</em>-based Gibbs energy models.</li>
+                <li>Developing algorithms and software for phase diagram assessment and optimization.</li>
+                <li>Development of CALPHAD databases and their applications in designing novel materials and processes.</li>
+            </ul>
+            <p>More specifically, we are interested in:</p>
+            <ul>
+                <li>Titanium-based systems</li>
+                <li>Binary, ternary, and multicomponent transition metal systems</li>
+                <li>Compositionally complex alloys (CCA and HEA)</li>
+            </ul>
+        </section>
 
-    <section>
-      <h2>On-going Projects</h2>
-      <ol>
-        <!-- Add project details here -->
-      </ol>
-    </section>
+        <!-- On-going Projects -->
+        <section>
+            <h2>On-going Projects</h2>
+            <ol>
+                <li>Project 1: Description of an ongoing research project.</li>
+                <li>Project 2: Description of another ongoing research project.</li>
+            </ol>
+        </section>
 
-    <section>
-      <h2>Completed Projects</h2>
-      <ol>
-        <li>Development of Functionally Graded Armor Composites (FGACs) Materials (2019-2022). Funded by DRDO under the ARMREB Grant-in-Aid Scheme.</li>
-        <li>Role of Short Range Ordering in designing High Entropy Alloys (2019-2022). Funded by SERB under Core Research Grant.</li>
-        <li>Development of low-cost β-Ti alloy for biomedical applications (2020-2023). Co-PI. Funded by SERB under Core Research Grant.</li>
-        <li>Phase-diagrams and thermodynamic investigations of Ti-Hf-Zr system using Cluster Variation Method (CVM) (2018-2020). Funded by IIT (BHU).</li>
-        <li>Free energy minimization in binary alloys via genetic algorithms (2012). Funded by UGC XI-Plan Research Grant for New Faculty.</li>
-        <li>Development of e-content on ancient Indian metallurgy and modern process metallurgy (2011-12). Funded by NMEICT, New Delhi.</li>
-      </ol>
-    </section>
-  </main>
+        <!-- Completed Projects -->
+        <section>
+            <h2>Completed Projects</h2>
+            <ol>
+                <li>Development of Functionally Graded Armor Composites (FGACs) Materials (2019-2022). Funded by DRDO under the ARMREB Grant-in-Aid Scheme.</li>
+                <li>Role of Short Range Ordering in designing High Entropy Alloys (2019-2022). Funded by SERB under Core Research Grant.</li>
+                <li>Development of low-cost β-Ti alloy for biomedical applications (2020-2023). Co-PI. Funded by SERB under Core Research Grant.</li>
+                <li>Phase-diagrams and thermodynamic investigations of Ti-Hf-Zr system using Cluster Variation Method (CVM) (2018-2020). Funded by IIT (BHU).</li>
+                <li>Free energy minimization in binary alloys via genetic algorithms (2012). Funded by UGC XI-Plan Research Grant for New Faculty.</li>
+                <li>Development of e-content on ancient Indian metallurgy and modern process metallurgy (2011-12). Funded by NMEICT, New Delhi.</li>
+            </ol>
+        </section>
+    </main>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container d-flex justify-content-between">
-      <div>
-        <h5>Address:</h5>
-        <p>IIT Campus, (BHU) Varanasi, Uttar Pradesh, India - 221005</p>
-      </div>
-      <div>
-        <h5>Phone:</h5>
-        <p>+91-542-7165640</p>
-      </div>
-      <div>
-        <h5>Email:</h5>
-        <p>vjindal.met@iitbhu.ac.in</p>
-      </div>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Materials Modeling Lab | IIT (BHU), Varanasi, India</p>
+            <p>Email: vjindal.met@iitbhu.ac.in | Phone: +91-542-7165640</p>
+        </div>
+    </footer>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
