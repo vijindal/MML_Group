@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Load the Header -->
+<!-- Load Header -->
 <div id="header"></div>
 
 <body>
-    <!-- Navbar -->
+    <!-- Load Navbar -->
     <div id="navbar"></div>
 
     <!-- Main Content -->
@@ -23,11 +23,11 @@
         </nav>
     </section>
 
-    <!-- Footer -->
+    <!-- Load Footer -->
     <div id="footer"></div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        // Dynamically load the navbar and footer
         $(document).ready(function () {
             $('#navbar').load('navbar.html');
             $('#footer').load('footer.html');
@@ -37,6 +37,7 @@
 </body>
 
 </html>
+
 
 
 
