@@ -1,58 +1,42 @@
-/* General Body Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-/* Navbar Styles */
-.navbar {
-    background-color: #343a40;
-}
-
-.navbar .nav-link {
-    color: #fff;
-    margin-right: 15px;
-}
-
-.navbar .nav-link:hover {
-    color: #ffc107;
-}
-
-/* Header Styles */
-.header {
-    text-align: center;
-    background-color: #007bff;
-    color: white;
-    padding: 50px 0;
-}
-
-.header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-/* Section Styles */
-section {
-    margin: 40px 0;
-}
-
-section h2 {
-    font-size: 1.75rem;
-    margin-bottom: 20px;
-    color: #007bff;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-footer p {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
 }
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+footer.address {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+footer.address .leftaddress,
+footer.address .midaddress,
+footer.address .rightaddress {
+    width: 30%;
+}
+
 

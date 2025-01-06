@@ -1,97 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Areas</title>
-    <!-- Link to external CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Teaching</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
+<body style="min-height: 100vh;">
 
-<body>
     <!-- Navbar -->
     <div id="navbar"></div>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <h1>Research Areas and Projects</h1>
-        </div>
-    </header>
-
     <!-- Main Content -->
-    <main class="container">
-        <!-- Research Areas -->
-        <section>
-            <h2>Research Areas</h2>
-            <p>Our research interests lie in various aspects of Computational Thermodynamics:</p>
-            <ul>
-                <li>Experimental and DFT-based thermochemical data.</li>
-                <li><em>Cluster Variation Method</em> and <em>Cluster Expansion</em>-based Gibbs energy models.</li>
-                <li>Developing algorithms and software for phase diagram assessment and optimization.</li>
-                <li>Development of CALPHAD databases and their applications in designing novel materials and processes.</li>
-            </ul>
-            <p>More specifically, we are interested in:</p>
-            <ul>
-                <li>Titanium-based systems</li>
-                <li>Binary, ternary, and multicomponent transition metal systems</li>
-                <li>Compositionally complex alloys (CCA and HEA)</li>
-            </ul>
-        </section>
-
-        <!-- On-going Projects -->
-        <section>
-            <h2>On-going Projects</h2>
-            <ol>
-                <li>Project 1: Description of an ongoing research project.</li>
-                <li>Project 2: Description of another ongoing research project.</li>
-            </ol>
-        </section>
-
-        <!-- Completed Projects -->
-        <section>
-            <h2>Completed Projects</h2>
-            <ol>
-                <li>Development of Functionally Graded Armor Composites (FGACs) Materials (2019-2022). Funded by DRDO under the ARMREB Grant-in-Aid Scheme.</li>
-                <li>Role of Short Range Ordering in designing High Entropy Alloys (2019-2022). Funded by SERB under Core Research Grant.</li>
-                <li>Development of low-cost β-Ti alloy for biomedical applications (2020-2023). Co-PI. Funded by SERB under Core Research Grant.</li>
-                <li>Phase-diagrams and thermodynamic investigations of Ti-Hf-Zr system using Cluster Variation Method (CVM) (2018-2020). Funded by IIT (BHU).</li>
-                <li>Free energy minimization in binary alloys via genetic algorithms (2012). Funded by UGC XI-Plan Research Grant for New Faculty.</li>
-                <li>Development of e-content on ancient Indian metallurgy and modern process metallurgy (2011-12). Funded by NMEICT, New Delhi.</li>
-            </ol>
-        </section>
-    </main>
+    <section class="content">
+        <h1 align="center">Teaching</h1>
+        <hr class="line">
+        <h2>Courses(Theory)</h2>
+        <p>
+            1. Computational Methods for Metallurgy<br>
+            2. Modeling and Simulation in Metallurgy<br>
+            3. Heat Treatment&nbsp;
+        </p>
+        <h2>Courses(Practical)</h2>
+        <p>
+            1. Computer Applications in Metallurgy Practical<br>
+            2. Heat Treatment Practical<br>
+            3. Modeling and Simulation in Metallurgy Practical<br>
+        </p>
+    </section>
 
     <!-- Footer -->
     <div id="footer"></div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- JavaScript for loading navbar and footer -->
     <script>
-        // Load navbar HTML dynamically
+        // Dynamically load navbar and footer
         fetch('navbar.html')
             .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-            });
+            .then(data => document.getElementById('navbar').innerHTML = data);
 
-        // Load footer HTML dynamically
         fetch('footer.html')
             .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
-            });
+            .then(data => document.getElementById('footer').innerHTML = data);
     </script>
 </body>
-
 </html>
+
 
