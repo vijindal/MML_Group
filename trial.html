@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Group</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
+
+<!-- Load the Header -->
+<div id="header"></div>
+
 <body>
     <!-- Navbar -->
     <div id="navbar"></div>
@@ -16,9 +12,8 @@
     <section class="content">
         <h1 align="center">Contact Information</h1>
         <hr class="line">
-
-        <nav style="display: flex;background-color: whitesmoke;">
-            <div style="width: 800px;margin: 2%;">
+        <nav style="display: flex; background-color: whitesmoke;">
+            <div style="width: 800px; margin: 2%;">
                 <h5 style="height: 15px;">Office: </h5>
                 <p style="font-style: italic;">Ground floor, Room No: 034, Department of Metallurgical Engineering, Indian Institute of Technology (BHU) Varanasi Uttar Pradesh (India), 221005</p>
                 <p style="font-style: italic; height: 5px;">e-mail: vjindal.met@iitbhu.ac.in</p>
@@ -32,17 +27,17 @@
     <div id="footer"></div>
 
     <script>
-        // Dynamically load navbar and footer
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('navbar').innerHTML = data);
-
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
+        // Dynamically load the navbar and footer
+        $(document).ready(function () {
+            $('#navbar').load('navbar.html');
+            $('#footer').load('footer.html');
+            $('#header').load('header.html');
+        });
     </script>
 </body>
+
 </html>
+
 
 
 
