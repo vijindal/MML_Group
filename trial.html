@@ -1,36 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Materials Modeling Lab</title>
+    <title>Research Areas</title>
+    <!-- Link to external CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Include navbar -->
+    <!-- Navbar -->
     <div id="navbar"></div>
 
+    <!-- Header -->
     <header class="header">
         <div class="container">
-            <h1>Welcome to the Materials Modeling Lab</h1>
+            <h1>Research Areas and Projects</h1>
         </div>
     </header>
 
+    <!-- Main Content -->
     <main class="container">
+        <!-- Research Areas -->
         <section>
-            <h2>About Us</h2>
-            <p>Our research focuses on computational thermodynamics, material design, and phase diagram assessment.</p>
+            <h2>Research Areas</h2>
+            <p>Our research interests lie in various aspects of Computational Thermodynamics:</p>
+            <ul>
+                <li>Experimental and DFT-based thermochemical data.</li>
+                <li><em>Cluster Variation Method</em> and <em>Cluster Expansion</em>-based Gibbs energy models.</li>
+                <li>Developing algorithms and software for phase diagram assessment and optimization.</li>
+                <li>Development of CALPHAD databases and their applications in designing novel materials and processes.</li>
+            </ul>
+            <p>More specifically, we are interested in:</p>
+            <ul>
+                <li>Titanium-based systems</li>
+                <li>Binary, ternary, and multicomponent transition metal systems</li>
+                <li>Compositionally complex alloys (CCA and HEA)</li>
+            </ul>
         </section>
 
+        <!-- On-going Projects -->
         <section>
-            <h2>Our Team</h2>
-            <p>We have a diverse group of researchers from various backgrounds in materials science and engineering.</p>
+            <h2>On-going Projects</h2>
+            <ol>
+                <li>Project 1: Description of an ongoing research project.</li>
+                <li>Project 2: Description of another ongoing research project.</li>
+            </ol>
+        </section>
+
+        <!-- Completed Projects -->
+        <section>
+            <h2>Completed Projects</h2>
+            <ol>
+                <li>Development of Functionally Graded Armor Composites (FGACs) Materials (2019-2022). Funded by DRDO under the ARMREB Grant-in-Aid Scheme.</li>
+                <li>Role of Short Range Ordering in designing High Entropy Alloys (2019-2022). Funded by SERB under Core Research Grant.</li>
+                <li>Development of low-cost β-Ti alloy for biomedical applications (2020-2023). Co-PI. Funded by SERB under Core Research Grant.</li>
+                <li>Phase-diagrams and thermodynamic investigations of Ti-Hf-Zr system using Cluster Variation Method (CVM) (2018-2020). Funded by IIT (BHU).</li>
+                <li>Free energy minimization in binary alloys via genetic algorithms (2012). Funded by UGC XI-Plan Research Grant for New Faculty.</li>
+                <li>Development of e-content on ancient Indian metallurgy and modern process metallurgy (2011-12). Funded by NMEICT, New Delhi.</li>
+            </ol>
         </section>
     </main>
 
-    <!-- Include footer -->
+    <!-- Footer -->
     <div id="footer"></div>
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for loading navbar and footer -->
     <script>
         // Load navbar HTML dynamically
         fetch('navbar.html')
@@ -47,4 +92,6 @@
             });
     </script>
 </body>
+
 </html>
+

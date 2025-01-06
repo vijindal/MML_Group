@@ -1,9 +1,11 @@
+/* General Body Styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
     color: #333;
 }
 
+/* Navbar Styles */
 .navbar {
     background-color: #343a40;
 }
@@ -17,6 +19,7 @@ body {
     color: #ffc107;
 }
 
+/* Header Styles */
 .header {
     text-align: center;
     background-color: #007bff;
@@ -29,6 +32,7 @@ body {
     font-weight: 700;
 }
 
+/* Section Styles */
 section {
     margin: 40px 0;
 }
@@ -39,6 +43,7 @@ section h2 {
     color: #007bff;
 }
 
+/* Footer Styles */
 footer {
     background-color: #343a40;
     color: white;
@@ -50,3 +55,4 @@ footer {
 footer p {
     margin: 0;
 }
+
