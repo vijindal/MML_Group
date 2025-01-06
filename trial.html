@@ -3,63 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web</title>   
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   
-    <link rel="stylesheet" href="style.css"> <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head> 
-<body style="min-height: 100vh;">
-    <nav class="navbar">
-        <table  style=" width: 100%;">
-            <tr>
-                <td style="width: 10%;; vertical-align: middle;">
-                    <img src="image/clg logo.jpg" alt="" style="height: 100px;">
-                </td>
-                <td style="text-align: center; width: 25%;">
-                    <h4  style="color: whitesmoke;"><b> MATERIALS MODELING LAB</b></h4>
-                </td>
-                <td style="text-align: right; width: 65%;">
-                    <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Research.html">Research</a></li>
-                        <li><a href="Publications.html"> Publications</a></li>
-                        <li><a href="Lab facilities.html">Lab facilities</a></li>
-                        <li><a href="Teaching.html">Teaching</a></li>
-                        <li><a href="People.html">People</a></li> 
-                        <li><a href="Contact Us.html">Contact Us</a></li>   
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </nav>
-    <section class="content">
-        <hr class="line">
-        <h2>Courses</h2>
-        <hr class="line">
-        <p >
-          1. Computational Methods for Metallurgy<br>
-          2. Computer Applications in Metallurgy Practical<br>
-          3. Modeling and Simulation in Metallurgy<br>
-          4. Heat Treatment&nbsp;
-        </p>
-      </section>
+    <title>Home - Materials Modeling Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Include navbar -->
+    <div id="navbar"></div>
 
-      <footer class="address background1" style="margin-top: auto;">
-        <div class="leftaddress">
-          <h5>Address:</h5>
-          <p>IIT Campus,(BHU) Varanasi Uttar Pradesh (India), 221005</p>
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to the Materials Modeling Lab</h1>
         </div>
-        <div class="midaddress">
-          <h5>Phone No:</h5>
-          <p>+91-542-7165640</p>
-        </div>
-        <div class="rightaddress">
-          <h5>Email:</h5>
-          <p>vjindal.met@iitbhu.ac.in</p>
-        </div>
-      </footer>
-        
-         
-        
-       
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>About Us</h2>
+            <p>Our research focuses on computational thermodynamics, material design, and phase diagram assessment.</p>
+        </section>
+
+        <section>
+            <h2>Our Team</h2>
+            <p>We have a diverse group of researchers from various backgrounds in materials science and engineering.</p>
+        </section>
+    </main>
+
+    <!-- Include footer -->
+    <div id="footer"></div>
+
+    <script>
+        // Load navbar HTML dynamically
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+
+        // Load footer HTML dynamically
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 </body>
-</html> 
+</html>
