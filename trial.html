@@ -3,101 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the Materials Modeling Lab (MML) at IIT BHU. Our research focuses on computational thermodynamics, alloys, phase diagrams, and more.">
-    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Research, Computational Thermodynamics, Alloys, Phase Diagrams, Materials Design">
-    <meta name="author" content="Materials Modeling Lab">
-    <title>Home | Materials Modeling Lab</title>
+    <title>Publications</title>
+    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body style="min-height: 100vh; display: flex; flex-direction: column;">
-
+<body>
     <!-- Include Header -->
-    <div id="header"></div>
+    <?php include('header.html'); ?>
 
-    <!-- Main Content -->
-    <main class="container my-5">
-        <h1 class="text-center">Welcome to the Materials Modeling Lab (MML)</h1>
-        <hr class="mb-4">
-        
-        <section class="content">
-            <div class="row">
-                <div class="col-lg-8">
-                    <p>MML is a part of the Department of Metallurgical Engineering at the <a href="https://iitbhu.ac.in/">Indian Institute of Technology (Banaras Hindu University), Varanasi</a>. Our research interests include:</p>
-                    <ul>
-                        <li>Computational Thermodynamics</li>
-                        <li>Experimental and DFT-based thermochemical data</li>
-                        <li>Cluster Variation Method and Cluster Expansion based Gibbs energy models</li>
-                        <li>Developing algorithms and software for phase diagram assessment optimization</li>
-                        <li>Development of CALPHAD databases and their applications in novel materials and processes</li>
-                    </ul>
-                    <p>To advance these areas, we are actively developing novel computational thermodynamics tools to design alloys and materials. (see <a href="research.html">Research</a>).</p>
+    <section class="content">
+        <h1 align="center">Publications</h1>
+        <hr class="line">
+        <nav class="Publications">
+            <h2>Publications (Peer Reviewed Journals)</h2>
+            <p><a href="https://scholar.google.com/citations?user=IEVIvqEAAAAJ&amp;hl=en">Google Scholar Link</a></p>
 
-                    <p><strong>We are looking for passionate new PhD and Master students to join the team!</strong></p>
-                    <p>We are grateful for funding from IIT (BHU), <a href="http://serb.gov.in/home.php">Science and Engineering Research Board (SERB)</a>, and the <a href="https://www.drdo.gov.in/armaments-research-board/contact-us">Armaments Research Board (DRDO)</a>.</p>
-
-                    <div class="text-center">
-                        <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0364591622000451-gr4.jpg" alt="Research Image" class="img-fluid">
-                    </div>
-                    <figure class="text-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Official_Logo_of_IIT%28BHU%29%2CVaranasi%2CIndia%2C2013.png" alt="IIT BHU Logo" height="100">
-                        <img src="https://www.serbonline.in/SERB/resources/app_srv/serb/gl/homepage/img/header/serb_15.gif" alt="SERB Logo" height="100">
-                        <img src="https://www.drdo.gov.in/sites/default/files/drdo_logo_0.png" alt="DRDO Logo" height="100">
-                    </figure>
-                </div>
-
-                <div class="col-lg-4">
-                    <h4>News</h4>
-                    <ul>
-                        <li><a href="https://doi.org/10.1007/s11669-023-01055-x">Our paper on "A Neural Network Driven Approach for Characterizing the Interplay Between Short Range Ordering and Enthalpy of Mixing of Binary Subsystems in the NbTiVZr High Entropy Alloy" has received an Editor’s Choice Award for 2023 from the Journal of Phase Equilibria and Diffusion.</a></li>
-                        <li>Shanker Kumar has successfully defended his PhD thesis on January 19, 2024. Congratulations!</li>
-                        <li><a href="https://doi.org/10.1007/s11669-023-01055-x">Our recent publication on "Influence of micro-segregation on the microstructure, and microhardness of MoNbTaxTi(1-x)W refractory high entropy alloys" published in "Intermetallics".</a></li>
-                        <li><a href="https://doi.org/10.1007/s11669-022-00989-y">Modeling Short-Range Ordering in Binary BCC Ti-X (X = Nb, V, Zr) Alloys using CE-CVM, published in "Journal of Phase Equilibria and Diffusion".</a></li>
-                    </ul>
-                    <p><a href="https://doi.org/10.1007/s11665-022-07002-0">Published paper on "Reciprocating Wear of Ti-TiB In Situ Composites Synthesized via Vacuum Arc Melting", J. Mater. Eng. Perform. (2022).</a></p>
-                    <p><a href="https://doi.org/10.1007/s11669-022-00959-4">Published paper on "Thermodynamic Re-assessment of the Nb-Zr System Using the CE–CVM Model for Solid Solution Phases", J. Phase Equilibria Diffus. (2022).</a></p>
-                </div>
-            </div>
-        </section>
-    </main>
+            <!-- List of Publications -->
+            <p>[1] S. Kumar, A. Linda, Y. Shadangi, V. Jindal, Influence of micro-segregation on the microstructure, and microhardness of MoNbTaxTi(1-x)W refractory high entropy alloys: Experimental and DFT approach, Intermetallics. 164 (2024) 108080. https://doi.org/10.1016/j.intermet.2023.108080.</p>
+            <p>[2] S. Kumar, A.K. Thakur, V. Jindal, K. Muralidharan, A Neural Network Driven Approach for Characterizing the Interplay Between Short Range Ordering and Enthalpy of Mixing of Binary Subsystems in the NbTiVZr High Entropy Alloy, J. Phase Equilibria Diffus. (2023). https://doi.org/10.1007/s11669-023-01055-x.</p>
+            <!-- Add more publications here as needed -->
+        </nav>
+    </section>
 
     <!-- Include Footer -->
-    <div id="footer"></div>
-
-    <!-- Footer Styles -->
-    <footer class="address background1" style="margin-top: auto;">
-        <div class="leftaddress">
-            <h5>Address:</h5>
-            <p>IIT Campus, (BHU) Varanasi, Uttar Pradesh (India), 221005</p>
-        </div>
-        <div class="midaddress">
-            <h5>Phone No:</h5>
-            <p>+91-542-7165640</p>
-        </div>
-        <div class="rightaddress">
-            <h5>Email:</h5>
-            <p>vjindal.met@iitbhu.ac.in</p>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Sc2jj7fxhx22JGzF5hLd51pGFsFN7Jo6ZXm" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFw2IYI1xZjzhffyKg0/2+qe6j" crossorigin="anonymous"></script>
-
-    <script>
-        // Load Header
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data);
-
-        // Load Footer
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
+    <?php include('footer.html'); ?>
 </body>
 </html>
+
 
 
 
