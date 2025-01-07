@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications</title>
+    <meta name="description" content="Explore the publications of the Materials Modeling Lab, IIT BHU, in the field of high entropy alloys, computational thermodynamics, and more.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Publications, High Entropy Alloys, Computational Thermodynamics, Research">
+    <meta name="author" content="Materials Modeling Lab">
+    <title>Publications | Materials Modeling Lab</title>
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom CSS -->
@@ -11,28 +14,54 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body>
-    <!-- Include Header -->
-    <?php include('header.html'); ?>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
 
-    <section class="content">
-        <h1 align="center">Publications</h1>
-        <hr class="line">
-        <nav class="Publications">
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h1 class="text-center">Publications</h1>
+        <hr class="mb-4">
+        
+        <section>
             <h2>Publications (Peer Reviewed Journals)</h2>
-            <p><a href="https://scholar.google.com/citations?user=IEVIvqEAAAAJ&amp;hl=en">Google Scholar Link</a></p>
+            <p>Explore the latest publications from the Materials Modeling Lab, IIT BHU. You can also visit our <a href="https://scholar.google.com/citations?user=IEVIvqEAAAAJ&amp;hl=en">Google Scholar page</a> for more details.</p>
 
             <!-- List of Publications -->
-            <p>[1] S. Kumar, A. Linda, Y. Shadangi, V. Jindal, Influence of micro-segregation on the microstructure, and microhardness of MoNbTaxTi(1-x)W refractory high entropy alloys: Experimental and DFT approach, Intermetallics. 164 (2024) 108080. https://doi.org/10.1016/j.intermet.2023.108080.</p>
-            <p>[2] S. Kumar, A.K. Thakur, V. Jindal, K. Muralidharan, A Neural Network Driven Approach for Characterizing the Interplay Between Short Range Ordering and Enthalpy of Mixing of Binary Subsystems in the NbTiVZr High Entropy Alloy, J. Phase Equilibria Diffus. (2023). https://doi.org/10.1007/s11669-023-01055-x.</p>
-            <!-- Add more publications here as needed -->
-        </nav>
-    </section>
+            <ul>
+                <li>
+                    <p><strong>[1]</strong> S. Kumar, A. Linda, Y. Shadangi, V. Jindal, Influence of micro-segregation on the microstructure, and microhardness of MoNbTaxTi(1-x)W refractory high entropy alloys: Experimental and DFT approach, <em>Intermetallics</em>. 164 (2024) 108080. <a href="https://doi.org/10.1016/j.intermet.2023.108080">DOI link</a>.</p>
+                </li>
+                <li>
+                    <p><strong>[2]</strong> S. Kumar, A.K. Thakur, V. Jindal, K. Muralidharan, A Neural Network Driven Approach for Characterizing the Interplay Between Short Range Ordering and Enthalpy of Mixing of Binary Subsystems in the NbTiVZr High Entropy Alloy, <em>J. Phase Equilibria Diffus.</em> (2023). <a href="https://doi.org/10.1007/s11669-023-01055-x">DOI link</a>.</p>
+                </li>
+                <!-- Add more publications here as needed -->
+            </ul>
+        </section>
+    </main>
 
     <!-- Include Footer -->
-    <?php include('footer.html'); ?>
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Sc2jj7fxhx22JGzF5hLd51pGFsFN7Jo6ZXm" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFw2IYI1xZjzhffyKg0/2+qe6j" crossorigin="anonymous"></script>
+
+    <script>
+        // Load Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // Load Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
 </body>
 </html>
+
 
 
 
