@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Teaching</title>   
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   
-		<link rel="stylesheet" href="style.css"> <link rel="icon" href="favicon.ico" type="image/x-icon">
-	</head>
-    <body style="min-height: 100vh;">
-        <nav class="navbar">
-            <table  style=" width: 100%;">
-                <tr>
-                    <td style="width: 10%;; vertical-align: middle;">
-                        <img src="image/clg logo.jpg" alt="" style="height: 100px;">
-                    </td>
-                    <td style="text-align: center; width: 25;">
-                        <h4  style="color: whitesmoke;"><b> MATERIALS MODELING LAB</b></h4>
-                    </td>
-                    <td style="text-align: right; width: 65%;">
-                        <ul class="nav-list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="Research.html">Research</a></li>
-                            <li><a href="Publications.html"> Publications</a></li>
-                            <li><a href="Lab facilities.html">Lab facilities</a></li>
-                            <li><a href="Teaching.html">Teaching</a></li>
-                            <li><a href="People.html">People</a></li> 
-                            <li><a href="Openings.html">Openings</a></li> 
-                            <li><a href="Contact Us.html">Contact</a></li>   
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </nav>
-    <section class="content">
-        <h1 align="center">Teaching</h1>
-        <hr class="line">
-        <h2>Courses(Theory)</h2>
-        <p >
-          1. Computational Methods for Metallurgy<br>
-          2. Modeling and Simulation in Metallurgy<br>
-          3. Heat Treatment&nbsp;
-        </p>
-        <h2>Courses(Practical)</h2>
-        <p >
-            1. Computer Applications in Metallurgy Practical<br>
-            2. Heat Treatment Practical<br>
-            3. Modeling and Simulation in Metallurgy Practical<br>
-          </p>
-      </section>
-<footer class="address background1" style="margin-top: auto;">
-    <div class="leftaddress">
-      <h5>Address:</h5>
-      <p>IIT Campus,(BHU) Varanasi Uttar Pradesh (India), 221005</p>
-    </div>
-    <div class="midaddress">
-      <h5>Phone No:</h5>
-      <p>+91-542-7165640</p>
-    </div>
-    <div class="rightaddress">
-      <h5>Email:</h5>
-      <p>vjindal.met@iitbhu.ac.in</p>
-    </div>
-  </footer>  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore teaching and courses offered by the Materials Modeling Lab at IIT BHU, including theoretical and practical courses in metallurgy.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Teaching, Metallurgy, Computational Methods, Heat Treatment, Simulation">
+    <meta name="author" content="Materials Modeling Lab">
+    <title>Teaching | Materials Modeling Lab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h1 class="text-center">Teaching</h1>
+        <hr class="mb-4">
+        <section>
+            <h2>Courses (Theory)</h2>
+            <ul>
+                <li>Computational Methods for Metallurgy</li>
+                <li>Modeling and Simulation in Metallurgy</li>
+                <li>Heat Treatment</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Courses (Practical)</h2>
+            <ul>
+                <li>Computer Applications in Metallurgy Practical</li>
+                <li>Heat Treatment Practical</li>
+                <li>Modeling and Simulation in Metallurgy Practical</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Sc2jj7fxhx22JGzF5hLd51pGFsFN7Jo6ZXm" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFw2IYI1xZjzhffyKg0/2+qe6j" crossorigin="anonymous"></script>
+
+    <script>
+        // Load Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // Load Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
 </body>
-</html> 
+</html>
+
+
+
+
+
+
+
