@@ -1,51 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Load Header -->
-<div id="header"></div>
-
-<body>
-    <!-- Load Navbar -->
-    <div id="navbar"></div>
-
-    <!-- Main Content -->
-    <section class="content">
-        <h1 class="text-center">Contact Information</h1>
-        <hr class="line">
-
-        <!-- Contact Information and Map -->
-        <div class="contact-container d-flex justify-content-between">
-            <div class="contact-info" style="width: 48%;">
-                <h5>Office:</h5>
-                <p style="font-style: italic;">
-                    Ground floor, Room No: 034, Department of Metallurgical Engineering, Indian Institute of Technology (BHU)
-                    Varanasi Uttar Pradesh (India), 221005
-                </p>
-                <p style="font-style: italic;">e-mail: vjindal.met@iitbhu.ac.in</p>
-                <p style="font-style: italic;">Phone No: +91-542-7165640</p>
-            </div>
-
-            <!-- Google Maps Embed -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.0486408812967!2d82.9903632143288!3d25.26894913498821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e322825843773%3A0x5a3cb69baedeb3c8!2sDepartment%20of%20Metallurgical%20Engineering%2C%20Indian%20Institute%20of%20Technology%20(BHU)!5e0!3m2!1sen!2sin!4v1635059147004!5m2!1sen!2sin"
-                width="100%" height="400" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore teaching and courses offered by the Materials Modeling Lab at IIT BHU, including theoretical and practical courses in metallurgy.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Teaching, Metallurgy, Computational Methods, Heat Treatment, Simulation">
+    <meta name="author" content="Materials Modeling Lab">
+    <title>Teaching | Materials Modeling Lab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="image/clg_logo.jpg" alt="IIT BHU Logo" style="height: 50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="Research.html">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="Publications.html">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="Lab_facilities.html">Lab Facilities</a></li>
+                <li class="nav-item active"><a class="nav-link" href="Teaching.html">Teaching</a></li>
+                <li class="nav-item"><a class="nav-link" href="People.html">People</a></li>
+                <li class="nav-item"><a class="nav-link" href="Openings.html">Openings</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact_Us.html">Contact</a></li>
+            </ul>
         </div>
-    </section>
+    </nav>
 
-    <!-- Load Footer -->
-    <div id="footer"></div>
+    <main class="container my-5">
+        <h1 class="text-center">Teaching</h1>
+        <hr class="mb-4">
+        <section>
+            <h2>Courses (Theory)</h2>
+            <ul>
+                <li>Computational Methods for Metallurgy</li>
+                <li>Modeling and Simulation in Metallurgy</li>
+                <li>Heat Treatment</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Courses (Practical)</h2>
+            <ul>
+                <li>Computer Applications in Metallurgy Practical</li>
+                <li>Heat Treatment Practical</li>
+                <li>Modeling and Simulation in Metallurgy Practical</li>
+            </ul>
+        </section>
+    </main>
 
-    <!-- jQuery and Dynamic Loading of Components -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#navbar').load('navbar.html');
-            $('#footer').load('footer.html');
-            $('#header').load('header.html');
-        });
-    </script>
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Address:</h5>
+                    <p>IIT Campus, (BHU) Varanasi, Uttar Pradesh (India), 221005</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Phone No:</h5>
+                    <p>+91-542-7165640</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Email:</h5>
+                    <p><a href="mailto:vjindal.met@iitbhu.ac.in" class="text-white">vjindal.met@iitbhu.ac.in</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Sc2jj7fxhx22JGzF5hLd51pGFsFN7Jo6ZXm" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFw2IYI1xZjzhffyKg0/2+qe6j" crossorigin="anonymous"></script>
 </body>
-
 </html>
+
 
 
 
