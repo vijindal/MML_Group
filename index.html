@@ -1,138 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>   
-    
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   
-    
-        <link rel="stylesheet" href="style.css"> <link rel="icon" href="favicon.ico" type="image/x-icon">
-    </head> 
-    <body style="min-height: 100vh;">
-        <nav class="navbar">
-            <table  style=" width: 100%;">
-                <tr>
-                    <td style="width: 10%;; vertical-align: middle;">
-                        <img src="image/clg logo.jpg" alt="" style="height: 100px;">
-                    </td>
-                    <td style="text-align: center; width: 25;">
-                        <h4  style="color: whitesmoke;"><b> MATERIALS MODELING LAB</b></h4>
-                    </td>
-                    <td style="text-align: right; width: 65%;">
-                        <ul class="nav-list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="Research.html">Research</a></li>
-                            <li><a href="Publications.html"> Publications</a></li>
-                            <li><a href="Lab facilities.html">Lab facilities</a></li>
-                            <li><a href="Teaching.html">Teaching</a></li>
-                            <li><a href="People.html">People</a></li> 
-                            <li><a href="Openings.html">Openings</a></li> 
-                            <li><a href="Contact Us.html">Contact</a></li>   
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </nav>
-    <style type="text/css">{
-        box-sizing: border-box;
-    }
-    /* Set additional styling options for the columns */
-    .column {
-    float: left;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Materials Modeling Lab (MML) at IIT BHU. Our research focuses on computational thermodynamics, alloys, phase diagrams, and more.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Research, Computational Thermodynamics, Alloys, Phase Diagrams, Materials Design">
+    <meta name="author" content="Materials Modeling Lab">
+    <title>Home | Materials Modeling Lab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
 
-    /* Set width length for the left, right and middle columns */
-    .left {
-    width: 80%;
-    }
+    <!-- Include Header -->
+    <div id="header"></div>
 
-    .right {
-    width: 20%;
-    }
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h1 class="text-center">Welcome to the Materials Modeling Lab (MML)</h1>
+        <hr class="mb-4">
+        
+        <section class="content">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p>MML is a part of the Department of Metallurgical Engineering at the <a href="https://iitbhu.ac.in/">Indian Institute of Technology (Banaras Hindu University), Varanasi</a>. Our research interests include:</p>
+                    <ul>
+                        <li>Computational Thermodynamics</li>
+                        <li>Experimental and DFT-based thermochemical data</li>
+                        <li>Cluster Variation Method and Cluster Expansion based Gibbs energy models</li>
+                        <li>Developing algorithms and software for phase diagram assessment optimization</li>
+                        <li>Development of CALPHAD databases and their applications in novel materials and processes</li>
+                    </ul>
+                    <p>To advance these areas, we are actively developing novel computational thermodynamics tools to design alloys and materials. (see <a href="research.html">Research</a>).</p>
 
-    .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-</style>
+                    <p><strong>We are looking for passionate new PhD and Master students to join the team!</strong></p>
+                    <p>We are grateful for funding from IIT (BHU), <a href="http://serb.gov.in/home.php">Science and Engineering Research Board (SERB)</a>, and the <a href="https://www.drdo.gov.in/armaments-research-board/contact-us">Armaments Research Board (DRDO)</a>.</p>
 
-<section class="content">
-<div class="row">
-   
-<div class="column left">
-    <h1 align="center">Welcome to the Materials Modeling Lab (MML)</h1>
-<hr class="line">
+                    <div class="text-center">
+                        <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0364591622000451-gr4.jpg" alt="Research Image" class="img-fluid">
+                    </div>
+                    <figure class="text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Official_Logo_of_IIT%28BHU%29%2CVaranasi%2CIndia%2C2013.png" alt="IIT BHU Logo" height="100">
+                        <img src="https://www.serbonline.in/SERB/resources/app_srv/serb/gl/homepage/img/header/serb_15.gif" alt="SERB Logo" height="100">
+                        <img src="https://www.drdo.gov.in/sites/default/files/drdo_logo_0.png" alt="DRDO Logo" height="100">
+                    </figure>
+                </div>
 
-<p >MML is a part of the Department of Metallurgical Engineering at the <a href="https://iitbhu.ac.in/">Indian Institute of Technology (Banaras Hindu University), Varanasi</a>. Our research interest lies in various aspects of Computational Thermodynamics-(i) Experimental and DFT-based thermochemical data, (ii) Cluster Variation Method and Cluster Expansion based Gibbs energy models, (iii) Developing algorithms and software for the phase diagram assessment optimization, and (iv) Development of CALPHAD databases and their applications in novel materials and processes.</p>
+                <div class="col-lg-4">
+                    <h4>News</h4>
+                    <ul>
+                        <li><a href="https://doi.org/10.1007/s11669-023-01055-x">Our paper on "A Neural Network Driven Approach for Characterizing the Interplay Between Short Range Ordering and Enthalpy of Mixing of Binary Subsystems in the NbTiVZr High Entropy Alloy" has received an Editor’s Choice Award for 2023 from the Journal of Phase Equilibria and Diffusion.</a></li>
+                        <li>Shanker Kumar has successfully defended his PhD thesis on January 19, 2024. Congratulations!</li>
+                        <li><a href="https://doi.org/10.1007/s11669-023-01055-x">Our recent publication on "Influence of micro-segregation on the microstructure, and microhardness of MoNbTaxTi(1-x)W refractory high entropy alloys" published in "Intermetallics".</a></li>
+                        <li><a href="https://doi.org/10.1007/s11669-022-00989-y">Modeling Short-Range Ordering in Binary BCC Ti-X (X = Nb, V, Zr) Alloys using CE-CVM, published in "Journal of Phase Equilibria and Diffusion".</a></li>
+                        <li><a href="https://doi.org/10.1007/s11665-022-07002-0">Published paper on "Reciprocating Wear of Ti-TiB In Situ Composites Synthesized via Vacuum Arc Melting", J. Mater. Eng. Perform. (2022).</a></li>
+                        <li><a href="https://doi.org/10.1007/s11669-022-00959-4">Published paper on "Thermodynamic Re-assessment of the Nb-Zr System Using the CE–CVM Model for Solid Solution Phases", J. Phase Equilibria Diffus. (2022).</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<div style="text-align:center"><img alt="" height="283" src="https://ars.els-cdn.com/content/image/1-s2.0-S0364591622000451-gr4.jpg" width="388" /></div>
+    <!-- Include Footer -->
+    <div id="footer"></div>
 
-<p >To this end, we develop novel computational thermodynamics&nbsp;tools to design&nbsp;alloys and materials.&nbsp;(see <a href="research">Research</a>).</p>
+    <!-- Footer Styles -->
+    <footer class="address background1" style="margin-top: auto;">
+        <div class="leftaddress">
+            <h5>Address:</h5>
+            <p>IIT Campus, (BHU) Varanasi, Uttar Pradesh (India), 221005</p>
+        </div>
+        <div class="midaddress">
+            <h5>Phone No:</h5>
+            <p>+91-542-7165640</p>
+        </div>
+        <div class="rightaddress">
+            <h5>Email:</h5>
+            <p>vjindal.met@iitbhu.ac.in</p>
+        </div>
+    </footer>
 
-<p ><strong>We are looking for passionate new PhD and Master students to join the team</strong><strong>!</strong></p>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Sc2jj7fxhx22JGzF5hLd51pGFsFN7Jo6ZXm" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFw2IYI1xZjzhffyKg0/2+qe6j" crossorigin="anonymous"></script>
 
-<p >We are grateful for funding from IIT(BHU), <a href="http://serb.gov.in/home.php">Science and Engineering Research Board (SERB)</a>,&nbsp;and the <a href="https://www.drdo.gov.in/armaments-research-board/contact-us">Armaments Research Board (DRDO)</a>.&nbsp;</p>
+    <script>
+        // Load Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
 
-<figure class="fourth">
-<p ><img alt="" height="100" src="https://upload.wikimedia.org/wikipedia/en/4/4c/Official_Logo_of_IIT%28BHU%29%2CVaranasi%2CIndia%2C2013.png" width="98" /><img alt="" height="100" src="https://www.serbonline.in/SERB/resources/app_srv/serb/gl/homepage/img/header/serb_15.gif" width="168" /> <img alt="" height="100" src="https://www.drdo.gov.in/sites/default/files/drdo_logo_0.png" width="473" /></p>
-</figure>
-
-</div>
-
-
-<div class="column right">
-<h4>News</h4>
-
-<p><a href="https://doi.org/10.1007/s11669-023-
-01055-x">-Our paper on "A Neural Network Driven Approach for Characterizing the Interplay Between Short Range Ordering and Enthalpy of Mixing of Binary Subsystems in the NbTiVZr High Entropy Alloy"&nbsp; has received an<br />
-Editor’s Choice Award for 2023 from the Journal of Phase Equilibria and Diffusion.</a></p>
-
-<p>- Shanker Kumar has successfully defended his PhD thesis on January 19, 2024. Congratulations!</p>
-
-<p><a href="https://doi.org/10.1007/s11669-023-
-01055-x">- Our recent publication on <span style="font-family:Arial,Helvetica,sans-serif;">"<span style="font-size:12.0pt"><span style="line-height:115%"> </span></span></span></a><a href="https://doi.org/10.1016/j.intermet.2023.108080"> Influence of micro-segregation on the microstructure, and microhardness of MoNbTaxTi(1-x)W refractory high entropy alloys: Experimental and DFT approach"</a><a href="https://doi.org/10.1016/j.intermet.2023.108080">&nbsp;published "<span style="font-size:11pt"><span style="line-height:normal"><span style="font-size:12.0pt">Intermetallics".&nbsp;</span></span></span></a></p>
-
-<p><a href="https://doi.org/10.1016/j.intermet.2023.108080">-&nbsp;Our latest #research on "</a><a href="https://doi.org/10.1007/s11669-023-01055-x">A Neural Network Driven Approach for Characterizing the Interplay Between Short Range Ordering and Enthalpy of Mixing of Binary Subsystems in the NbTiVZr High Entropy Alloy</a>" published in&nbsp;"Journal of Phase Equilibria and Diffusion"</p>
-
-<p>-&nbsp;Our latest #research on <a href="https://link.springer.com/article/10.1007/s11669-022-00989-y">"Modeling Short-Range Ordering in Binary BCC Ti-X (X = Nb, V, Zr) Alloys using CE-CVM"</a>, published with @SpringerNature in "Journal of Phase Equilibria and Diffusion"<br />
-<img alt="" height="159" src="https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs11669-022-00989-y/MediaObjects/11669_2022_989_Fig24_HTML.png?as=webp" width="200" /><br />
-<br />
-- Published paper on "<a href="http://dx.doi.org/10.1007/s12666-022-02651-0">Effect of Load on Tribological Properties of Ti–TiB–Fe Composites Processed via Spark Plasma Sintering (SPS)</a>", Trans. IIM (2022).&nbsp;<br />
-<img alt="" height="161" src="https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs12666-022-02651-0/MediaObjects/12666_2022_2651_Fig3_HTML.png?as=webp" width="200" /><br />
-- Published Paper on&nbsp;"<a href="https://doi.org/10.1016/j.calphad.2022.102439"><em>First-principles calculations and thermodynamic assessment of the Nb–V system using CE-CVM</em>", Calphad. 78 (2022) 102439.</a>&nbsp;<img alt="" height="146" src="https://ars.els-cdn.com/content/image/1-s2.0-S0364591622000451-gr4.jpg" width="200" /></p>
-
-<p>-Published paper on&nbsp;"<a href="https://doi.org/10.1007/s11665-022-07002-0 "><em>Reciprocating Wear of Ti-TiB In Situ Composites Synthesized via Vacuum Arc Melting</em>", J. Mater. Eng. Perform. (2022).</a><br />
-<br />
-- Published paper on "<a href="https://doi.org/10.1007/s11669-022-00959-4 "><em>Thermodynamic Re-assessment of the Nb-Zr System Using the CE–CVM Model for Solid Solution Phases</em> ", J. Phase Equilibria Diffus. (2022).</a></p>
-</div>
-</div>
-
-<hr style=" margin:2%;height:2px;border-width:0;color:gray;background-color:gray" />
-<div class="container-fluid">
-<div class="row">
-<div class="col-sm-8" id="homeid">&nbsp;</div>
-
-<div class="col-sm-4" id="newsid">
-<div class="well">&nbsp;</div>
-</div>
-</div>
-</div>
-</section>
-<footer class="address background1" style="margin-top: auto;">
-    <div class="leftaddress">
-      <h5>Address:</h5>
-      <p>IIT Campus,(BHU) Varanasi Uttar Pradesh (India), 221005</p>
-    </div>
-    <div class="midaddress">
-      <h5>Phone No:</h5>
-      <p>+91-542-7165640</p>
-    </div>
-    <div class="rightaddress">
-      <h5>Email:</h5>
-      <p>vjindal.met@iitbhu.ac.in</p>
-    </div>
-  </footer>
+        // Load Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
 </body>
-</html>  
+</html>
