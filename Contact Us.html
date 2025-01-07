@@ -3,41 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Information</title>
+    <meta name="description" content="Contact information for the Materials Modeling Lab at IIT (BHU) Varanasi, including office location and communication details.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Contact Information, Varanasi, Metallurgy">
+    <meta name="author" content="Materials Modeling Lab">
+    <title>Contact | Materials Modeling Lab</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script>
-        // Load Header and Footer
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('header.html').then(response => response.text()).then(data => document.getElementById('header').innerHTML = data);
-            fetch('footer.html').then(response => response.text()).then(data => document.getElementById('footer').innerHTML = data);
-        });
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-
-<body>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
     <!-- Include Header -->
     <div id="header"></div>
 
     <!-- Main Content -->
-    <section class="content container mt-4">
+    <main class="container my-5">
         <h1 class="text-center">Contact Information</h1>
-        <hr class="line">
+        <hr class="mb-4">
+        <section>
+            <h2>Office Location</h2>
+            <p class="font-italic">
+                Ground floor, Room No: 034, Department of Metallurgical Engineering, IIT (BHU), Varanasi, Uttar Pradesh, India, 221005
+            </p>
+        </section>
+        <section>
+            <h2>Contact Details</h2>
+            <p class="font-italic">Email: <a href="mailto:vjindal.met@iitbhu.ac.in">vjindal.met@iitbhu.ac.in</a></p>
+            <p class="font-italic">Phone: <a href="tel:+915427165640">+91-542-7165640</a></p>
+        </section>
 
-        <!-- Contact Information and Map -->
-        <div class="contact-container d-flex justify-content-between">
-            <div class="contact-info" style="width: 48%;">
-                <h5>Office:</h5>
-                <p class="font-italic">
-                    Ground floor, Room No: 034, Department of Metallurgical Engineering, IIT (BHU) Varanasi, UP, India, 221005
-                </p>
-                <p class="font-italic">e-mail: <a href="mailto:vjindal.met@iitbhu.ac.in">vjindal.met@iitbhu.ac.in</a></p>
-                <p class="font-italic">Phone No: <a href="tel:+915427165640">+91-542-7165640</a></p>
-            </div>
-
-            <!-- Google Maps Embed -->
+        <!-- Google Maps Embed -->
+        <section>
+            <h2>Location on Map</h2>
             <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Include Footer -->
     <div id="footer"></div>
@@ -45,5 +44,18 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        // Load Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // Load Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
 </body>
 </html>
+
