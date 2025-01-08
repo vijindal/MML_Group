@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the field of Thermodynamic Modeling, its applications in first-principles calculations, cluster expansion, and machine learning integration.">
+    <meta name="keywords" content="Thermodynamic Modeling, First-principles, CALPHAD, Cluster Expansion, Machine Learning, High Entropy Alloys">
+    <meta name="author" content="Materials Modeling Lab">
+    <title>1.4.	Optimization (Thermodynamic Assessments) and Database | Materials Modeling Lab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h1 class="text-center"> Optimization (Thermodynamic Assessments) and Database</h1>
+        <hr class="mb-4 line">
+
+        <section>
+            <h3>Thermodynamic Assessments</h3>
+            <p>
+                We have developed algorithms and computer programs for various thermodynamic calculations. For binary systems, we 
+                utilized the Newton-Raphson method for phase boundary calculations and the internal minimization of Cluster 
+                Expansion-Cluster Variation Method (CE-CVM) expressions. Additionally, the Levenberg–Marquardt (LM) algorithm 
+                was employed in the outermost loop to optimize model parameters during thermodynamic assessments. For multicomponent systems,
+                 we adapted Hillert’s algorithm for both phase boundary calculations and the internal minimization of CE-CVM expressions. 
+                 These advancements enable precise phase equilibria calculations for complex systems. Further details on the binary system 
+                 algorithms are available in our previous publications (Jindal et al., 2013), while the specifics of the multicomponent algorithms will be
+                  detailed in an upcoming publication.
+            </p>
+            <p>
+                Many binary systems have been optimized so far, for example Cr-Mo, Nb-Ti, Nb-V, Nb-Zr, Ti-V, Ti-Zr, etc. The solution phases 
+                (bcc, fcc, and hcp) in these systems were modeled by the Cluster Expansion-Cluster Variation Method (CE-CVM), which takes into
+                 account short-range order (SRO) and is a better physical model than the regular solution (R-K) polynomial used in conventional CALPHAD databases. 
+                 Ab initio calculations were performed using Special Quasirandom Structures (SQS) and the Cluster Expansion (CE) method to derive 
+                 accurate enthalpy of mixing data.  
+            </p>
+             <!-- Figure 1 -->
+            <div class="my-4 text-center">
+                <img src="image/optimization_1.jpg" alt="CVM" class="img-fluid" style="width: auto; height: 400px;">
+                <p class="caption">Figure 2: Thermodynamic assessment of the Nb-V system.</p>
+            </div>
+            <p>
+                In the ternary system, we have recently optimized various subsystems of the Nb-Ti-V-Zr system. Those results are also shown in the figure. 
+            </p>
+            <!-- Figure 2 -->
+            <div class="my-4 text-center">
+                <img src="image/optimization_2.jpg" alt="CVM" class="img-fluid" style="width: auto; height: 400px;">
+                <p class="caption">Figure 2: Ternary subsystems of the Nb-Ti-V-Zr system.
+                </p>
+            </div>
+
+            <h3>Thermodynamic Databases</h3>
+            <p>Using the CT approach, we have so far generated two databases. 
+            </p>
+            <ul>
+                <li>
+                    <strong>(i) Ti-B-Fe-Mo System:</strong> Thermodynamic modeling of Ti-B-Fe-Mo was performed using the CALPHAD approach based on extrapolations from the four ternary subsystems, namely: Ti-B-Fe, Ti-B-Mo, Ti-Fe-Mo, and B-Fe-Mo. This database consists of a total of 19 phases. This was part of the DRDO-armreb project.
+                </li>
+                <li>
+                    <strong>(ii) Nb-Ti-V-Zr System:</strong> The Nb-Ti-V-Zr System was modeled using CE-CVM. It includes descriptions of 6 binary and four ternary subsystems. This database consists of a total of 2 solid solution phases, one intermetallic, and one liquid phase. This was part of the SERB project.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Sc2jj7fxhx22JGzF5hLd51pGFsFN7Jo6ZXm" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFw2IYI1xZjzhffyKg0/2+qe6j" crossorigin="anonymous"></script>
+
+    <script>
+        // Load Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // Load Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+</html>
