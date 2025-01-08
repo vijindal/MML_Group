@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the field of Thermodynamic Modeling, its applications in first-principles calculations, cluster expansion, and machine learning integration.">
+    <meta name="keywords" content="Thermodynamic Modeling, First-principles, CALPHAD, Cluster Expansion, Machine Learning, High Entropy Alloys">
+    <meta name="author" content="Materials Modeling Lab">
+    <title>Thermodynamic Modeling | Materials Modeling Lab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h1 class="text-center"> Modelling of Gibbs Energy using Cluster Variation Method(CVM)</h1>
+        <hr class="mb-4 line">
+
+        <section>
+            <h3>Gibbs Energy</h3>
+            <p>
+                The Gibbs energy can be expressed as the sum of a reference term, a mixing term, and a physical model, such as 
+                one accounting for magnetic transitions. The mixing term itself comprises an ideal mixing component and an excess term. 
+                Different models vary in their treatment of the excess term.
+            </p>
+            <p>In the first category of models, the excess Gibbs energy of mixing is represented as a polynomial function of composition. 
+                These empirical models do not explicitly incorporate short-range order (SRO). In contrast, the second category of models 
+                derives the excess Gibbs energy of mixing from statistical mechanics, explicitly accounting for SRO.</p>
+            <p>
+                The Cluster Variation Method (CVM) belongs to the second group. As a mean-field approach, CVM provides a hierarchy of solutions 
+                to the Ising model, offering a reasonably accurate treatment of SRO by considering correlations between neighboring sites.
+            </p>
+            <h3>Modified CVM</h3>
+            <p>The truncation error in the Cluster Variation Method (CVM) entropy functional can be significantly reduced by modifying the
+                 multiplicity of the basic cluster term in the entropy functional. This modification is determined by equating the consolute 
+                 temperature to a more accurate value. This approach improves estimates of enthalpy, entropy, consolute temperature, and 
+                 short-range order (SRO) without additional computational cost, making it a practical standard for CVM entropy functionals. 
+                 We have applied this methodology for bcc and fcc structures. 
+            </p>
+            <!-- Figure 1 -->
+            <div class="my-4 text-center">
+                <img src="image/gibbs_cvm_1.jpg" alt="CVM" class="img-fluid" style="width: auto; height: 400px;">
+                <p class="caption">Figure 2: Results for bcc and fcc structures. </p>
+            </div>
+
+            <h3>Polynomial approximation of correlation function</h3>
+            <p>Correlation Functions (CFs) are typically derived by solving nonlinear equilibrium equations, a process that demands 
+                compute-intensive numerical methods. To simplify this, CFs can instead be expressed as polynomial functions of composition, 
+                bypassing the need for equilibrium equations. In this approach, the coefficients of the polynomial are rational functions 
+                of temperature and energy parameters. This method offers ease of application comparable to CALPHAD techniques while retaining
+                 detailed information about short-range order (SRO). It has been successfully applied to the A2–B32 system using the tetrahedron approximation.</p>
+
+            <!-- Figure 2 -->
+            <div class="my-4 text-center">
+                <img src="image/gibbs_cvm_2.jpg" alt="CVM" class="img-fluid" style="width: auto; height: 400px;">
+                <p class="caption">Figure 2: Comparison of CVM and polynomial data for phase separating tendency of A2 phase at various temperatures 
+                    for (i) II-n pair CF (𝑢2), (ii) triangle CF (𝑢3), (iii) tetrahedron CF (𝑢4) and (iv) Gibbs energy of mixing (𝐺𝑚𝑖𝑥/RT).
+                </p>
+            </div>
+
+            <h3>Invariant Basis for Multicomponent Systems</h3>
+            <p>Cluster Effective Coefficients (CECs) are not unique and exhibit basis dependence when extended from binary to multicomponent alloys. 
+                Unlike CALPHAD methods, CECs lack standardization, making database development challenging. To address this issue, a new framework 
+                has been developed that employs configurational variables and corresponding CECs independent of the choice of basis. This framework
+                 has been validated for disordered bcc, fcc, and hcp structures, providing a standardized and reliable approach for handling CECs 
+                 in complex alloy systems.</p>
+
+        </section>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Sc2jj7fxhx22JGzF5hLd51pGFsFN7Jo6ZXm" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFw2IYI1xZjzhffyKg0/2+qe6j" crossorigin="anonymous"></script>
+
+    <script>
+        // Load Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // Load Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+</html>
