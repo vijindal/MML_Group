@@ -1,0 +1,120 @@
+<!-- Instrument Usage Charges Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Details of equipment usage charges at Materials Modeling Lab, IIT BHU.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Instrument Usage Charges, Vacuum Hot Press, Charpy Impact Tester, Vacuum Arc Furnace">
+    <meta name="author" content="Materials Modeling Lab">
+    <title>Instrument Usage Charges | Materials Modeling Lab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h1 class="text-center">Instrument Usage Charges</h1>
+        <hr class="mb-4">
+
+        <section>
+            <h4>Vacuum Hot Press (VHP) Charges (<i>18% GST Extra</i>)</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Equipment Name</th>
+                        <th>IIT(BHU) Users</th>
+                        <th>BHU Users</th>
+                        <th>Govt. R&D Labs</th>
+                        <th>Industry Users</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vacuum Hot Press (VHP)</td>
+                        <td>₹ 3,000/- per sample</td>
+                        <td>₹ 5,000/- per sample</td>
+                        <td>₹ 5,000/- per sample</td>
+                        <td>₹ 5,000/- per sample</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Sample preparation charges extra. Users need to arrange their own die.</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <h4>Vacuum Arc Melting (VAM) Charges (<i>18% GST Extra</i>)</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Equipment Name</th>
+                        <th>IIT(BHU) Users</th>
+                        <th>BHU Users</th>
+                        <th>Govt. R&D Labs</th>
+                        <th>Industry Users</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>VAM (4 Samples)</td>
+                        <td>₹ 2,000/-</td>
+                        <td>₹ 10,000/-</td>
+                        <td>₹ 10,000/-</td>
+                        <td>₹ 10,000/-</td>
+                    </tr>
+                    <tr>
+                        <td>VAM (1 Sample)</td>
+                        <td>₹ 1,000/-</td>
+                        <td>₹ 5,000/-</td>
+                        <td>₹ 5,000/-</td>
+                        <td>₹ 5,000/-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Charpy Notch Test Charges (<i>18% GST Extra</i>)</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Equipment Name</th>
+                        <th>IIT(BHU) Users</th>
+                        <th>BHU Users</th>
+                        <th>Govt. R&D Labs</th>
+                        <th>Industry Users</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Charpy Notch Test</td>
+                        <td>₹ 1,500/- per 5 samples</td>
+                        <td>₹ 5,000/- per 5 samples</td>
+                        <td>₹ 5,000/- per 5 samples</td>
+                        <td>₹ 5,000/- per 5 samples</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <script>
+        // Load Header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // Load Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+</html>
