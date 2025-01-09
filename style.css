@@ -1,31 +1,70 @@
-/* Global Styles */ 
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: justify;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
 }
 
 h1 {
     margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #212529;
+    text-align: center;
 }
 
-hr.line {
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
     border: 1px solid #ccc;
+    margin: 20px 0;
 }
 
-iframe {
-    border: none;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 /* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .nav-list {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
+    margin: 0;
 }
 
 .nav-list li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -33,38 +72,74 @@ iframe {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
-.navbar {
-    background-color: #333;
-    padding: 10px 0;
+.nav-list li a:hover {
+    background-color: #575757;
 }
 
 /* Footer Styles */
 footer.address {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     background-color: #333;
     color: white;
+    padding: 20px 10px;
+    flex-wrap: wrap;
+}
+
+footer.address .address-section {
+    width: 30%;
     padding: 10px;
 }
 
-footer.address .leftaddress,
-footer.address .midaddress,
-footer.address .rightaddress {
-    width: 30%;
+footer.address .address-section h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #f8f9fa;
+}
+
+footer.address .address-section p {
+    margin: 5px 0;
+    font-size: 0.9rem;
 }
 
 /* Responsive Media Queries */
-@media (max-width: 768px) {
-    .navbar, footer.address {
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    footer.address .address-section {
+        width: 45%;
+    }
+
+    .navbar {
         flex-direction: column;
         text-align: center;
     }
 
+    .nav-list {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
     .nav-list li {
-        display: block;
         margin: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    footer.address .address-section {
+        width: 100%;
+        text-align: center;
     }
 
     iframe {
@@ -72,6 +147,7 @@ footer.address .rightaddress {
         height: 300px;
     }
 }
+
 
 
 
