@@ -10,6 +10,31 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .equipment-card {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .equipment-card img {
+            width: 300px; /* Fixed width */
+            height: 200px; /* Fixed height */
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .equipment-info {
+            padding: 1.5rem;
+            flex: 1;
+        }
+        .equipment-info h4 {
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body style="min-height: 100vh; display: flex; flex-direction: column;">
     <!-- Include Header -->
@@ -17,39 +42,64 @@
 
     <!-- Main Content -->
     <main class="container my-5">
-        <h1 class="text-center">Lab Equipment</h1>
-        <hr class="mb-4">
+        <h1 class="text-center mb-4">Lab Equipment</h1>
 
         <section>
-            <h2>Equipment List</h2>
-            <ul>
-                <li>
+            <!-- Computer Server -->
+            <div class="equipment-card">
+                <img src="image/server.jpg" alt="Computer Server">
+                <div class="equipment-info">
                     <h4>Computer Server</h4>
                     <p>Processor: Intel Xeon Gold 6140 (2.30GHz/18-core/24.75MB/140W)<br>
                     RAM: 384 GB<br>
                     Hard Drive: 8000 GB (NL SAS)</p>
-                </li>
-                <li>
+                </div>
+            </div>
+
+            <!-- Vacuum Hot Press -->
+            <div class="equipment-card flex-row-reverse">
+                <img src="image/vacuum-hot-press.jpg" alt="Vacuum Hot Press">
+                <div class="equipment-info">
                     <h4>Vacuum Hot Press</h4>
                     <p>20-ton capacity for sintering metal and ceramic powders under controlled atmosphere and temperatures up to 1500°C.</p>
-                </li>
-                <li>
+                </div>
+            </div>
+
+            <!-- Charpy Impact Tester -->
+            <div class="equipment-card">
+                <img src="image/charpy-impact-tester.jpg" alt="Charpy Impact Tester">
+                <div class="equipment-info">
                     <h4>Charpy Impact Tester</h4>
                     <p>450 Joules capacity, suitable for impact resistance evaluation of metallic materials using Charpy testing.</p>
-                </li>
-                <li>
+                </div>
+            </div>
+
+            <!-- Vacuum Arc Furnace -->
+            <div class="equipment-card flex-row-reverse">
+                <img src="image/arc-melting-furnace.jpg" alt="Arc Melting Furnace">
+                <div class="equipment-info">
                     <h4>Vacuum Arc Furnace with Suction Casting</h4>
                     <p>Designed for melting high-temperature materials with electric arcs, capable of reaching temperatures exceeding 3500°C.</p>
-                </li>
-                <li>
+                </div>
+            </div>
+
+            <!-- High Vacuum Furnace -->
+            <div class="equipment-card">
+                <img src="image/heat-treatment-furnace.jpg" alt="Heat Treatment Furnace">
+                <div class="equipment-info">
                     <h4>High Vacuum High-Temperature Furnace</h4>
                     <p>For precise heat treatment of metal alloys under controlled atmospheres, operating up to 1500°C.</p>
-                </li>
-                <li>
+                </div>
+            </div>
+
+            <!-- Planetary Ball Mill -->
+            <div class="equipment-card flex-row-reverse">
+                <img src="image/planetary-ball-mill.jpg" alt="Planetary Ball Mill">
+                <div class="equipment-info">
                     <h4>Planetary Ball Mill</h4>
                     <p>Versatile tool for wet/dry grinding and powder blending with variable speeds up to 300 RPM.</p>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
     </main>
 
