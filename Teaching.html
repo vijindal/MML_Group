@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,67 +11,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-        .container {
-            display: flex;
-            flex: 1;
-        }
-        .menu {
-            width: 20%;
-            background-color: #f8f9fa;
-            padding: 20px;
-            /* box-shadow: none; */ /* Remove the visual boundary */
-        }
-        .menu a {
-            display: block;
-            padding: 5px 10px; /* Reduce padding for tighter spacing */
-            margin: 2px 0;     /* Reduce margin between menu items */
-            text-decoration: none;
-            color: #007bff;
-            margin-bottom: 10px;
-            font-size: 14px; /* New font size */
-            text-align: left; /* Ensure text is not justified */
-        }
-        .menu a:hover {
-            background-color: #e9ecef;
-            text-decoration: none;
-        }
-        .content {
-            width: 80%;
-            padding: 20px;
-        }
-        .content h2 {
-            text-align: center;
-        }
-    </style>
 </head>
-<body style="min-height: 100vh; display: flex; flex-direction: column;">
+
+<body>
     <!-- Include Header -->
     <div id="header"></div>
-
     <!-- Main Content -->
-    <h1 class="text-center">Teaching</h1>
-    <hr>
-    <div class="container">
-        <!-- Left Side Menu -->
-        <nav class="menu">
-            <h5>Courses</h5>
-            <a href="#computational-methods">Computational Methods for Metallurgy</a>
-            <a href="#modeling-simulation">Modeling and Simulation in Metallurgy</a>
-            <a href="#heat-treatment">Heat Treatment</a>
-            <a href="#computer-applications">Computer Applications in Metallurgy Practical</a>
-            <a href="#heat-treatment-practical">Heat Treatment Practical</a>
-            <a href="#simulation-practical">Modeling and Simulation in Metallurgy Practical</a>
-        </nav>
+    <main class="container my-5">
+        <h1 class="text-center">Teaching</h1>
+        <hr>
+        <div class="main-container">
+            <!-- Left Sidebar Menu -->
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#computational-methods">Computational Methods for Metallurgy</a></li>
+                    <li><a href="#modeling-simulation">Modeling and Simulation in Metallurgy</a></li>
+                    <li> <a href="#heat-treatment">Heat Treatment</a></li>
+                    <li> <a href="#computer-applications">Computer Applications in Metallurgy Practical</a></li>
+                    <li><a href="#heat-treatment-practical">Heat Treatment Practical</a></li>
+                    <li><a href="#simulation-practical">Modeling and Simulation in Metallurgy Practical</a></li>
+                </ul>
+            </div>
 
-        <!-- Main Content Section -->
-         
+
+        <!-- Content Section -->
         <div class="content">
+         
             <section id="computational-methods">
                 <h1 class="text-center">Computational Methods for Metallurgy</h1>
                 <p> Computational Methods for Metallurgy course (MT 561) is intended to provide students with the knowledge and skills necessary 
