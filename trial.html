@@ -1,105 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore teaching and courses offered by the Materials Modeling Lab at IIT BHU, including theoretical and practical courses in metallurgy.">
-    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Teaching, Metallurgy, Computational Methods, Heat Treatment, Simulation">
+    <meta name="description" content="Explore the research areas and ongoing projects at the Materials Modeling Lab, IIT BHU, focusing on Computational Thermodynamics, High Entropy Alloys, and more.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Research, Computational Thermodynamics, High Entropy Alloys, Phase Diagram, CALPHAD, Material Science">
     <meta name="author" content="Materials Modeling Lab">
-    <title>Teaching | Materials Modeling Lab</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Research Areas | Materials Modeling Lab</title>
+
+    <!-- Link to external style.css -->
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-        .container {
-            display: flex;
-            flex: 1;
-        }
-        .menu {
-            width: 20%;
-            background-color: #f8f9fa;
-            padding: 20px;
-            /* box-shadow: none; */ /* Remove the visual boundary */
-        }
-        .menu a {
-            display: block;
-            padding: 5px 10px; /* Reduce padding for tighter spacing */
-            margin: 2px 0;     /* Reduce margin between menu items */
-            text-decoration: none;
-            color: #007bff;
-            margin-bottom: 10px;
-            font-size: 14px; /* New font size */
-            text-align: left; /* Ensure text is not justified */
-        }
-        .menu a:hover {
-            background-color: #e9ecef;
-            text-decoration: none;
-        }
-        .content {
-            width: 80%;
-            padding: 20px;
-        }
-        .content h2 {
-            text-align: center;
-        }
-    </style>
 </head>
-<body style="min-height: 100vh; display: flex; flex-direction: column;">
+
+<body>
+
     <!-- Include Header -->
     <div id="header"></div>
 
     <!-- Main Content -->
-    <div class="container">
-        <!-- Left Side Menu -->
-        <nav class="menu">
-            <h5>Courses</h5>
-            <a href="#computational-methods">Computational Methods for Metallurgy</a>
-            <a href="#modeling-simulation">Modeling and Simulation in Metallurgy</a>
-            <a href="#heat-treatment">Heat Treatment</a>
-            <a href="#computer-applications">Computer Applications in Metallurgy Practical</a>
-            <a href="#heat-treatment-practical">Heat Treatment Practical</a>
-            <a href="#simulation-practical">Modeling and Simulation in Metallurgy Practical</a>
-        </nav>
-
-        <!-- Main Content Section -->
-         
-        <div class="content">
-            <section id="computational-methods">
-                <h1 class="text-center">Computational Methods for Metallurgy</h1>
-                <p> Computational Methods for Metallurgy course (MT 561) is intended to provide students with the knowledge and skills necessary 
-                    to apply numerical methods to solve problems in metallurgical engineering. The course covers a variety of topics, 
-                    including error analysis, numerical differentiation and integration, root finding, optimization, and the solution 
-                    of ordinary and partial differential equations. Students will also learn about finite difference and finite element 
-                    methods, and how to use these methods to simulate metallurgical processes such as heat transfer, solidification, 
-                    and metal forming. At the conclusion of this course, student would be able to select suitable numerical method(s)/technique(s)
-                     and develop necessary computer algorithm(s) for a chosen problem. </p>
-            </section>
-            <section id="modeling-simulation">
-                <h1 class="text-center">Modeling and Simulation in Metallurgy</h1>
-                <p>The course "Modelling and Simulation in Metallurgy" (MT 404) offers a comprehensive introduction to various modeling and simulation
-                     techniques in metallurgical engineering. Topics include mathematical modeling, multi-scale modeling of materials, phase-field methods 
-                     for microstructures, and simulations such as molecular dynamics, Monte Carlo techniques, neural networks, and genetic algorithms. 
-                     Applications cover phase diagram computation and process modeling for blast furnaces and steelmaking. By exploring these advanced 
-                     methodologies, students gain insight into supplementing experimental approaches for better understanding materials behavior.</p>
-            </section>
-            <section id="heat-treatment">
-                <h1 class="text-center">Heat Treatment</h1>
-                <p>The Heat Treatment course (MT 304) is aimed at exploring the critical processes used to modify the microstructures of metals and alloys to achieve desired mechanical properties. This course provides an in-depth understanding of structure-property correlations through various heat treatment techniques. It covers foundational topics such as the iron-carbon equilibrium diagram, isothermal and continuous cooling transformation diagrams, and concepts like austenization, grain size, and hardenability control. The course extensively examines heat treatment techniques for ferrous alloys, including processes like quenching, annealing, normalizing, hardening, tempering, and case hardening treatments such as carburizing, nitriding, and diffusion-based surface hardening methods like laser and electron beam hardening. Additionally, it addresses heat treatment processes for non-ferrous alloys, discussing recrystallization annealing, age hardening, and heat treatments for metals such as aluminum, copper, magnesium, titanium, and nickel. The syllabus is designed to balance theoretical knowledge and practical industrial applications. By the end of the course, students will gain the ability to correlate heat treatment techniques to material properties, making them competent to apply these principles in both industrial and research settings. The course fosters a foundational understanding essential for engineering design and innovation in materials science.</p>
-            </section>
+    <main class="container my-5">
+        <h1 class="text-center">Research</h1>
+        <hr>
+        <div class="main-container">
+            <!-- Left Sidebar Menu -->
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#research-areas">Research Areas</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="computational_thermodynamics.html">Computational Thermodynamics</a></li>
+                    <li><a href="gibbs_cvm.html">Cluster Variation Method</a></li>
+                    <li><a href="data.html">Thermochemical Data</a></li>
+                    <li><a href="Optimization.html">Optimization Algorithms</a></li>
+                    <li><a href="Optimization.html">Databases</a></li>
+                </ul>
+            </div>
+    
+            <!-- Content Section -->
+            <div class="content">
+    
+                <!-- Research Areas -->
+                <section id="research-areas">
+                    <h2>Research Areas</h2>
+                    <p>Our research group focuses on <a href="computational_thermodynamics.html">Computational Thermodynamics</a> and its applications in materials and metallurgical engineering, 
+                        a vital component of Integrated Computational Materials Engineering (ICME). We aim to develop accurate Gibbs energy models 
+                        for solid crystalline metal phases, with particular emphasis on modeling short-range ordering (SRO) effects, using advanced 
+                        methods like the <a href="gibbs_cvm.html">Cluster Variation Method (CVM)</a>. This work is crucial for designing advanced materials such as high-entropy alloys, 
+                        Ti-based composites for defense, bioimplants, and energy storage systems. Our research combines experimental techniques 
+                        (e.g., drop calorimetry, DSC) with first-principles calculations (e.g., DFT) to acquire <a href="data.html">thermochemical data</a>, and we develop <a href="Optimization.html">CE-CVM-based
+                            algorithms</a> to predict phase diagrams and optimize material properties. We also contribute to <a href="Optimization.html">CALPHAD and CE-CVM database</a> development, 
+                        supporting the design and processing of novel materials. 
+                    </p>
+                    <p>More specifically, we are interested in:</p>
+                    <ul>
+                        <li>Titanium-based systems</li>
+                        <li>Binary, ternary, and multicomponent transition metal systems</li>
+                        <li>Compositionally complex alloys (CCA and HEA)</li>
+                    </ul>
+                </section>
+    
+                <!-- Projects -->
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <ol>
+                        <li>Development of Functionally Graded Armor Composites (FGACs) Materials (2019-2022). Funded by DRDO under the ARMREB Grant-in-Aid Scheme.</li>
+                        <li>Role of Short Range Ordering in designing High Entropy Alloys (2019-2022). Funded by SERB under Core Research Grant.</li>
+                        <li>Development of low-cost β-Ti alloy for biomedical applications (2020-2023). Co-PI. Funded by SERB under Core Research Grant.</li>
+                        <li>Phase-diagrams and thermodynamic investigations of Ti-Hf-Zr system using Cluster Variation Method (CVM) (2018-2020). Funded by IIT (BHU).</li>
+                        <li>Free energy minimization in binary alloys via genetic algorithms (2012). Funded by UGC XI-Plan Research Grant for New Faculty.</li>
+                        <li>Development of e-content on ancient Indian metallurgy and modern process metallurgy (2011-12). Funded by NMEICT, New Delhi.</li>
+                    </ol>
+                </section>
+            </div>
         </div>
-    </div>
+        
+    </main>
 
     <!-- Include Footer -->
     <div id="footer"></div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Sc2jj7fxhx22JGzF5hLd51pGFsFN7Jo6ZXm" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFw2IYI1xZjzhffyKg0/2+qe6j" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
         // Load Header
@@ -112,12 +98,8 @@
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
     </script>
+
 </body>
+
 </html>
-
-
-
-
-
-
 
