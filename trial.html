@@ -3,122 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Details of lab facilities and equipment at Materials Modeling Lab, IIT BHU, including cutting-edge instruments and their technical specifications.">
-    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Lab Facilities, Equipment, Vacuum Hot Press, Charpy Impact Tester, High Vacuum Furnace, Planetary Ball Mill">
+    <meta name="description" content="Explore teaching and courses offered by the Materials Modeling Lab at IIT BHU, including theoretical and practical courses in metallurgy.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Teaching, Metallurgy, Computational Methods, Heat Treatment, Simulation">
     <meta name="author" content="Materials Modeling Lab">
-    <title>Equipment | Materials Modeling Lab</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <title>Teaching | Materials Modeling Lab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
-        .equipment-card {
+        body {
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
+            min-height: 100vh;
+            margin: 0;
         }
-        .equipment-card img {
-            width: 300px; /* Fixed width */
-            height: 200px; /* Fixed height */
-            object-fit: cover;
-            flex-shrink: 0;
+        .menu {
+            width: 20%;
+            background-color: #f8f9fa;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
-        .equipment-info {
-            padding: 1.5rem;
-            flex: 1;
+        .menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #007bff;
         }
-        .equipment-info h4 {
-            margin-bottom: 1rem;
-            font-weight: bold;
+        .menu a:hover {
+            background-color: #e9ecef;
+            text-decoration: none;
+        }
+        .content {
+            width: 80%;
+            padding: 20px;
         }
     </style>
 </head>
-<body style="min-height: 100vh; display: flex; flex-direction: column;">
-    <!-- Include Header -->
-    <div id="header"></div>
+<body>
+    <!-- Left Side Menu -->
+    <nav class="menu">
+        <h4>Courses</h4>
+        <a href="#computational-methods">Computational Methods for Metallurgy</a>
+        <a href="#modeling-simulation">Modeling and Simulation in Metallurgy</a>
+        <a href="#heat-treatment">Heat Treatment</a>
+        <a href="#computer-applications">Computer Applications in Metallurgy Practical</a>
+        <a href="#heat-treatment-practical">Heat Treatment Practical</a>
+        <a href="#simulation-practical">Modeling and Simulation in Metallurgy Practical</a>
+    </nav>
 
     <!-- Main Content -->
-    <main class="container my-5">
-        <h1 class="text-center mb-4">Lab Equipment</h1>
-
-        <section>
-            <!-- Computer Server -->
-            <div class="equipment-card">
-                <img src="image/server.jpg" alt="Computer Server">
-                <div class="equipment-info">
-                    <h4>Computer Server</h4>
-                    <p>Processor: Intel Xeon Gold 6140 (2.30GHz/18-core/24.75MB/140W)<br>
-                    RAM: 384 GB<br>
-                    Hard Drive: 8000 GB (NL SAS)</p>
-                </div>
-            </div>
-
-            <!-- Vacuum Hot Press -->
-            <div class="equipment-card flex-row-reverse">
-                <img src="image/vacuum-hot-press.jpg" alt="Vacuum Hot Press">
-                <div class="equipment-info">
-                    <h4>Vacuum Hot Press</h4>
-                    <p>20-ton capacity for sintering metal and ceramic powders under controlled atmosphere and temperatures up to 1500°C.</p>
-                </div>
-            </div>
-
-            <!-- Charpy Impact Tester -->
-            <div class="equipment-card">
-                <img src="image/charpy-impact-tester.jpg" alt="Charpy Impact Tester">
-                <div class="equipment-info">
-                    <h4>Charpy Impact Tester</h4>
-                    <p>450 Joules capacity, suitable for impact resistance evaluation of metallic materials using Charpy testing.</p>
-                </div>
-            </div>
-
-            <!-- Vacuum Arc Furnace -->
-            <div class="equipment-card flex-row-reverse">
-                <img src="image/arc-melting-furnace.jpg" alt="Arc Melting Furnace">
-                <div class="equipment-info">
-                    <h4>Vacuum Arc Furnace with Suction Casting</h4>
-                    <p>Designed for melting high-temperature materials with electric arcs, capable of reaching temperatures exceeding 3500°C.</p>
-                </div>
-            </div>
-
-            <!-- High Vacuum Furnace -->
-            <div class="equipment-card">
-                <img src="image/heat-treatment-furnace.jpg" alt="Heat Treatment Furnace">
-                <div class="equipment-info">
-                    <h4>High Vacuum High-Temperature Furnace</h4>
-                    <p>For precise heat treatment of metal alloys under controlled atmospheres, operating up to 1500°C.</p>
-                </div>
-            </div>
-
-            <!-- Planetary Ball Mill -->
-            <div class="equipment-card flex-row-reverse">
-                <img src="image/planetary-ball-mill.jpg" alt="Planetary Ball Mill">
-                <div class="equipment-info">
-                    <h4>Planetary Ball Mill</h4>
-                    <p>Versatile tool for wet/dry grinding and powder blending with variable speeds up to 300 RPM.</p>
-                </div>
-            </div>
+    <div class="content">
+        <h1>Teaching</h1>
+        <hr>
+        <section id="computational-methods">
+            <h2>Computational Methods for Metallurgy</h2>
+            <p>Explore the principles and techniques used in computational approaches for metallurgy research and development.</p>
         </section>
-    </main>
+        <section id="modeling-simulation">
+            <h2>Modeling and Simulation in Metallurgy</h2>
+            <p>This course focuses on developing simulation models to predict material behavior and properties.</p>
+        </section>
+        <section id="heat-treatment">
+            <h2>Heat Treatment</h2>
+            <p>Learn about various heat treatment techniques and their effects on microstructures and mechanical properties.</p>
+        </section>
+        <section id="computer-applications">
+            <h2>Computer Applications in Metallurgy Practical</h2>
+            <p>Hands-on training on using software tools for metallurgical computations and simulations.</p>
+        </section>
+        <section id="heat-treatment-practical">
+            <h2>Heat Treatment Practical</h2>
+            <p>Experimental techniques and practices for heat treatment of ferrous and non-ferrous alloys.</p>
+        </section>
+        <section id="simulation-practical">
+            <h2>Modeling and Simulation in Metallurgy Practical</h2>
+            <p>Practical exercises on simulation methods for material modeling and analysis.</p>
+        </section>
+    </div>
 
-    <!-- Include Footer -->
-    <div id="footer"></div>
-
-    <script>
-        // Load Header
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data);
-
-        // Load Footer
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Sc2jj7fxhx22JGzF5hLd51pGFsFN7Jo6ZXm" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFw2IYI1xZjzhffyKg0/2+qe6j" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
 
 
 
