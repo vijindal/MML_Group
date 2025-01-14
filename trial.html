@@ -13,13 +13,17 @@
     <style>
         body {
             display: flex;
-            flex-direction: column;
             min-height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            display: flex;
+            flex: 1;
         }
         .menu {
             width: 20%;
             background-color: #f8f9fa;
-            padding: 15px;
+            padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
         .menu a {
@@ -27,6 +31,7 @@
             padding: 10px;
             text-decoration: none;
             color: #007bff;
+            margin-bottom: 10px;
         }
         .menu a:hover {
             background-color: #e9ecef;
@@ -36,14 +41,17 @@
             width: 80%;
             padding: 20px;
         }
+        .content h2 {
+            text-align: center;
+        }
     </style>
 </head>
-<body>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
     <!-- Include Header -->
     <div id="header"></div>
 
     <!-- Main Content -->
-    <div style="display: flex; flex: 1;">
+    <div class="container">
         <!-- Left Side Menu -->
         <nav class="menu">
             <h4>Courses</h4>
@@ -57,42 +65,11 @@
 
         <!-- Main Content Section -->
         <div class="content">
+            <h1 class="text-center">Heat Treatment</h1>
             <hr>
-            <section id="computational-methods">
-                <h2>Computational Methods for Metallurgy</h2>
-                <p>Explore the principles and techniques used in computational approaches for metallurgy research and development.</p>
-            </section>
-            <section id="modeling-simulation">
-                <h2>Modeling and Simulation in Metallurgy</h2>
-                <p>This course focuses on developing simulation models to predict material behavior and properties.</p>
-            </section>
             <section id="heat-treatment">
-                <h2>Heat Treatment</h2>
-                <p>The Heat Treatment course (MT 304) is aimed at exploring the critical processes used to modify the 
-                    microstructures of metals and alloys to achieve desired mechanical properties. This course provides an in-depth 
-                    understanding of structure-property correlations through various heat treatment techniques. It covers foundational 
-                    topics such as the iron-carbon equilibrium diagram, isothermal and continuous cooling transformation diagrams, and 
-                    concepts like austenization, grain size, and hardenability control. The course extensively examines heat treatment 
-                    techniques for ferrous alloys, including processes like quenching, annealing, normalizing, hardening, tempering, and 
-                    case hardening treatments such as carburizing, nitriding, and diffusion-based surface hardening methods like laser 
-                    and electron beam hardening. Additionally, it addresses heat treatment processes for non-ferrous alloys, discussing 
-                    recrystallization annealing, age hardening, and heat treatments for metals such as aluminum, copper, magnesium, 
-                    titanium, and nickel. The syllabus is designed to balance theoretical knowledge and practical industrial applications. By the 
-                    end of the course, students will gain the ability to correlate heat treatment techniques to material properties, 
-                    making them competent to apply these principles in both industrial and research settings. The course fosters a 
-                    foundational understanding essential for engineering design and innovation in materials science.</p>
-            </section>
-            <section id="computer-applications">
-                <h2>Computer Applications in Metallurgy Practical</h2>
-                <p>Hands-on training on using software tools for metallurgical computations and simulations.</p>
-            </section>
-            <section id="heat-treatment-practical">
-                <h2>Heat Treatment Practical</h2>
-                <p>Experimental techniques and practices for heat treatment of ferrous and non-ferrous alloys.</p>
-            </section>
-            <section id="simulation-practical">
-                <h2>Modeling and Simulation in Metallurgy Practical</h2>
-                <p>Practical exercises on simulation methods for material modeling and analysis.</p>
+                
+                <p>The Heat Treatment course (MT 304) is aimed at exploring the critical processes used to modify the microstructures of metals and alloys to achieve desired mechanical properties. This course provides an in-depth understanding of structure-property correlations through various heat treatment techniques. It covers foundational topics such as the iron-carbon equilibrium diagram, isothermal and continuous cooling transformation diagrams, and concepts like austenization, grain size, and hardenability control. The course extensively examines heat treatment techniques for ferrous alloys, including processes like quenching, annealing, normalizing, hardening, tempering, and case hardening treatments such as carburizing, nitriding, and diffusion-based surface hardening methods like laser and electron beam hardening. Additionally, it addresses heat treatment processes for non-ferrous alloys, discussing recrystallization annealing, age hardening, and heat treatments for metals such as aluminum, copper, magnesium, titanium, and nickel. The syllabus is designed to balance theoretical knowledge and practical industrial applications. By the end of the course, students will gain the ability to correlate heat treatment techniques to material properties, making them competent to apply these principles in both industrial and research settings. The course fosters a foundational understanding essential for engineering design and innovation in materials science.</p>
             </section>
         </div>
     </div>
@@ -117,9 +94,6 @@
     </script>
 </body>
 </html>
-
-
-
 
 
 
