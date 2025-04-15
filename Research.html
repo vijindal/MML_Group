@@ -1,91 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the research areas and ongoing projects at the Materials Modeling Lab, IIT BHU, focusing on Computational Thermodynamics, High Entropy Alloys, and more.">
     <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Research, Computational Thermodynamics, High Entropy Alloys, Phase Diagram, CALPHAD, Material Science">
     <meta name="author" content="Materials Modeling Lab">
-    <title>Research Areas | Materials Modeling Lab</title>
-    <!-- Link to external style.css -->
+    <title>Research | Materials Modeling Lab</title>
+    <!-- Bootstrap 4.5.2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-
-<body>
-
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
     <!-- Include Header -->
     <div id="header"></div>
 
     <!-- Main Content -->
     <main class="container my-5">
-        <h1 class="text-center">Research</h1>
-        <hr>
-        <div class="main-container">
-            <!-- Left Sidebar Menu -->
-            <div class="sidebar">
-                <ul>
-                    <li><a href="#research-areas">Research Areas</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="computational_thermodynamics.html">Computational Thermodynamics</a></li>
-                    <li><a href="gibbs_cvm.html">Cluster Variation Method</a></li>
-                    <li><a href="data.html">Thermochemical Data</a></li>
-                    <li><a href="Optimization.html">Optimization Algorithms</a></li>
-                    <li><a href="Optimization.html">Databases</a></li>
-                </ul>
-            </div>
-    
-            <!-- Content Section -->
-            <div class="content">
-    
-                <!-- Research Areas -->
-                <section id="research-areas">
-                    <h2>Research Areas</h2>
-                    <p>Our research group focuses on <a href="computational_thermodynamics.html">Computational Thermodynamics</a> and its applications in materials and metallurgical engineering, 
-                        a vital component of Integrated Computational Materials Engineering (ICME). We aim to develop accurate Gibbs energy models 
-                        for solid crystalline metal phases, with particular emphasis on modeling short-range ordering (SRO) effects, using advanced 
-                        methods like the <a href="gibbs_cvm.html">Cluster Variation Method (CVM)</a>. This work is crucial for designing advanced materials such as high-entropy alloys, 
-                        Ti-based composites for defense, bioimplants, and energy storage systems. Our research combines experimental techniques 
-                        (e.g., drop calorimetry, DSC) with first-principles calculations (e.g., DFT) to acquire <a href="data.html">thermochemical data</a>, and we develop <a href="Optimization.html">CE-CVM-based
-                            algorithms</a> to predict phase diagrams and optimize material properties. We also contribute to <a href="Optimization.html">CALPHAD and CE-CVM database</a> development, 
-                        supporting the design and processing of novel materials. 
-                    </p>
-                    <p>More specifically, we are interested in:</p>
-                    <ul>
-                        <li>Titanium-based systems</li>
-                        <li>Binary, ternary, and multicomponent transition metal systems</li>
-                        <li>Compositionally complex alloys (CCA and HEA)</li>
+        <h1>Research</h1>
+        <hr class="mb-4">
+        <div class="row">
+            <!-- Sidebar Menu -->
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#research-areas">Research Areas</a></li>
+                        <li class="list-group-item"><a href="#projects">Projects</a></li>
+                        <li class="list-group-item"><a href="computational_thermodynamics.html">Computational Thermodynamics</a></li>
+                        <li class="list-group-item"><a href="gibbs_cvm.html">Cluster Variation Method</a></li>
+                        <li class="list-group-item"><a href="data.html">Thermochemical Data</a></li>
+                        <li class="list-group-item"><a href="optimization_algorithms.html">Optimization Algorithms</a></li>
+                        <li class="list-group-item"><a href="databases.html">Databases</a></li>
                     </ul>
-                </section>
-    
-                <!-- Projects -->
-                <section id="projects">
-                    <h2>Projects</h2>
-                    <ol>
-                        <li>Development of Functionally Graded Armor Composites (FGACs) Materials (2019-2022). Funded by DRDO under the ARMREB Grant-in-Aid Scheme.</li>
-                        <li>Role of Short Range Ordering in designing High Entropy Alloys (2019-2022). Funded by SERB under Core Research Grant.</li>
-                        <li>Development of low-cost β-Ti alloy for biomedical applications (2020-2023). Co-PI. Funded by SERB under Core Research Grant.</li>
-                        <li>Phase-diagrams and thermodynamic investigations of Ti-Hf-Zr system using Cluster Variation Method (CVM) (2018-2020). Funded by IIT (BHU).</li>
-                        <li>Free energy minimization in binary alloys via genetic algorithms (2012). Funded by UGC XI-Plan Research Grant for New Faculty.</li>
-                        <li>Development of e-content on ancient Indian metallurgy and modern process metallurgy (2011-12). Funded by NMEICT, New Delhi.</li>
-                    </ol>
-                </section>
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="col-md-9">
+                <div class="content">
+                    <section class="mb-5">
+                        <p class="lead">The Materials Modeling Lab (MML) at IIT BHU conducts cutting-edge research in computational materials science, focusing on advanced modeling techniques and innovative material design.</p>
+                    </section>
+
+                    <section id="research-areas" class="mb-5">
+                        <h2>Research Areas</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Our research group focuses on <a href="computational_thermodynamics.html">Computational Thermodynamics</a> and its applications in materials and metallurgical engineering, a vital component of Integrated Computational Materials Engineering (ICME). We aim to develop accurate Gibbs energy models for solid crystalline metal phases, with particular emphasis on modeling short-range ordering (SRO) effects, using advanced methods like the <a href="gibbs_cvm.html">Cluster Variation Method (CVM)</a>. This work is crucial for designing advanced materials such as high-entropy alloys, Ti-based composites for defense, bioimplants, and energy storage systems. Our research combines experimental techniques (e.g., drop calorimetry, DSC) with first-principles calculations (e.g., DFT) to acquire <a href="data.html">thermochemical data</a>, and we develop <a href="optimization_algorithms.html">CE-CVM-based algorithms</a> to predict phase diagrams and optimize material properties. We also contribute to <a href="databases.html">CALPHAD and CE-CVM database</a> development, supporting the design and processing of novel materials.</p>
+                                <p>More specifically, we are interested in:</p>
+                                <ul>
+                                    <li>Titanium-based systems</li>
+                                    <li>Binary, ternary, and multicomponent transition metal systems</li>
+                                    <li>Compositionally complex alloys (CCA and HEA)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="projects" class="mb-5">
+                        <h2>Projects</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <ol>
+                                    <li>Development of Functionally Graded Armor Composites (FGACs) Materials (2019-2022). Funded by DRDO under the ARMREB Grant-in-Aid Scheme.</li>
+                                    <li>Role of Short Range Ordering in designing High Entropy Alloys (2019-2022). Funded by SERB under Core Research Grant.</li>
+                                    <li>Development of low-cost β-Ti alloy for biomedical applications (2020-2023). Co-PI. Funded by SERB under Core Research Grant.</li>
+                                    <li>Phase-diagrams and thermodynamic investigations of Ti-Hf-Zr system using Cluster Variation Method (CVM) (2018-2020). Funded by IIT (BHU).</li>
+                                    <li>Free energy minimization in binary alloys via genetic algorithms (2012). Funded by UGC XI-Plan Research Grant for New Faculty.</li>
+                                    <li>Development of e-content on ancient Indian metallurgy and modern process metallurgy (2011-12). Funded by NMEICT, New Delhi.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="text-center mt-5">
+                        <h2>Interested in Our Research?</h2>
+                        <p>Explore opportunities to collaborate or join our projects. Visit our <a href="openings.html">Openings</a> page for more details.</p>
+                        <a href="openings.html" class="btn btn-primary">Learn More</a>
+                    </section>
+                </div>
             </div>
         </div>
-        
     </main>
 
     <!-- Include Footer -->
     <div id="footer"></div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <!-- Bootstrap 4.5.2 JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script>
         // Load Header
         fetch('header.html')
@@ -97,8 +105,5 @@
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
     </script>
-
 </body>
-
 </html>
-
