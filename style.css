@@ -184,17 +184,10 @@ footer.address .address-section p {
 
 /* Sidebar Menu */
 .sidebar {
-    width: 250px;
+    width: 100%;
     padding: 1rem;
     background-color: var(--white);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 1rem;
-    align-self: flex-start;
-    height: calc(100vh - 150px); /* Adjust based on header/footer height */
-    overflow-y: auto;
-    margin-right: 1rem; /* Added to create space between sidebar and content */
 }
 
 .sidebar ul {
@@ -217,9 +210,7 @@ footer.address .address-section p {
 
 /* Content Section */
 .content {
-    flex-grow: 1;
-    padding: 0 1.5rem; /* Adjusted padding for symmetry */
-    margin-left: 0; /* Removed to eliminate gap */
+    padding: 0 1.5rem;
 }
 
 /* Hero Banner Styles (Custom for Jumbotron) */
@@ -244,7 +235,23 @@ footer.address .address-section p {
 }
 
 /* Responsive Media Queries */
-@media (max-width: 992px) {
+@media (min-width: 768px) {
+    .sidebar {
+        width: 250px;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 1rem;
+        height: calc(100vh - 150px); /* Adjust based on header/footer height */
+        overflow-y: auto;
+        margin-right: 1rem;
+    }
+
+    .content {
+        padding-left: 2rem; /* Increased padding to account for sidebar spacing */
+    }
+}
+
+@media (max-width: 767px) {
     h1 {
         font-size: 2rem;
     }
@@ -261,19 +268,6 @@ footer.address .address-section p {
 
     .nav-list li {
         margin: 0.5rem 0;
-    }
-
-    .sidebar {
-        width: 100%;
-        position: static;
-        height: auto;
-        box-shadow: none;
-        margin-bottom: 1rem;
-        margin-right: 0;
-    }
-
-    .content {
-        padding: 1rem;
     }
 
     .equipment-card {
