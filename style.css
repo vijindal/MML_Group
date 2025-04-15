@@ -188,11 +188,13 @@ footer.address .address-section p {
     padding: 1rem;
     background-color: var(--white);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 1rem;
     align-self: flex-start;
     height: calc(100vh - 150px); /* Adjust based on header/footer height */
     overflow-y: auto;
+    margin-right: 1rem; /* Added to create space between sidebar and content */
 }
 
 .sidebar ul {
@@ -216,8 +218,8 @@ footer.address .address-section p {
 /* Content Section */
 .content {
     flex-grow: 1;
-    padding: 1.5rem;
-    margin-left: 1rem; /* Reduced from 250px for natural spacing */
+    padding: 0 1.5rem; /* Adjusted padding for symmetry */
+    margin-left: 0; /* Removed to eliminate gap */
 }
 
 /* Hero Banner Styles (Custom for Jumbotron) */
@@ -267,10 +269,11 @@ footer.address .address-section p {
         height: auto;
         box-shadow: none;
         margin-bottom: 1rem;
+        margin-right: 0;
     }
 
     .content {
-        margin-left: 0;
+        padding: 1rem;
     }
 
     .equipment-card {
