@@ -3,61 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the Materials Modeling Lab (MML) at IIT BHU. Our research focuses on computational thermodynamics, alloys, phase diagrams, and more.">
-    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Research, Computational Thermodynamics, Alloys, Phase Diagrams, Materials Design">
+    <meta name="description" content="Welcome to the Materials Modeling Lab (MML) at IIT BHU, pioneering research in computational thermodynamics, alloys, and advanced materials design.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Computational Thermodynamics, Alloys, Phase Diagrams, High Entropy Alloys, Materials Science">
     <meta name="author" content="Materials Modeling Lab">
     <title>Home | Materials Modeling Lab</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap 4.5.2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body>
-
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
     <!-- Include Header -->
     <div id="header"></div>
 
+    <!-- Hero Banner -->
+    <section class="jumbotron text-center" style="background-image: url('image/banner.jpeg'); background-size: cover; color: var(--white);">
+        <h1 class="display-4">Materials Modeling Lab</h1>
+        <p class="lead">Advancing Materials Science at IIT (BHU), Varanasi</p>
+        <a href="#about" class="btn btn-primary">Learn More</a>
+    </section>
+
     <!-- Main Content -->
     <main class="container my-5">
-        <h1>Welcome to the Materials Modeling Lab (MML)</h1>
-        <hr>
-        
-        <section class="content">
+        <section id="about">
+            <h1>Welcome to the Materials Modeling Lab</h1>
+            <hr class="mb-4">
             <div class="row">
                 <div class="col-lg-8">
-                    <p>MML is part of the Department of Metallurgical Engineering at the <a href="https://iitbhu.ac.in/">Indian Institute of Technology (Banaras Hindu University), Varanasi</a>. Our research interests include:</p>
+                    <p>The Materials Modeling Lab (MML) is part of the <a href="https://iitbhu.ac.in/">Department of Metallurgical Engineering</a> at IIT (BHU), Varanasi. We specialize in cutting-edge research to design advanced materials for applications in defense, biomedical, and energy sectors.</p>
+                    <h2>Our Research Focus</h2>
                     <ul>
                         <li>Computational Thermodynamics</li>
-                        <li>Experimental and DFT-based thermochemical data</li>
-                        <li>Cluster Variation Method and Cluster Expansion-based Gibbs energy models</li>
-                        <li>Developing algorithms and software for phase diagram assessment optimization</li>
-                        <li>Development of CALPHAD databases and their applications in novel materials and processes</li>
+                        <li>High Entropy Alloys and Titanium-Based Composites</li>
+                        <li>Cluster Variation Method and CALPHAD Databases</li>
+                        <li>DFT-Based Thermochemical Data and Phase Diagram Optimization</li>
+                        <li>Machine Learning in Materials Design</li>
                     </ul>
-                    <p>To advance these areas, we are actively developing computational thermodynamics tools to design alloys and materials. See <a href="research.html">Research</a>.</p>
-                    <p><strong>We are looking for passionate new PhD and Master students to join the team!</strong></p>
-                    <p>We are grateful for funding from IIT (BHU), <a href="http://serb.gov.in/home.php">Science and Engineering Research Board (SERB)</a>, and the <a href="https://www.drdo.gov.in/armaments-research-board/contact-us">Armaments Research Board (DRDO)</a>.</p>
-
-                    <div class="text-center mb-4">
-                        <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0364591622000451-gr4.jpg" alt="Research Image" class="img-fluid" style="max-width: 100%; height: auto; max-height: 400px;">
+                    <p>Explore our <a href="research.html">Research</a> and <a href="publications.html">Publications</a> to learn more about our contributions.</p>
+                    <div class="card mb-4">
+                        <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0364591622000451-gr4.jpg" alt="Phase Diagram Research" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Our work on phase diagrams drives innovation in alloy design.</p>
+                        </div>
                     </div>
-                     <!-- Logos Section -->
-                    <div class="d-flex justify-content-center mb-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Official_Logo_of_IIT%28BHU%29%2CVaranasi%2CIndia%2C2013.png" alt="IIT BHU Logo" class="m-2" style="height: 100px;">
-                        <img src="image/serb_15.gif" alt="SERB Logo" class="m-2" style="height: 100px;">
-                        <img src="https://www.drdo.gov.in/sites/default/files/drdo_logo_0.png" alt="DRDO Logo" class="m-2" style="height: 100px;">
-                     </div>
+                    <h2>Join Our Team</h2>
+                    <p><strong>We are seeking passionate PhD and Master’s students!</strong> Visit our <a href="openings.html">Openings</a> page for opportunities.</p>
+                    <h2>Our Supporters</h2>
+                    <p>We gratefully acknowledge funding from:</p>
+                    <div class="d-flex justify-content-center flex-wrap mb-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Official_Logo_of_IIT%28BHU%29%2CVaranasi%2CIndia%2C2013.png" alt="IIT BHU Logo" class="m-2" style="height: 80px;">
+                        <img src="image/serb_15.gif" alt="SERB Logo" class="m-2" style="height: 80px;">
+                        <img src="https://www.drdo.gov.in/sites/default/files/drdo_logo_0.png" alt="DRDO Logo" class="m-2" style="height: 80px;">
+                    </div>
                 </div>
-
                 <div class="col-lg-4">
-                    <h4>News</h4>
-                    <ul>
-                        <li><a href ="https://doi.org/10.1016/j.jalmes.2024.100132">Published paper on "Effect of hot-pressing sintering temperature and pressure on the densification and properties of Ti-TiB composites"</a></li>
-                        <li><a href="https://doi.org/10.1007/s11669-023-01055-x">Our paper on "A Neural Network Driven Approach for Characterizing the Interplay Between Short Range Ordering and Enthalpy of Mixing of Binary Subsystems in the NbTiVZr High Entropy Alloy"</a></li>
-                        <li>Shanker Kumar successfully defended his PhD thesis on January 19, 2024. Congratulations!</li>
-                        <li><a href="https://doi.org/10.1007/s11669-023-01055-x">Published paper on "Influence of micro-segregation on the microstructure, and microhardness of MoNbTaxTi(1-x)W refractory high entropy alloys"</a></li>
-                        <li><a href="https://doi.org/10.1007/s11669-022-00989-y">Modeling Short-Range Ordering in Binary BCC Ti-X (X = Nb, V, Zr) Alloys using CE-CVM"</a></li>
-                        <li><a href="https://doi.org/10.1007/s11665-022-07002-0">Published paper on "Reciprocating Wear of Ti-TiB In Situ Composites"</a></li>
-                        <li><a href="https://doi.org/10.1007/s11669-022-00959-4">Thermodynamic Re-assessment of the Nb-Zr System"</a></li>
-                    </ul>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Latest News</h2>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <a href="https://doi.org/10.1016/j.jalmes.2024.100132">New paper on Ti-TiB composites published in J. Alloy. Metall. Syst.</a>
+                                    <small class="d-block text-muted">March 2024</small>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="https://doi.org/10.1007/s11669-023-01055-x">Paper on NbTiVZr high entropy alloys in J. Phase Equilibria Diffus.</a>
+                                    <small class="d-block text-muted">December 2023</small>
+                                </li>
+                                <li class="mb-3">
+                                    Shanker Kumar defends PhD thesis on high entropy alloys.
+                                    <small class="d-block text-muted">January 19, 2024</small>
+                                </li>
+                                <li>
+                                    <a href="news.html">View All News</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -66,6 +90,10 @@
     <!-- Include Footer -->
     <div id="footer"></div>
 
+    <!-- Bootstrap 4.5.2 JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script>
         // Load Header
         fetch('header.html')
