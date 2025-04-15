@@ -1,74 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore teaching and courses offered by the Materials Modeling Lab at IIT BHU, including theoretical and practical courses in metallurgy.">
-    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Teaching, Metallurgy, Computational Methods, Heat Treatment, Simulation">
+    <meta name="description" content="Discover the teaching programs at the Materials Modeling Lab, IIT BHU, offering courses in computational methods, metallurgy, and heat treatment.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Teaching, Metallurgy, Computational Methods, Heat Treatment, Modeling and Simulation, Materials Science">
     <meta name="author" content="Materials Modeling Lab">
     <title>Teaching | Materials Modeling Lab</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap 4.5.2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-
-<body>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
     <!-- Include Header -->
     <div id="header"></div>
+
     <!-- Main Content -->
     <main class="container my-5">
-        <h1 class="text-center">Teaching</h1>
-        <hr>
+        <h1>Teaching</h1>
+        <hr class="mb-4">
         <div class="main-container">
-            <!-- Left Sidebar Menu -->
+            <!-- Sidebar Menu -->
             <div class="sidebar">
-                <ul>
-                    <li><a href="#computational-methods">Computational Methods for Metallurgy</a></li>
-                    <li><a href="#modeling-simulation">Modeling and Simulation in Metallurgy</a></li>
-                    <li> <a href="#heat-treatment">Heat Treatment</a></li>
-                    <li> <a href="#computer-applications">Computer Applications in Metallurgy Practical</a></li>
-                    <li><a href="#heat-treatment-practical">Heat Treatment Practical</a></li>
-                    <li><a href="#simulation-practical">Modeling and Simulation in Metallurgy Practical</a></li>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#computational-methods">Computational Methods for Metallurgy</a></li>
+                    <li class="list-group-item"><a href="#modeling-simulation">Modeling and Simulation in Metallurgy</a></li>
+                    <li class="list-group-item"><a href="#heat-treatment">Heat Treatment</a></li>
+                    <li class="list-group-item"><a href="#computer-applications">Computer Applications in Metallurgy Practical</a></li>
+                    <li class="list-group-item"><a href="#heat-treatment-practical">Heat Treatment Practical</a></li>
+                    <li class="list-group-item"><a href="#simulation-practical">Modeling and Simulation in Metallurgy Practical</a></li>
                 </ul>
             </div>
 
+            <!-- Content Section -->
+            <div class="content">
+                <section class="mb-5">
+                    <p class="lead">At the Materials Modeling Lab (MML), we offer a range of theoretical and practical courses within the Department of Metallurgical Engineering at IIT BHU. Our programs equip students with skills in computational techniques, materials modeling, and metallurgical processes, preparing them for careers in research and industry.</p>
+                </section>
 
-        <!-- Content Section -->
-        <div class="content">
-         
-            <section id="computational-methods">
-                <h1 class="text-center">Computational Methods for Metallurgy</h1>
-                <p> Computational Methods for Metallurgy course (MT 561) is intended to provide students with the knowledge and skills necessary 
-                    to apply numerical methods to solve problems in metallurgical engineering. The course covers a variety of topics, 
-                    including error analysis, numerical differentiation and integration, root finding, optimization, and the solution 
-                    of ordinary and partial differential equations. Students will also learn about finite difference and finite element 
-                    methods, and how to use these methods to simulate metallurgical processes such as heat transfer, solidification, 
-                    and metal forming. At the conclusion of this course, student would be able to select suitable numerical method(s)/technique(s)
-                     and develop necessary computer algorithm(s) for a chosen problem. </p>
-            </section>
-            <section id="modeling-simulation">
-                <h1 class="text-center">Modeling and Simulation in Metallurgy</h1>
-                <p>The course "Modelling and Simulation in Metallurgy" (MT 404) offers a comprehensive introduction to various modeling and simulation
-                     techniques in metallurgical engineering. Topics include mathematical modeling, multi-scale modeling of materials, phase-field methods 
-                     for microstructures, and simulations such as molecular dynamics, Monte Carlo techniques, neural networks, and genetic algorithms. 
-                     Applications cover phase diagram computation and process modeling for blast furnaces and steelmaking. By exploring these advanced 
-                     methodologies, students gain insight into supplementing experimental approaches for better understanding materials behavior.</p>
-            </section>
-            <section id="heat-treatment">
-                <h1 class="text-center">Heat Treatment</h1>
-                <p>The Heat Treatment course (MT 304) is aimed at exploring the critical processes used to modify the microstructures of metals and alloys to achieve desired mechanical properties. This course provides an in-depth understanding of structure-property correlations through various heat treatment techniques. It covers foundational topics such as the iron-carbon equilibrium diagram, isothermal and continuous cooling transformation diagrams, and concepts like austenization, grain size, and hardenability control. The course extensively examines heat treatment techniques for ferrous alloys, including processes like quenching, annealing, normalizing, hardening, tempering, and case hardening treatments such as carburizing, nitriding, and diffusion-based surface hardening methods like laser and electron beam hardening. Additionally, it addresses heat treatment processes for non-ferrous alloys, discussing recrystallization annealing, age hardening, and heat treatments for metals such as aluminum, copper, magnesium, titanium, and nickel. The syllabus is designed to balance theoretical knowledge and practical industrial applications. By the end of the course, students will gain the ability to correlate heat treatment techniques to material properties, making them competent to apply these principles in both industrial and research settings. The course fosters a foundational understanding essential for engineering design and innovation in materials science.</p>
-            </section>
+                <section id="computational-methods" class="mb-5">
+                    <h2>Computational Methods for Metallurgy (MT 561)</h2>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/600x300?text=Computational+Methods" alt="Computational Methods Simulation" class="card-img-top">
+                        <div class="card-body">
+                            <p>This course introduces numerical methods for solving metallurgical engineering problems. Topics include:</p>
+                            <ul>
+                                <li>Error analysis and numerical differentiation/integration</li>
+                                <li>Root finding and optimization</li>
+                                <li>Finite difference and finite element methods</li>
+                                <li>Simulation of heat transfer, solidification, and metal forming</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Students will develop algorithms to address complex metallurgical challenges, bridging theory and computation.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="modeling-simulation" class="mb-5">
+                    <h2>Modeling and Simulation in Metallurgy (MT 404)</h2>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/600x300?text=Modeling+Simulation" alt="Materials Modeling Simulation" class="card-img-top">
+                        <div class="card-body">
+                            <p>This course explores advanced modeling techniques, including:</p>
+                            <ul>
+                                <li>Mathematical and multi-scale modeling</li>
+                                <li>Phase-field methods for microstructures</li>
+                                <li>Molecular dynamics, Monte Carlo, and neural networks</li>
+                                <li>Phase diagram computation and process modeling</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Students gain expertise in simulating materials behavior, complementing experimental approaches.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="heat-treatment" class="mb-5">
+                    <h2>Heat Treatment (MT 304)</h2>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/600x300?text=Heat+Treatment" alt="Heat Treatment Process" class="card-img-top">
+                        <div class="card-body">
+                            <p>This course covers techniques to modify metal and alloy microstructures, focusing on:</p>
+                            <ul>
+                                <li>Iron-carbon equilibrium and transformation diagrams</li>
+                                <li>Austenization, grain size, and hardenability</li>
+                                <li>Quenching, annealing, tempering, and case hardening</li>
+                                <li>Heat treatments for non-ferrous alloys (Al, Cu, Ti)</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Students learn to correlate heat treatment with material properties for industrial and research applications.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="computer-applications" class="mb-5">
+                    <h2>Computer Applications in Metallurgy Practical</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>This hands-on course teaches software tools for metallurgical analysis, including:</p>
+                            <ul>
+                                <li>CALPHAD software for phase diagram calculations</li>
+                                <li>Simulation of thermodynamic and kinetic processes</li>
+                                <li>Data analysis with Python and MATLAB</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Students gain practical skills in computational tools for materials research.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="heat-treatment-practical" class="mb-5">
+                    <h2>Heat Treatment Practical</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>This lab-based course focuses on:</p>
+                            <ul>
+                                <li>Performing annealing, quenching, and tempering</li>
+                                <li>Microstructural analysis using optical microscopy</li>
+                                <li>Hardness testing and property evaluation</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Students master experimental techniques to optimize alloy performance.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="simulation-practical" class="mb-5">
+                    <h2>Modeling and Simulation in Metallurgy Practical</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>This practical course covers:</p>
+                            <ul>
+                                <li>Running molecular dynamics simulations</li>
+                                <li>Monte Carlo methods for phase transitions</li>
+                                <li>Validating models against experimental data</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Students develop proficiency in simulation software for materials design.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="text-center mt-5">
+                    <h2>Interested in Our Courses?</h2>
+                    <p>Contact us for more details about our teaching programs and student opportunities.</p>
+                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                </section>
+            </div>
         </div>
-    </div>
+    </main>
 
     <!-- Include Footer -->
     <div id="footer"></div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Sc2jj7fxhx22JGzF5hLd51pGFsFN7Jo6ZXm" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFw2IYI1xZjzhffyKg0/2+qe6j" crossorigin="anonymous"></script>
-
+    <!-- Bootstrap 4.5.2 JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script>
         // Load Header
         fetch('header.html')
@@ -82,10 +167,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
