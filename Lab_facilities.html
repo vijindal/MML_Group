@@ -3,38 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Details of lab facilities and equipment at Materials Modeling Lab, IIT BHU, including cutting-edge instruments and their technical specifications.">
-    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Lab Facilities, Equipment, Vacuum Hot Press, Charpy Impact Tester, High Vacuum Furnace, Planetary Ball Mill">
+    <meta name="description" content="Explore state-of-the-art lab facilities at the Materials Modeling Lab, IIT BHU, including advanced equipment for materials synthesis and testing.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Lab Facilities, Equipment, Vacuum Hot Press, Charpy Impact Tester, Vacuum Arc Furnace, Materials Science">
     <meta name="author" content="Materials Modeling Lab">
-    <title>Equipment | Materials Modeling Lab</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <title>Lab Facilities | Materials Modeling Lab</title>
+    <!-- Bootstrap 4.5.2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        .equipment-card {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .equipment-card img {
-            width: 300px; /* Fixed width */
-            height: 200px; /* Fixed height */
-            object-fit: cover;
-            flex-shrink: 0;
-        }
-        .equipment-info {
-            padding: 1.5rem;
-            flex: 1;
-        }
-        .equipment-info h4 {
-            margin-bottom: 1rem;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body style="min-height: 100vh; display: flex; flex-direction: column;">
     <!-- Include Header -->
@@ -42,77 +21,101 @@
 
     <!-- Main Content -->
     <main class="container my-5">
-        <h1 class="text-center mb-4">Lab Equipment</h1>
+        <h1>Lab Facilities</h1>
         <hr class="mb-4">
-         <!-- Hyperlink Section -->
-         <div class="user-charges-link">
-            <p>
-                <a href="user_charges.html" target="_blank">View Instrument Usage Charges here</a>.
-            </p>
-        </div>
+        <section>
+            <p class="lead">The Materials Modeling Lab (MML) at IIT BHU is equipped with cutting-edge facilities for materials synthesis, processing, and characterization, supporting our research in computational thermodynamics and alloy design.</p>
+            <p><a href="user_charges.html" class="btn btn-primary" target="_blank">View Instrument Usage Charges</a></p>
+        </section>
 
         <section>
             <!-- Computer Server -->
-            <div class="equipment-card">
-                <img src="image/server.jpg" alt="Computer Server">
+            <div class="equipment-card flex-row">
+                <img src="image/server.jpg" alt="High-Performance Computer Server at MML">
                 <div class="equipment-info">
                     <h4>Computer Server</h4>
-                    <p>Processor: Intel Xeon Gold 6140 (2.30GHz/18-core/24.75MB/140W)<br>
-                    RAM: 384 GB<br>
-                    Hard Drive: 8000 GB (NL SAS)</p>
+                    <p><strong>Specifications:</strong><br>
+                        Processor: Intel Xeon Gold 6140 (2.30GHz, 18-core, 24.75MB, 140W)<br>
+                        RAM: 384 GB<br>
+                        Storage: 8000 GB (NL SAS)<br>
+                        <strong>Applications:</strong> High-performance computing for DFT calculations, CALPHAD simulations, and machine learning in materials design.</p>
                 </div>
             </div>
 
             <!-- Vacuum Hot Press -->
             <div class="equipment-card flex-row-reverse">
-                <img src="image/vacuum-hot-press.jpg" alt="Vacuum Hot Press">
+                <img src="image/vacuum-hot-press.jpg" alt="Vacuum Hot Press at MML">
                 <div class="equipment-info">
                     <h4>Vacuum Hot Press</h4>
-                    <p>20-ton capacity for sintering metal and ceramic powders under controlled atmosphere and temperatures up to 1500°C.</p>
+                    <p><strong>Specifications:</strong><br>
+                        Capacity: 20 tons<br>
+                        Max Temperature: 1500°C<br>
+                        Chamber: Controlled atmosphere<br>
+                        <strong>Applications:</strong> Sintering of metal and ceramic powders, fabrication of Ti-based composites, and diffusion bonding.</p>
                 </div>
             </div>
 
             <!-- Charpy Impact Tester -->
-            <div class="equipment-card">
-                <img src="image/charpy-impact-tester.jpg" alt="Charpy Impact Tester">
+            <div class="equipment-card flex-row">
+                <img src="image/charpy-impact-tester.jpg" alt="Charpy Impact Tester at MML">
                 <div class="equipment-info">
                     <h4>Charpy Impact Tester</h4>
-                    <p>450 Joules capacity, suitable for impact resistance evaluation of metallic materials using Charpy testing.</p>
+                    <p><strong>Specifications:</strong><br>
+                        Capacity: 450 Joules<br>
+                        <strong>Applications:</strong> Evaluating impact resistance of metallic materials, including high entropy alloys and Ti-composites.</p>
                 </div>
             </div>
 
             <!-- Vacuum Arc Furnace -->
             <div class="equipment-card flex-row-reverse">
-                <img src="image/arc-melting-furnace.jpg" alt="Arc Melting Furnace">
+                <img src="image/arc-melting-furnace.jpg" alt="Vacuum Arc Furnace with Suction Casting at MML">
                 <div class="equipment-info">
                     <h4>Vacuum Arc Furnace with Suction Casting</h4>
-                    <p>Designed for melting high-temperature materials with electric arcs, capable of reaching temperatures exceeding 3500°C.</p>
+                    <p><strong>Specifications:</strong><br>
+                        Max Temperature: >3500°C<br>
+                        <strong>Applications:</strong> Melting high-temperature materials like refractory alloys and producing homogeneous samples via suction casting.</p>
                 </div>
             </div>
 
             <!-- High Vacuum Furnace -->
-            <div class="equipment-card">
-                <img src="image/heat-treatment-furnace.jpg" alt="Heat Treatment Furnace">
+            <div class="equipment-card flex-row">
+                <img src="image/heat-treatment-furnace.jpg" alt="High Vacuum High-Temperature Furnace at MML">
                 <div class="equipment-info">
                     <h4>High Vacuum High-Temperature Furnace</h4>
-                    <p>For precise heat treatment of metal alloys under controlled atmospheres, operating up to 1500°C.</p>
+                    <p><strong>Specifications:</strong><br>
+                        Max Temperature: 1500°C<br>
+                        Atmosphere: Controlled high vacuum<br>
+                        <strong>Applications:</strong> Precise heat treatment of alloys, annealing, and phase transformation studies.</p>
                 </div>
             </div>
 
             <!-- Planetary Ball Mill -->
             <div class="equipment-card flex-row-reverse">
-                <img src="image/planetary-ball-mill.jpg" alt="Planetary Ball Mill">
+                <img src="image/planetary-ball-mill.jpg" alt="Planetary Ball Mill at MML">
                 <div class="equipment-info">
                     <h4>Planetary Ball Mill</h4>
-                    <p>Versatile tool for wet/dry grinding and powder blending with variable speeds up to 300 RPM.</p>
+                    <p><strong>Specifications:</strong><br>
+                        Speed: Up to 300 RPM<br>
+                        Modes: Wet/dry grinding<br>
+                        <strong>Applications:</strong> Powder blending, nanostructured alloy preparation, and material homogenization.</p>
                 </div>
             </div>
+        </section>
+
+        <section class="text-center mt-5">
+            <h2>Interested in Using Our Facilities?</h2>
+            <p>Contact us to learn about equipment access and collaboration opportunities.</p>
+            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
         </section>
     </main>
 
     <!-- Include Footer -->
     <div id="footer"></div>
 
+    <!-- Bootstrap 4.5.2 JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script>
         // Load Header
         fetch('header.html')
