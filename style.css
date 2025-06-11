@@ -67,6 +67,12 @@ img {
     margin: 0 auto;
 }
 
+.caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
 /* Navbar Styles */
 .navbar {
     background-color: var(--primary);
