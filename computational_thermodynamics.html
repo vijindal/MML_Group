@@ -1,98 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the field of Computational Thermodynamics, its applications in phase diagram modeling, and the development of thermodynamic databases.">
-    <meta name="keywords" content="Computational Thermodynamics, Phase Diagrams, Thermochemistry, Material Systems, Alloy Design">
-    <meta name="author" content="Materials Modeling Lab">
-    <title>Computational Thermodynamics | Materials Modeling Lab</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explore the field of Computational Thermodynamics, its applications in phase diagram modeling, and the development of thermodynamic databases." />
+  <meta name="keywords" content="Computational Thermodynamics, Phase Diagrams, Thermochemistry, Material Systems, Alloy Design" />
+  <meta name="author" content="Materials Modeling Lab" />
+  <title>Computational Thermodynamics | Materials Modeling Lab</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 </head>
 <body style="min-height: 100vh; display: flex; flex-direction: column;">
-    <!-- Include Header -->
-    <div id="header"></div>
+  <!-- Header -->
+  <div id="header"></div>
 
-    <!-- Main Content -->
-    <main class="container my-5">
-        <h1 class="text-center">Computational Thermodynamics</h1>
-        <hr class="mb-4 line">
-        <div class="main-container">
-            <!-- Left Sidebar Menu -->
-            <div class="sidebar">
-                <ul>
-                    <li><a href="#research-areas">Research Areas</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="computational_thermodynamics.html">Computational Thermodynamics</a></li>
-                    <li><a href="gibbs_cvm.html">Cluster Variation Method</a></li>
-                    <li><a href="data.html">Thermochemical Data</a></li>
-                    <li><a href="Optimization.html">Optimization Algorithms</a></li>
-                    <li><a href="Optimization.html">Databases</a></li>
-                </ul>
-            </div>
-            <!-- Content Section -->
-            <div class="content">
+  <!-- Main Content -->
+  <main class="container my-5">
+    <h1 class="mb-4">Computational Thermodynamics</h1>
+    <hr>
 
-        <section>
-            <p>
-                Phase diagrams, or equilibrium diagrams, depict the stability regions of phases in material systems under equilibrium conditions based on thermodynamic variables like composition, temperature, and pressure. They are critical in developing and manufacturing new alloys, helping to design heat treatment processes to achieve desired properties. Additionally, phase diagrams are essential for identifying and resolving performance issues in commercial alloys.
-            </p>
+    <section>
+      <p>Phase diagrams, or equilibrium diagrams, depict the stability regions of phases in material systems under equilibrium conditions based on thermodynamic variables like composition, temperature, and pressure. They are critical in developing and manufacturing new alloys, helping to design heat treatment processes to achieve desired properties. Additionally, phase diagrams are essential for identifying and resolving performance issues in commercial alloys.</p>
 
-            <div class="my-4 text-center">
-                <img src="image/ct_1.jpg" alt="Phase Diagram Example" class="img-fluid" style="width: auto ; height: 400px;">
-                <p class="caption">Figure 1: Austenitizing temperature for full annealing and normalizing.
-                </p>
-            </div>
+      <div class="my-4 text-center">
+        <img src="image/ct_1.jpg" alt="Phase Diagram Example" class="img-fluid rounded shadow-sm" style="max-height: 400px;">
+        <p class="caption">Figure 1: Austenitizing temperature for full annealing and normalizing.</p>
+      </div>
 
-            <p>
-                Historically, phase diagrams have been determined through experimentation, which can be labor-intensive, costly, and impractical, especially for multicomponent systems with broad compositional and temperature ranges. To complement this traditional approach, theoretical calculations offer a more efficient alternative. The main advantage of this method is that by applying appropriate thermodynamic descriptions of the phases in an alloy system, information from simpler, lower-order systems can be used to predict the phase diagram of the more complex multicomponent system.
-            </p>
+      <p>Historically, phase diagrams have been determined through experimentation, which can be labor-intensive, costly, and impractical, especially for multicomponent systems with broad compositional and temperature ranges. To complement this traditional approach, theoretical calculations offer a more efficient alternative. The main advantage of this method is that by applying appropriate thermodynamic descriptions of the phases in an alloy system, information from simpler, lower-order systems can be used to predict the phase diagram of the more complex multicomponent system.</p>
 
-            <div class="my-4 text-center">
-                <img src="image/ct_2.jpg" alt="Thermodynamic Modeling" class="img-fluid" style="width: auto ; height: 400px;">
-                <p class="caption">Figure 2: Computational Thermodynamics Approach</p>
-            </div>
+      <div class="my-4 text-center">
+        <img src="image/ct_2.jpg" alt="Thermodynamic Modeling" class="img-fluid rounded shadow-sm" style="max-height: 400px;">
+        <p class="caption">Figure 2: Computational Thermodynamics Approach</p>
+      </div>
 
-            <p>
-                This predicted diagram can help identify specific regions of composition and temperature, where critical information can be gathered with minimal experimental effort. Once initial predictions are made, experimental data can be used to refine the interaction parameters of the multicomponent system, optimizing the data set and improving the accuracy of the phase diagram. This approach, known as Computational Thermodynamics (CT) (Kattner, 1997), enables the construction of a complete thermodynamic description of complex systems with reduced experimental work.
-            </p>
+      <p>This predicted diagram can help identify specific regions of composition and temperature, where critical information can be gathered with minimal experimental effort. Once initial predictions are made, experimental data can be used to refine the interaction parameters of the multicomponent system, optimizing the data set and improving the accuracy of the phase diagram. This approach, known as Computational Thermodynamics (CT) (Kattner, 1997), enables the construction of a complete thermodynamic description of complex systems with reduced experimental work.</p>
 
-            <div class="my-4 text-center">
-                <img src="image/ct_3.jpg" alt="Applications of Computational Thermodynamics" class="img-fluid" style="width: auto ; height: 400px;">
-                <p class="caption">Figure 3: Applications of Computational Thermodynamics</p>
-            </div>
+      <div class="my-4 text-center">
+        <img src="image/ct_3.jpg" alt="Applications of Computational Thermodynamics" class="img-fluid rounded shadow-sm" style="max-height: 400px;">
+        <p class="caption">Figure 3: Applications of Computational Thermodynamics</p>
+      </div>
 
-            <h4>CT Activities:</h4>
-            <ul>
-                <li><strong>Data:</strong> Determination of phase diagrams and thermochemical data.</li>
-                <li><strong>Modeling:</strong> Developing Gibbs energy models for individual phases.</li>
-                <li><strong>Optimization:</strong> Coupling phase equilibria and thermochemistry to create consistent thermodynamic databases for multi-phase, multicomponent systems.</li>
-                <li><strong>Application:</strong> Predicting thermodynamic properties and phase equilibria of multicomponent systems.</li>
-            </ul>
-        </section>
-    </div>
-        </div>
-    </main>
+      <h4>CT Activities:</h4>
+      <ul>
+        <li><strong>Data:</strong> Determination of phase diagrams and thermochemical data.</li>
+        <li><strong>Modeling:</strong> Developing Gibbs energy models for individual phases.</li>
+        <li><strong>Optimization:</strong> Coupling phase equilibria and thermochemistry to create consistent thermodynamic databases for multi-phase, multicomponent systems.</li>
+        <li><strong>Application:</strong> Predicting thermodynamic properties and phase equilibria of multicomponent systems.</li>
+      </ul>
+    </section>
+  </main>
 
-    <!-- Include Footer -->
-    <div id="footer"></div>
+  <!-- Footer -->
+  <div id="footer"></div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Sc2jj7fxhx22JGzF5hLd51pGFsFN7Jo6ZXm" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFw2IYI1xZjzhffyKg0/2+qe6j" crossorigin="anonymous"></script>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
 
-    <script>
-        // Load Header
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data);
-
-        // Load Footer
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
 </body>
 </html>
