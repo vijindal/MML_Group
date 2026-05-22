@@ -442,6 +442,9 @@ footer a:hover { color: var(--accent); text-decoration: none; }
 /* ---- Accessibility --------------------------------------- */
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 
+/* ---- Openings helpers ------------------------------------ */
+.project-topics-label { font-size: .9rem; }
+
 /* ---- index.html helpers ---------------------------------- */
 .btn-ghost-white {
     color: #fff;
