@@ -1,18 +1,28 @@
-/* Global Styles */
+/* ============================================================
+   Materials Modeling Lab — style.css
+   Color scheme: Navy #1a3a5c + Teal #2ecc8f on White
+   ============================================================ */
+
 :root {
-    --primary: #005662; /* IIT BHU blue */
-    --accent: #FFC107; /* IIT BHU gold */
-    --text: #212529; /* Dark gray for text */
-    --background: #f8f9fa; /* Light gray background */
-    --border: #ccc; /* Neutral border */
-    --white: #ffffff; /* White for contrast */
+    --primary:     #1a3a5c;   /* deep navy */
+    --accent:      #2ecc8f;   /* teal */
+    --accent-dark: #22a370;   /* teal hover */
+    --text:        #212529;
+    --text-muted:  #6c757d;
+    --background:  #f8f9fa;
+    --white:       #ffffff;
+    --border:      #dee2e6;
+    --shadow:      0 2px 12px rgba(0,0,0,.10);
+    --radius:      8px;
 }
 
+/* ---- Reset / Base ---------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
-    font-family: 'Roboto', Arial, sans-serif; /* Modern font with fallback */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0; padding: 0;
+    line-height: 1.7;
     color: var(--text);
     background-color: var(--background);
     min-height: 100vh;
@@ -20,297 +30,448 @@ body {
     flex-direction: column;
 }
 
+main { flex: 1; }
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
     font-weight: 700;
+    line-height: 1.3;
 }
+h1 { font-size: 2.4rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
 
-h1 {
-    font-size: 2.5rem;
-}
+p { margin-bottom: 1rem; text-align: justify; }
+ul { padding-left: 1.5rem; margin-bottom: 1rem; }
 
-h2 {
-    font-size: 1.8rem;
-}
+a { color: var(--primary); text-decoration: none; transition: color .25s; }
+a:hover { color: var(--accent-dark); text-decoration: underline; }
 
-p {
-    margin-bottom: 1rem;
-    text-align: justify;
-}
+hr { border: none; border-top: 2px solid var(--border); margin: 1.5rem 0; }
 
-ul {
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
+img { max-width: 100%; height: auto; display: block; }
 
-a {
-    color: var(--primary);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+.caption { text-align: center; font-style: italic; margin-top: .5rem; font-size: .9rem; color: var(--text-muted); }
 
-a:hover {
-    color: var(--accent);
-    text-decoration: underline;
-}
-
-hr {
-    border: 1px solid var(--border);
-    margin: 1.5rem 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.caption {
-  text-align: center;
-  font-style: italic;
-  margin-top: 0.5rem;
-}
-
-/* Navbar Styles */
+/* ---- Navbar ---------------------------------------------- */
 .navbar {
-    background-color: var(--primary);
-    padding: 1rem;
+    background-color: var(--primary) !important;
+    padding: .6rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,.25);
 }
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-list li {
-    margin: 0 1rem;
-}
-
-.nav-list li a {
-    color: var(--white);
+.navbar-brand img.logo { height: 48px; transition: height .3s; }
+.navbar-nav .nav-link {
+    color: rgba(255,255,255,.88) !important;
     font-weight: 500;
-    padding: 0.5rem 1rem;
+    padding: .5rem .85rem !important;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background .25s, color .25s;
 }
-
-.nav-list li a:hover {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
     background-color: var(--accent);
-    color: var(--text);
+    color: var(--primary) !important;
     text-decoration: none;
 }
-
-/* Footer Styles */
-footer.address {
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 2rem 1rem;
-    margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.navbar-toggler { border-color: rgba(255,255,255,.5); }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255%2C255%2C255%2C0.85%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-footer.address .address-section {
-    flex: 1;
-    min-width: 200px;
-    padding: 1rem;
-}
+@media (max-width: 991px) { .navbar-brand img.logo { height: 38px; } }
+@media (max-width: 575px) { .navbar-brand img.logo { height: 32px; } }
 
-footer.address .address-section h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-footer.address .address-section p {
-    font-size: 0.9rem;
-    margin: 0.3rem 0;
-}
-
-/* Card Styles (for Publications, Facilities, etc.) */
-.card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
-    background-color: var(--white);
-    border: none; /* Override Bootstrap default */
-}
-
-.card-body {
-    padding: 1.5rem;
-}
-
-.card-img-top {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    object-fit: cover;
-    max-height: 300px;
-}
-
-/* Equipment Card (Lab Facilities) */
-.equipment-card {
+/* ---- Hero ------------------------------------------------- */
+.hero-banner {
+    position: relative;
+    background-image: url('image/banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 420px;
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-color: var(--white);
-    overflow: hidden;
+    justify-content: center;
 }
-
-.equipment-card img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
+.hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(26,58,92,.82) 0%, rgba(26,58,92,.55) 100%);
 }
-
-.equipment-info {
-    padding: 1.5rem;
-    flex: 1;
-}
-
-.equipment-card.flex-row-reverse img {
-    order: 2;
-}
-
-.equipment-card.flex-row-reverse .equipment-info {
-    order: 1;
-}
-
-/* Main layout */
-.main-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Sidebar Menu */
-.sidebar {
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: var(--white);
+    padding: 2rem 1rem;
+    max-width: 900px;
     width: 100%;
-    padding: 1rem;
-    background-color: var(--white);
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
+.hero-content h1 { color: var(--white); font-size: 2.6rem; margin-bottom: .5rem; }
+.hero-content p  { color: rgba(255,255,255,.9); font-size: 1.15rem; text-align: center; }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
+/* Stat pills in hero */
+.hero-stats { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin-top: 1.25rem; }
+.stat-pill {
+    background: rgba(255,255,255,.15);
+    border: 2px solid var(--accent);
+    border-radius: 50px;
+    padding: .45rem 1.2rem;
+    color: var(--white);
+    font-size: .95rem;
+    font-weight: 600;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 }
+.stat-pill span { color: var(--accent); font-size: 1.25rem; font-weight: 700; display: block; line-height: 1.2; }
 
-.sidebar li {
-    margin-bottom: 0.75rem;
-}
-
-.sidebar a {
+/* ---- Section headings ------------------------------------- */
+.section-title {
     color: var(--primary);
-    font-weight: 500;
+    font-size: 1.75rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: .5rem;
+    margin-bottom: 1.5rem;
 }
-
-.sidebar a:hover {
-    color: var(--accent);
+.section-title::after {
+    content: '';
+    position: absolute; left: 0; bottom: 0;
+    width: 50px; height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
 }
+.section-title.center { text-align: center; }
+.section-title.center::after { left: 50%; transform: translateX(-50%); }
 
-/* Content Section */
-.content {
-    padding: 0 1.5rem;
+/* ---- Cards ----------------------------------------------- */
+.card {
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    margin-bottom: 1.5rem;
+    transition: box-shadow .25s, transform .25s;
 }
+.card:hover { box-shadow: 0 6px 20px rgba(0,0,0,.14); transform: translateY(-2px); }
+.card-body { padding: 1.5rem; }
+.card-img-top { border-top-left-radius: var(--radius); border-top-right-radius: var(--radius); object-fit: cover; max-height: 220px; width: 100%; }
 
-/* Hero Banner Styles (Custom for Jumbotron) */
-.jumbotron {
-    background-color: var(--primary);
-    margin-bottom: 0;
+/* Research focus cards */
+.research-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    height: 100%;
+    transition: box-shadow .25s, transform .25s, border-color .25s;
+    box-shadow: var(--shadow);
 }
+.research-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,.14); transform: translateY(-3px); border-color: var(--accent); }
+.research-card .rc-icon {
+    width: 52px; height: 52px;
+    background: rgba(46,204,143,.12);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.research-card h4 { color: var(--primary); font-size: 1.05rem; margin-bottom: .5rem; }
+.research-card p  { font-size: .9rem; color: var(--text-muted); text-align: left; margin: 0; }
 
-.jumbotron h1, .jumbotron p {
+/* People / student cards */
+.person-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    height: 100%;
+    transition: box-shadow .25s, transform .25s;
+}
+.person-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,.14); transform: translateY(-2px); }
+.person-card img {
+    width: 100px; height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    margin: 0 auto .75rem;
+}
+.person-card h5 { color: var(--primary); font-size: 1rem; margin-bottom: .25rem; }
+.person-card .role { font-size: .85rem; color: var(--accent-dark); font-weight: 600; margin-bottom: .25rem; }
+.person-card p { font-size: .82rem; color: var(--text-muted); text-align: center; margin: 0; }
+
+/* PI card */
+.pi-card {
+    background: linear-gradient(135deg, var(--primary) 0%, #2a5080 100%);
+    border-radius: var(--radius);
+    padding: 2rem;
+    color: var(--white);
+    box-shadow: 0 4px 16px rgba(26,58,92,.35);
+}
+.pi-card img {
+    width: 130px; height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+    margin-bottom: 1rem;
+}
+.pi-card h3 { color: var(--white); }
+.pi-card p  { color: rgba(255,255,255,.85); text-align: center; }
+.pi-card a  { color: var(--accent); }
+.pi-card a:hover { color: var(--white); }
+
+/* ---- News badges ------------------------------------------ */
+.badge-paper   { background: #0d6efd; color: #fff; }
+.badge-award   { background: #fd7e14; color: #fff; }
+.badge-opening { background: #2ecc8f; color: #fff; }
+.badge-thesis  { background: #6f42c1; color: #fff; }
+.badge-event   { background: #20c997; color: #fff; }
+.news-badge {
+    display: inline-block;
+    padding: .2em .55em;
+    font-size: .75rem;
+    font-weight: 700;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    margin-right: .4rem;
+    vertical-align: middle;
+}
+.news-entry {
+    padding: .9rem 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    gap: .75rem;
+}
+.news-entry:last-child { border-bottom: none; }
+.news-date { font-size: .8rem; color: var(--text-muted); white-space: nowrap; min-width: 90px; padding-top: .15rem; }
+.news-text  { flex: 1; font-size: .95rem; }
+
+/* ---- Year filter (Publications) --------------------------- */
+.year-filters { margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: .5rem; }
+.year-btn {
+    background: var(--white);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: .35rem .9rem;
+    border-radius: 20px;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s, color .2s;
+}
+.year-btn:hover, .year-btn.active {
+    background: var(--primary);
     color: var(--white);
 }
-
-.jumbotron a.btn-primary {
-    background-color: var(--accent);
-    border-color: var(--accent);
+.pub-item { padding: .8rem 0; border-bottom: 1px solid var(--border); font-size: .95rem; }
+.pub-item:last-child { border-bottom: none; }
+.pub-year-header {
+    background: rgba(26,58,92,.07);
+    border-left: 4px solid var(--accent);
+    padding: .5rem 1rem;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 1.5rem 0 .75rem;
+    font-size: 1.1rem;
 }
 
-.jumbotron a.btn-primary:hover {
+/* ---- CTA banner ------------------------------------------ */
+.cta-banner {
+    background: linear-gradient(135deg, var(--primary) 0%, #2a5080 100%);
+    color: var(--white);
+    padding: 3rem 1rem;
+    text-align: center;
+    margin: 3rem 0;
+    border-radius: var(--radius);
+}
+.cta-banner h2 { color: var(--white); }
+.cta-banner p  { color: rgba(255,255,255,.85); text-align: center; }
+
+/* ---- Buttons --------------------------------------------- */
+.btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
-    color: var(--white);
+    font-weight: 600;
+    border-radius: 6px;
+    padding: .55rem 1.4rem;
+    transition: background .25s, border-color .25s, transform .2s;
 }
+.btn-primary:hover {
+    background-color: var(--accent-dark);
+    border-color: var(--accent-dark);
+    transform: translateY(-1px);
+}
+.btn-accent {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--primary);
+    font-weight: 700;
+    border-radius: 6px;
+    padding: .55rem 1.4rem;
+    display: inline-block;
+    transition: background .25s, transform .2s;
+}
+.btn-accent:hover {
+    background-color: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: var(--white);
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+.btn-outline-primary {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: .5rem 1.3rem;
+    transition: background .25s, color .25s;
+}
+.btn-outline-primary:hover { background: var(--primary); color: var(--white); text-decoration: none; }
 
-/* Responsive Media Queries */
+/* ---- Funders row ------------------------------------------ */
+.funders-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+.funders-row img { height: 70px; width: auto; filter: grayscale(20%); transition: filter .25s, transform .25s; }
+.funders-row img:hover { filter: grayscale(0%); transform: scale(1.08); }
+
+/* ---- Sidebar --------------------------------------------- */
+.sidebar {
+    width: 100%;
+    padding: .5rem;
+    background-color: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+}
+.sidebar .list-group-item {
+    border: none;
+    border-bottom: 1px solid var(--border);
+    padding: .65rem 1rem;
+    font-size: .95rem;
+}
+.sidebar .list-group-item:last-child { border-bottom: none; }
+.sidebar .list-group-item a { color: var(--primary); font-weight: 500; }
+.sidebar .list-group-item a:hover { color: var(--accent-dark); text-decoration: none; }
+
 @media (min-width: 768px) {
     .sidebar {
-        width: 250px;
-        position: -webkit-sticky; /* Safari */
         position: sticky;
-        top: 1rem;
-        height: calc(100vh - 150px); /* Adjust based on header/footer height */
+        top: 5rem;
+        max-height: calc(100vh - 120px);
         overflow-y: auto;
-        margin-right: 1rem;
-    }
-
-    .content {
-        padding-left: 2rem; /* Increased padding to account for sidebar spacing */
     }
 }
 
+/* ---- Footer ---------------------------------------------- */
+footer {
+    background-color: var(--primary);
+    color: rgba(255,255,255,.85);
+    padding: 2.5rem 1rem 1rem;
+    margin-top: auto;
+}
+footer h5 { color: var(--accent); font-size: 1rem; margin-bottom: .75rem; text-transform: uppercase; letter-spacing: .06em; }
+footer p, footer address { font-size: .9rem; margin-bottom: .4rem; font-style: normal; }
+footer a { color: rgba(255,255,255,.75); }
+footer a:hover { color: var(--accent); text-decoration: none; }
+.footer-bottom {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,.15);
+    text-align: center;
+    font-size: .82rem;
+    color: rgba(255,255,255,.5);
+}
+
+/* ---- Equipment Card (Lab Facilities) --------------------- */
+.equipment-card {
+    display: flex; align-items: center;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+.equipment-card img { width: 280px; height: 200px; object-fit: cover; }
+.equipment-info { padding: 1.5rem; flex: 1; }
+
+/* ---- Utility --------------------------------------------- */
+.text-accent   { color: var(--accent) !important; }
+.text-primary  { color: var(--primary) !important; }
+.bg-navy       { background-color: var(--primary) !important; }
+.bg-accent     { background-color: var(--accent) !important; }
+
+/* ---- Responsive media queries ---------------------------- */
 @media (max-width: 767px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        margin-top: 0.5rem;
-    }
-
-    .nav-list li {
-        margin: 0.5rem 0;
-    }
-
-    .equipment-card {
-        flex-direction: column;
-    }
-
-    .equipment-card img {
-        width: 100%;
-        height: auto;
-    }
-
-    footer.address .address-section {
-        flex: 1 1 45%;
-    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    .hero-banner { min-height: 320px; }
+    .hero-content h1 { font-size: 1.9rem; }
+    .equipment-card { flex-direction: column; }
+    .equipment-card img { width: 100%; height: 200px; }
+    .news-entry { flex-direction: column; gap: .25rem; }
+    .news-date { min-width: unset; }
 }
 
-@media (max-width: 576px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1.3rem;
-    }
-
-    footer.address .address-section {
-        flex: 1 1 100%;
-        text-align: center;
-    }
-
-    iframe {
-        height: 300px;
-    }
+@media (max-width: 480px) {
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.3rem; }
+    .hero-banner { min-height: 260px; }
+    .hero-content h1 { font-size: 1.5rem; }
+    .stat-pill span { font-size: 1.1rem; }
+    .hero-stats { gap: .5rem; }
+    .stat-pill { padding: .35rem .9rem; font-size: .85rem; }
+    iframe { height: 280px; }
 }
 
-/* Accessibility Enhancements */
-:focus {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
+/* ---- Accessibility --------------------------------------- */
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+/* ---- index.html helpers ---------------------------------- */
+.btn-ghost-white {
+    color: #fff;
+    border-color: rgba(255,255,255,.7);
+}
+.funders-note {
+    font-size: .9rem;
+}
+
+/* ---- PI card stat pills ---------------------------------- */
+.pi-stat-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-top: 1rem;
+}
+.pi-stat-pill {
+    background: rgba(255,255,255,.15);
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 50px;
+    padding: .45rem 1.2rem;
+    color: var(--white);
+    font-size: .95rem;
+    font-weight: 600;
+}
+.pi-stat-pill span {
+    color: var(--accent);
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: block;
+    line-height: 1.2;
 }

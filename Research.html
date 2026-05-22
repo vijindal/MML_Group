@@ -1,149 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the research areas and ongoing projects at the Materials Modeling Lab, IIT BHU, focusing on Computational Thermodynamics, High Entropy Alloys, and more.">
-  <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Research, Computational Thermodynamics, High Entropy Alloys, Phase Diagram, CALPHAD, Material Science">
-  <meta name="author" content="Materials Modeling Lab">
-  <title>Research | Materials Modeling Lab</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research at the Materials Modeling Lab, IIT (BHU) — computational thermodynamics, high entropy alloys, machine learning in materials design, Ti-TiB composites, and atomistic simulations.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Research, Computational Thermodynamics, CALPHAD, CVM, High Entropy Alloys, Machine Learning, Ti-TiB">
+    <meta name="author" content="Materials Modeling Lab">
+    <title>Research | Materials Modeling Lab — IIT (BHU)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body style="min-height: 100vh; display: flex; flex-direction: column;">
-  <div id="header"></div>
+<body>
+    <div id="header"></div>
 
-  <main class="container my-5">
-    <h1 class="mb-4">Research</h1>
-    <hr>
+    <main class="container my-5">
+        <h1>Research</h1>
+        <hr>
+        <p class="lead">The MML conducts advanced research in computational materials science, combining rigorous thermodynamic modelling with machine learning and experimental validation to design next-generation materials for defence, biomedical, and energy applications.</p>
 
-     <section>
-        <p>The Materials Modeling Lab (MML) at IIT BHU conducts advanced research in computational materials science, 
-          focusing on advanced modeling techniques and innovative material design.</p>
-        <p>Our research group focuses on <a href="computational_thermodynamics.html">Computational Thermodynamics</a> and 
-          its applications in materials and metallurgical engineering, a vital component of Integrated Computational Materials 
-          Engineering (ICME). We aim to develop accurate Gibbs energy models for solid crystalline metal phases, with particular 
-          emphasis on modeling short-range ordering (SRO) effects, using advanced methods like 
-          the <a href="gibbs_cvm.html">Cluster Variation Method (CVM)</a>. This work is crucial for designing advanced materials 
-          such as high-entropy alloys, Ti-based composites for defense, bioimplants, and energy storage systems. Our research combines
-           experimental techniques (e.g., drop calorimetry, DSC) with first-principles calculations (e.g., DFT) to 
-           acquire <a href="data.html">thermochemical data</a>, and we develop <a href="https://vijindal.github.io/MML_Group/Optimization.html">CE-CVM-based algorithms</a> to 
-           predict phase diagrams and optimize material properties. We also contribute to <a href="https://vijindal.github.io/MML_Group/Optimization.html">CALPHAD and CE-CVM database</a> development,
-            supporting the design and processing of novel materials.</p>
-                                <p>More specifically, we are interested in:</p>
-                                <ul>
-                                    <li>Titanium-based systems</li>
-                                    <li>Binary, ternary, and multicomponent transition metal systems</li>
-                                    <li>Compositionally complex alloys (CCA and HEA)</li>
-                                </ul>
-    </section>
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 mb-4">
+                <div class="sidebar">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#ct">Computational Thermodynamics</a></li>
+                        <li class="list-group-item"><a href="#hea">High Entropy Alloys</a></li>
+                        <li class="list-group-item"><a href="#ml">Machine Learning in Materials</a></li>
+                        <li class="list-group-item"><a href="#titib">Ti-TiB Composites &amp; FGMs</a></li>
+                        <li class="list-group-item"><a href="#beta-ti">Beta-Ti Biomedical Alloys</a></li>
+                        <li class="list-group-item"><a href="#atomistic">Atomistic Simulations</a></li>
+                        <li class="list-group-item"><a href="#projects">Funded Projects</a></li>
+                    </ul>
+                </div>
+            </div>
 
-    <section class="my-5">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <img src="image/data_2.jpg" alt="Computational Thermodynamics" class="img-fluid rounded shadow-sm">
+            <!-- Content -->
+            <div class="col-md-9">
+
+                <!-- 1. Computational Thermodynamics -->
+                <section id="ct" class="mb-5">
+                    <h2 class="section-title">Computational Thermodynamics</h2>
+                    <div class="row align-items-center mb-3">
+                        <div class="col-md-5 mb-3 mb-md-0">
+                            <img src="image/ct_1.jpg" alt="Computational Thermodynamics" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-7">
+                            <p>Our core research focus is the development of accurate Gibbs energy models for solid crystalline metal phases, with particular emphasis on modelling short-range ordering (SRO) effects using the <a href="gibbs_cvm.html">Cluster Variation Method (CVM)</a> and Cluster Expansion (CE) methods. This work is a vital component of Integrated Computational Materials Engineering (ICME).</p>
+                            <p>We develop algorithms for thermodynamic assessments and <a href="Optimization.html">CE-CVM-based optimisation</a> to predict phase diagrams and generate <a href="data.html">thermochemical databases</a> for novel materials systems including Ti-B-Fe-Mo and Nb-Ti-V-Zr. See the <a href="computational_thermodynamics.html">Computational Thermodynamics</a> page for full details.</p>
+                        </div>
+                    </div>
+                    <p><strong>Key publications:</strong>
+                        <a href="https://doi.org/10.1016/j.calphad.2025.102825" target="_blank" rel="noopener">Multicomponent CVM for HEAs, <em>Calphad</em> (2025)</a> &bull;
+                        <a href="https://doi.org/10.1007/s11669-022-00989-y" target="_blank" rel="noopener">CE-CVM for Ti-X alloys, <em>JPED</em> (2022)</a>
+                    </p>
+                </section>
+
+                <!-- 2. High Entropy Alloys -->
+                <section id="hea" class="mb-5">
+                    <h2 class="section-title">High Entropy Alloys</h2>
+                    <div class="row align-items-center mb-3">
+                        <div class="col-md-5 mb-3 mb-md-0">
+                            <img src="image/gibbs_cvm_2.jpg" alt="High Entropy Alloys" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-7">
+                            <p>We investigate the thermodynamics of compositionally complex alloys (CCA) and high-entropy alloys (HEA), with a focus on short-range ordering, phase stability, and alloy design. Our multicomponent CVM framework enables accurate modelling of SRO in systems such as Nb-Ti-V-Zr.</p>
+                            <p>Experimental work includes synthesis, heat treatment, and microstructural characterisation of refractory HEAs (MoNbTaTiW system), validated against DFT calculations and machine learning predictions.</p>
+                        </div>
+                    </div>
+                    <p><strong>Key publications:</strong>
+                        <a href="https://doi.org/10.1016/j.intermet.2026.109301" target="_blank" rel="noopener">Hardness in refractory HEAs, <em>Intermetallics</em> (2026)</a> &bull;
+                        <a href="https://doi.org/10.1007/s11669-023-01055-x" target="_blank" rel="noopener">Neural network for SRO in NbTiVZr, <em>JPED</em> (2023)</a>
+                    </p>
+                </section>
+
+                <!-- 3. Machine Learning -->
+                <section id="ml" class="mb-5">
+                    <h2 class="section-title">Machine Learning in Materials Design</h2>
+                    <div class="row align-items-center mb-3">
+                        <div class="col-md-5 mb-3 mb-md-0">
+                            <img src="image/data_2.jpg" alt="Machine Learning in Materials" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-7">
+                            <p>Recent work from the MML Group integrates machine learning with DFT and experimental data to predict materials properties in high-entropy alloys. A neural network model was developed to characterise the interplay between short-range ordering and enthalpy of mixing in the NbTiVZr system (<em>J. Phase Equilibria Diffus.</em>, 2023). More recently, an ML+DFT approach was demonstrated for Vickers hardness prediction in refractory HEAs (<em>MRS Communications</em>, 2025; <em>Intermetallics</em>, 2026).</p>
+                            <p>These efforts position the group at the intersection of traditional computational thermodynamics and modern data-driven materials science — a key attractor for the next generation of researchers.</p>
+                        </div>
+                    </div>
+                    <p><strong>Key publications:</strong>
+                        <a href="https://doi.org/10.1016/j.intermet.2026.109301" target="_blank" rel="noopener">Data-driven hardness in HEAs, <em>Intermetallics</em> (2026)</a> &bull;
+                        <a href="https://doi.org/10.1557/s43579-025-00736-7" target="_blank" rel="noopener">ML+DFT for hardness, <em>MRS Commun.</em> (2025)</a> &bull;
+                        <a href="https://doi.org/10.1088/1361-651X/ac3a16" target="_blank" rel="noopener">Data-driven CVM correlation functions, <em>MSMSE</em> (2022)</a>
+                    </p>
+                </section>
+
+                <!-- 4. Ti-TiB -->
+                <section id="titib" class="mb-5">
+                    <h2 class="section-title">Ti-TiB Composites &amp; Functionally Graded Materials</h2>
+                    <div class="row align-items-center mb-3">
+                        <div class="col-md-5 mb-3 mb-md-0">
+                            <img src="image/optimization_2.jpg" alt="Ti-TiB Composites" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-7">
+                            <p>We design and characterise Ti-TiB composites and Functionally Graded Armour Composite Materials (FGACMs) for defence and biomedical applications. CALPHAD-guided processing routes — vacuum arc melting, spark plasma sintering (SPS), and hot pressing — are used to tailor microstructure and properties.</p>
+                            <p>Funded by a DRDO–ARMREB grant (&#8377;91.66 Lakhs, 2020–2023), this work produced significant advances in densification behaviour, fracture toughness, and tribological performance of Ti-TiB-Fe systems.</p>
+                        </div>
+                    </div>
+                    <p><strong>Key publications:</strong>
+                        <a href="https://doi.org/10.1007/s11665-026-13766-6" target="_blank" rel="noopener">Ti-TiB FGMs — fracture behavior, <em>JMEP</em> (2026)</a> &bull;
+                        <a href="https://doi.org/10.1016/j.jalmes.2024.100132" target="_blank" rel="noopener">Hot-pressing of Ti-TiB, <em>JAMS</em> (2024)</a> &bull;
+                        <a href="https://doi.org/10.1016/j.actamat.2019.03.040" target="_blank" rel="noopener">CALPHAD-guided TiB alloy design, <em>Acta Mater.</em> (2019)</a>
+                    </p>
+                </section>
+
+                <!-- 5. Beta-Ti -->
+                <section id="beta-ti" class="mb-5">
+                    <h2 class="section-title">Beta-Titanium Biomedical Alloys</h2>
+                    <div class="row align-items-center mb-3">
+                        <div class="col-md-5 mb-3 mb-md-0">
+                            <img src="image/ct_2.jpg" alt="Beta-Titanium Alloys" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-7">
+                            <p>Low-modulus beta-titanium alloys are ideal for dental and orthopaedic implants because their elastic modulus closely matches human bone, reducing stress-shielding. We use thermodynamic modelling (CALPHAD, DFT, CE-CVM) to design beta-Ti alloy compositions with optimal elastic properties and biocompatibility.</p>
+                            <p>An ongoing IIT(BHU) Challenge Grant project (&#8377;45 Lakhs, 2025–2027) is developing beta-Ti alloys for dental and orthopaedic applications, in collaboration with colleagues in the Department of Metallurgical Engineering.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. Atomistic Simulations -->
+                <section id="atomistic" class="mb-5">
+                    <h2 class="section-title">Atomistic Simulations</h2>
+                    <div class="row align-items-center mb-3">
+                        <div class="col-md-5 mb-3 mb-md-0">
+                            <img src="image/data_4.jpg" alt="Atomistic Simulations" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-7">
+                            <p>Molecular dynamics (MD) and Monte Carlo (MC) simulations are employed to study phase transitions, dislocation evolution, and alloy thermodynamics at the atomic scale. Recent work has examined strain-rate and size effects on deformation and phase transformation in Mg single crystals, and Cu phase transitions under constrained compression.</p>
+                            <p>These simulations complement our thermodynamic modelling and DFT work, providing mechanistic insight into materials behaviour that is difficult to access experimentally.</p>
+                        </div>
+                    </div>
+                    <p><strong>Key publications:</strong>
+                        <a href="https://doi.org/10.1007/s10853-026-12687-y" target="_blank" rel="noopener">Atomistic simulation of Cu, <em>J. Mater. Sci.</em> (2026)</a> &bull;
+                        <a href="https://doi.org/10.1007/s11665-025-12948-y" target="_blank" rel="noopener">Strain rate effects in Mg, <em>JMEP</em> (2026)</a>
+                    </p>
+                </section>
+
+                <!-- Funded Projects -->
+                <section id="projects" class="mb-5">
+                    <h2 class="section-title">Funded Projects</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Ongoing</h5>
+                            <ul>
+                                <li><strong>Development of Low Modulus Beta-Titanium Alloy for Dental and Orthopedic Implant Applications</strong> — IIT(BHU) Challenge Grant, &#8377;45 Lakhs (July 2025–March 2027). Co-PI.</li>
+                                <li><strong>Molten Metal Electrolysis — An Alternate Route of Steelmaking</strong> — SRTMI–SAIL, New Delhi (June 2025–Present). Co-PI.</li>
+                            </ul>
+                            <h5 class="mt-3">Completed</h5>
+                            <ul>
+                                <li><strong>Development of Functionally Graded Armor Composites (FGACs) Materials</strong> — DRDO–ARMREB, &#8377;91.66 Lakhs (2020–2023). Principal Investigator.</li>
+                                <li><strong>Role of Short Range Ordering in Designing High Entropy Alloys</strong> — SERB Core Research Grant (CRG/2019/000430), &#8377;41.36 Lakhs (2019–2022). Principal Investigator.</li>
+                                <li><strong>Development of Low-Cost &beta;-Ti Alloy for Biomedical Applications</strong> — SERB Core Research Grant, &#8377;40.50 Lakhs (2020–2023). Co-PI.</li>
+                                <li><strong>Phase-diagrams and thermodynamic investigations of Ti-Hf-Zr system using CVM</strong> — IIT(BHU) Seed Grant (2018–2020).</li>
+                                <li><strong>Free Energy Minimisation in Binary Alloys via Genetic Algorithms</strong> — UGC XI-Plan Research Grant for New Faculty (2012).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="text-center mt-4">
+                    <h2>Interested in Collaborating?</h2>
+                    <p>We welcome research collaborations and student applications. Visit our <a href="Openings.html">Openings</a> page or <a href="Contact_Us.html">contact us</a> directly.</p>
+                    <a href="Openings.html" class="btn btn-primary">View Openings</a>
+                </section>
+
+            </div>
         </div>
-        <div class="col-md-8">
-          <h3>Theoretical Data</h3>
-          <p>In the realm of computational thermodynamics, acquiring accurate thermochemical and phase equilibrium data is paramount. 
-            However, experimental data is often scarce due to the complexities and costs associated with studying unstable phases, 
-            especially in multicomponent systems. To bridge this gap, our lab employs first-principles calculations, notably Density 
-            Functional Theory (DFT), to predict thermodynamic properties such as enthalpy and entropy across various conditions. 
-            For ordered structures, DFT calculations involve defining the crystal structure, selecting appropriate pseudopotentials, 
-            and setting computational parameters like exchange-correlation functionals and k-point meshes. Disordered structures, on the
-             other hand, are modeled using techniques such as Special Quasirandom Structures (SQS) and Cluster Expansion (CE). By integrating
-              these computational strategies, we enhance the reliability of CALPHAD modeling, facilitating the accurate description of complex
-               material systems. For more details refer to the <a href="https://vijindal.github.io/MML_Group/data.html">Theoretical Data page</a>.</p>
-          <p><strong>Related Publications:</strong><br>
-            <a href="https://doi.org/10.1016/j.intermet.2023.108080">Influence of micro-segregation on the microstructure, and microhardness of MoNbTaxTi(1-x)W refractory high entropy alloys: Experimental and DFT approach (2024)</a><br>
-            <a href="https://doi.org/10.1007/s11669-023-01055-x"> A Neural Network Driven Approach for Characterizing the Interplay Between Short Range Ordering and Enthalpy of Mixing of Binary Subsystems in the NbTiVZr High Entropy Alloy (2023). </a>
-          </p>
-        </div>
-      </div>
-    </section>
+    </main>
 
-    <section class="my-5">
-      <div class="row align-items-center flex-row-reverse">
-        <div class="col-md-5">
-          <img src="image/gibbs_cvm_2.jpg" alt="High Entropy Alloys" class="img-fluid rounded shadow-sm">
-        </div>
-        <div class="col-md-7">
-          <h3>Cluster Variation Method (CVM)</h3>
-            <p>The Cluster Variation Method (CVM) is a statistical thermodynamics approach that enhances the modeling of Gibbs energy by explicitly 
-                accounting for short-range order (SRO) in alloy systems. Unlike empirical models that represent excess Gibbs energy as polynomial 
-                functions of composition without considering SRO, CVM provides a more accurate treatment by considering correlations between neighboring sites. Our
-                 work enhances CVM using cluster multiplicity correction, temperature-dependent correlation functions, and a basis-independent multicomponent
-                  framework for efficient thermodynamic modeling and database development. To improve the accuracy of CVM, modifications to the entropy functional 
-                  have been implemented by adjusting the multiplicity of the basic cluster term. This refinement reduces truncation errors and yields better 
-                  estimates of enthalpy, entropy, consolute temperature, and SRO without additional computational costs. Furthermore, to simplify the computation of 
-                  correlation functions (CFs), they can be expressed as polynomial functions of composition, with coefficients being rational functions of temperature 
-                  and energy parameters. This approach retains detailed information about SRO while offering computational efficiency comparable to CALPHAD techniques.
-                  For more details refer to the <a href="https://vijindal.github.io/MML_Group/gibbs_cvm.html">CVM page</a>.</p>
-            <p><strong>Related Publications:</strong><br>
-            <a href="https://doi.org/10.1007/s11669-022-00989-y">Modeling Short-Range Ordering in Binary BCC Ti-X (X = Nb, V, Zr) Alloys using CE-CVM (2022)</a><br>
-            <a href="https://doi.org/10.1016/j.calphad.2022.102439">S. Kumar, V. Jindal, First-principles calculations and thermodynamic assessment of the Nb–V system using CE-CVM (2022)</a>
-          </p>
-        </div>
-      </div>
-    </section>
+    <div id="footer"></div>
 
-    <section class="my-5">
-      <div class="row align-items-center">
-        <div class="col-md-5">
-          <img src="image/optimization_2.jpg" alt="Optimization (Thermodynamic Assessments) and Database
-" class="img-fluid rounded shadow-sm">
-        </div>
-        <div class="col-md-7">
-          <h3>Optimization (Thermodynamic Assessments) and Database</h3>
-          <p>Our lab has developed algorithms for thermodynamic assessments, employing methods like Newton-Raphson and Levenberg–Marquardt for binary systems, 
-            and adapting Hillert’s algorithm for multicomponent systems. These techniques, combined with the Cluster Expansion-Cluster Variation Method (CE-CVM), 
-            enable phase equilibria calculations by accounting for short-range order. We've optimized various binary systems, and
-             recently extended our work to ternary subsystems of the Nb-Ti-V-Zr system. Utilizing these assessments, we've generated thermodynamic databases for systems
-              like Ti-B-Fe-Mo and Nb-Ti-V-Zr, supporting projects under DRDO-armreb and SERB, respectively. For more details refer to the <a href="https://vijindal.github.io/MML_Group/Optimization.html">Optimization page.</a></p>
-          <p><strong>Related Publications:</strong><br>
-            <a href="https://doi.org/10.1016/j.calphad.2025.102825"> Multicomponent cluster variation method: Application to high entropy alloys (2025)</a><br>
-            <a href="https://doi.org/10.1007/s11669-022-00989-y">Modeling Short-Range Ordering in Binary BCC Ti-X (X = Nb, V, Zr) Alloys using CE-CVM (2022)</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-      <section>
-      <div class="research-area">
-        <h2>Projects</h2>
-        <ul>
-          <li><strong>Development of Functionally Graded Armor Composites (FGACs) Materials (2019-2022)</strong>. Funded by DRDO under the ARMREB Grant-in-Aid Scheme.</li>
-          <li><strong>Role of Short Range Ordering in designing High Entropy Alloys (2019-2022)</strong>. Funded by SERB under Core Research Grant.</li>
-          <li><strong>Development of low-cost β-Ti alloy for biomedical applications (2020-2023)</strong>. Co-PI. Funded by SERB under Core Research Grant.</li>
-          <li><strong>Phase-diagrams and thermodynamic investigations of Ti-Hf-Zr system using Cluster Variation Method (CVM) (2018-2020)</strong>. Funded by IIT (BHU).</li>
-          <li><strong>Free energy minimization in binary alloys via genetic algorithms (2012)</strong>. Funded by UGC XI-Plan Research Grant for New Faculty.</li>
-          <li><strong>Development of e-content on ancient Indian metallurgy and modern process metallurgy (2011-12)</strong>. Funded by NMEICT, New Delhi.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="text-center mt-5">
-      <h2>Interested in Our Research?</h2>
-      <p>Explore opportunities to collaborate or join our projects. Visit our <a href="openings.html">Openings</a> page for more details.</p>
-      <a href="openings.html" class="btn btn-primary">Learn More</a>
-    </section>
-  </main>
-
-  <div id="footer"></div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-  <script>
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('header').innerHTML = data);
-
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('footer').innerHTML = data);
-  </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        fetch('header.html').then(r => r.text()).then(d => document.getElementById('header').innerHTML = d);
+        fetch('footer.html').then(r => r.text()).then(d => document.getElementById('footer').innerHTML = d);
+    </script>
 </body>
 </html>

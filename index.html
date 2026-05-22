@@ -3,110 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the Materials Modeling Lab (MML) at IIT BHU, pioneering research in computational thermodynamics, alloys, and advanced materials design.">
-    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Computational Thermodynamics, Alloys, Phase Diagrams, High Entropy Alloys, Materials Science">
-    <meta name="author" content="Materials Modeling Lab">
-    <title>Home | Materials Modeling Lab</title>
-    <!-- Bootstrap 4.5.2 CSS -->
+    <meta name="description" content="Materials Modeling Lab (MML) at IIT (BHU) Varanasi — research in computational thermodynamics, high entropy alloys, machine learning in materials design, and Ti-TiB composites.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Computational Thermodynamics, High Entropy Alloys, CALPHAD, Machine Learning, Phase Diagrams">
+    <meta name="author" content="Materials Modeling Lab, IIT (BHU)">
+    <title>Home | Materials Modeling Lab — IIT (BHU)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Google Fonts: Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body style="min-height: 100vh; display: flex; flex-direction: column;">
-    <!-- Include Header -->
+<body>
     <div id="header"></div>
 
     <!-- Hero Banner -->
-    <section class="jumbotron text-center" style="background-image: url('image/banner.jpeg'); background-size: cover; background-position: center; height: 400px; width: 100%; color: var(--white);">
+    <section class="hero-banner">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Materials Modeling Lab</h1>
+            <p>Computational Thermodynamics &bull; Machine Learning &bull; Advanced Materials Design<br>
+               Department of Metallurgical Engineering, IIT (BHU) Varanasi</p>
+            <div class="hero-stats">
+                <div class="stat-pill"><span>34</span>Journal Papers</div>
+                <div class="stat-pill"><span>601</span>Citations</div>
+                <div class="stat-pill"><span>14</span>h-index</div>
+                <div class="stat-pill"><span>&#8377;1.8Cr+</span>Research Grants</div>
+            </div>
+            <div class="mt-4">
+                <a href="Research.html" class="btn-accent mr-2">Our Research</a>
+                <a href="Openings.html" class="btn-outline-primary btn-ghost-white">Join Us</a>
+            </div>
+        </div>
     </section>
 
-    <!-- Main Content -->
     <main class="container my-5">
-        <section id="about">
-            <h1>Welcome to the Materials Modeling Lab</h1>
-            <hr class="mb-4">
+
+        <!-- About -->
+        <section id="about" class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h2 class="section-title">Welcome to MML</h2>
+                    <p>The <strong>Materials Modeling Lab (MML)</strong> is part of the <a href="https://iitbhu.ac.in/" target="_blank" rel="noopener">Department of Metallurgical Engineering</a> at IIT (BHU), Varanasi. We develop next-generation computational and experimental tools for designing advanced materials — from high-entropy alloys and Ti-TiB composites to beta-titanium biomedical implants and functionally graded armour materials.</p>
+                    <p>Our work bridges classical thermodynamic modelling (CALPHAD, CVM, CE) with modern machine learning and atomistic simulations, placing us at the intersection of traditional materials science and data-driven discovery.</p>
+                    <a href="Research.html" class="btn btn-primary mt-2">Explore Research</a>
+                </div>
+                <div class="col-lg-5 mt-4 mt-lg-0 text-center">
+                    <img src="image/optimization_1.jpg" alt="Phase diagram research at MML" class="img-fluid rounded shadow-sm">
+                    <p class="caption mt-2">Phase diagram modelling and alloy design at MML</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Focus Cards -->
+        <section id="research-focus" class="mb-5">
+            <h2 class="section-title center">Research Focus</h2>
             <div class="row">
-                <div class="col-lg-8">
-                    <p>The Materials Modeling Lab (MML) is part of the <a href="https://iitbhu.ac.in/">Department of Metallurgical Engineering</a> 
-                        at IIT (BHU), Varanasi. Our research focuses on the development of next-generation materials tailored for critical applications in defense,
-                         healthcare, and energy systems.</p>
-                    <h2>Our Research Focus</h2>
-                    <ul>
-                        <li>Computational Thermodynamics</li>
-                        <li>High Entropy Alloys and Titanium-Based Composites</li>
-                        <li>Cluster Variation Method and CALPHAD Databases</li>
-                        <li>DFT-Based Thermochemical Data and Phase Diagram Optimization</li>
-                        <li>Machine Learning in Materials Design</li>
-                    </ul>
-                    <p>Explore our <a href="research.html">Research</a> and <a href="publications.html">Publications</a> to learn more about our contributions.</p>
-                    <div class="card mb-4">
-                        <img src="image/optimization_1.jpg" alt="Phase Diagram Research"  style="width: 100%; height: auto;">
-                        <div class="card-body">
-                            <p class="card-text text-center">Our work on phase diagrams drives innovation in alloy design.</p>
-                        </div>
-                    </div>
-                    <h2>Join Our Team</h2>
-                    <p><strong>We are seeking passionate PhD and Master’s students!</strong> Visit our <a href="openings.html">Openings</a> page for opportunities.</p>
-                    <h2>Our Supporters</h2>
-                    <p>We gratefully acknowledge funding from:</p>
-                    <div class="d-flex justify-content-center flex-wrap mb-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Official_Logo_of_IIT%28BHU%29%2CVaranasi%2CIndia%2C2013.png" alt="IIT BHU Logo" class="m-2" style="height: 80px;">
-                        <img src="image/serb_15.gif" alt="SERB Logo" class="m-2" style="height: 80px;">
-                        <img src="https://www.drdo.gov.in/sites/default/files/drdo_logo_0.png" alt="DRDO Logo" class="m-2" style="height: 80px;">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="research-card">
+                        <div class="rc-icon">&#9678;</div>
+                        <h4>Computational Thermodynamics</h4>
+                        <p>CALPHAD, Cluster Variation Method (CVM), and Cluster Expansion (CE) for phase diagram assessment and Gibbs energy modelling.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="research-card">
+                        <div class="rc-icon">&#9733;</div>
+                        <h4>High Entropy Alloys</h4>
+                        <p>Thermodynamic modelling of short-range ordering, neural-network-driven enthalpy prediction, and experimental validation of HEAs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="research-card">
+                        <div class="rc-icon">&#129504;</div>
+                        <h4>Machine Learning in Materials</h4>
+                        <p>ML + DFT for hardness prediction in refractory HEAs, neural network models for SRO, and data-driven alloy design pipelines.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="research-card">
+                        <div class="rc-icon">&#9632;</div>
+                        <h4>Ti-TiB Composites &amp; FGMs</h4>
+                        <p>CALPHAD-guided processing of Ti-TiB composites and Functionally Graded Armour Materials for defence and biomedical applications.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="research-card">
+                        <div class="rc-icon">&#10010;</div>
+                        <h4>Beta-Ti Biomedical Alloys</h4>
+                        <p>Low-modulus beta-titanium alloys for dental and orthopaedic implants — thermodynamic design and experimental characterisation.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="research-card">
+                        <div class="rc-icon">&#9881;</div>
+                        <h4>Atomistic Simulations</h4>
+                        <p>MD and MC simulations for phase transitions, dislocation evolution, and alloy thermodynamics at the atomic scale.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-2">
+                <a href="Research.html" class="btn btn-primary">View All Research Areas</a>
+            </div>
+        </section>
+
+        <!-- Latest News + PhD Students -->
+        <section id="news-people" class="mb-5">
+            <div class="row">
+                <!-- Latest News -->
+                <div class="col-lg-7 mb-4">
+                    <h2 class="section-title">Latest News</h2>
                     <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-title">Latest News</h2>
-                            <ul class="list-unstyled">
-                                <li class="mb-3">
-                                    <a href="https://vijindal.github.io/MML_Group/Openings.html">We invite applications for Institute Post Doctoral Fellowship (IPDF). See more details</details></a>
-                                    <small class="d-block text-muted">July 2025</small>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="https://doi.org/10.1016/j.jalmes.2024.100132">New paper on Ti-TiB composites published in J. Alloy. Metall. Syst.</a>
-                                    <small class="d-block text-muted">March 2024</small>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="https://doi.org/10.1007/s11669-023-01055-x">Paper on NbTiVZr high entropy alloys in J. Phase Equilibria Diffus.</a>
-                                    <small class="d-block text-muted">December 2023</small>
-                                </li>
-                                <li class="mb-3">
-                                    Shanker Kumar defends PhD thesis on high entropy alloys.
-                                    <small class="d-block text-muted">January 19, 2024</small>
-                                </li>
-                                <li>
-                                    <a href="news.html">View All News</a>
-                                </li>
-                            </ul>
+                        <div class="card-body p-3">
+
+                            <div class="news-entry">
+                                <span class="news-date">May 2026</span>
+                                <div class="news-text">
+                                    <span class="news-badge badge-paper">Paper</span>
+                                    <a href="https://doi.org/10.1016/j.intermet.2026.109301" target="_blank" rel="noopener">Mechanistic &amp; data-driven hardness prediction in refractory HEAs — <em>Intermetallics</em> 194 (2026)</a>
+                                </div>
+                            </div>
+
+                            <div class="news-entry">
+                                <span class="news-date">Apr 2026</span>
+                                <div class="news-text">
+                                    <span class="news-badge badge-paper">Paper</span>
+                                    <a href="https://doi.org/10.1007/s10853-026-12687-y" target="_blank" rel="noopener">Atomistic simulation of Cu phase transition — <em>J. Mater. Sci.</em> (2026)</a>
+                                </div>
+                            </div>
+
+                            <div class="news-entry">
+                                <span class="news-date">Mar 2026</span>
+                                <div class="news-text">
+                                    <span class="news-badge badge-paper">Paper</span>
+                                    <a href="https://doi.org/10.1007/s11665-026-13766-6" target="_blank" rel="noopener">Ti-TiB Composites and FGMs — Mechanical Properties &amp; Fracture Behavior — <em>J. Mater. Eng. Perform.</em> (2026)</a>
+                                </div>
+                            </div>
+
+                            <div class="news-entry">
+                                <span class="news-date">Feb 2026</span>
+                                <div class="news-text">
+                                    <span class="news-badge badge-paper">Paper</span>
+                                    <a href="https://doi.org/10.1007/s11665-025-12948-y" target="_blank" rel="noopener">Strain Rate &amp; Size Effects in Mg Single Crystals — <em>J. Mater. Eng. Perform.</em> (2026)</a>
+                                </div>
+                            </div>
+
+                            <div class="news-entry">
+                                <span class="news-date">Oct 2025</span>
+                                <div class="news-text">
+                                    <span class="news-badge badge-paper">Paper</span>
+                                    <a href="https://doi.org/10.1557/s43579-025-00736-7" target="_blank" rel="noopener">Integrating ML &amp; DFT for hardness prediction in HEAs — <em>MRS Commun.</em> (2025)</a>
+                                </div>
+                            </div>
+
+                            <div class="news-entry">
+                                <span class="news-date">Jul 2025</span>
+                                <div class="news-text">
+                                    <span class="news-badge badge-paper">Paper</span>
+                                    <a href="https://doi.org/10.1016/j.calphad.2025.102825" target="_blank" rel="noopener">Multicomponent CVM for high entropy alloys — <em>Calphad</em> 89 (2025)</a>
+                                </div>
+                            </div>
+
+                            <div class="news-entry">
+                                <span class="news-date">Jul 2025</span>
+                                <div class="news-text">
+                                    <span class="news-badge badge-opening">Opening</span>
+                                    <a href="Openings.html">Applications invited for Institute Post-Doctoral Fellowship (IPDF). See Openings page.</a>
+                                </div>
+                            </div>
+
+                            <div class="news-entry">
+                                <span class="news-date">Jun 2025</span>
+                                <div class="news-text">
+                                    <span class="news-badge badge-award">Award</span>
+                                    Dr. Vikas Jindal invited as Editorial Board Member, <em>Scientific Reports</em> (Nature Portfolio).
+                                </div>
+                            </div>
+
+                            <div class="news-entry">
+                                <span class="news-date">Jan 2024</span>
+                                <div class="news-text">
+                                    <span class="news-badge badge-thesis">Thesis</span>
+                                    Shanker Kumar successfully defends PhD thesis on short-range order in high entropy alloys.
+                                </div>
+                            </div>
+
                         </div>
+                    </div>
+                    <div class="text-right mt-2">
+                        <a href="News.html" class="btn btn-outline-primary btn-sm">View All News &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Current PhD Students -->
+                <div class="col-lg-5 mb-4">
+                    <h2 class="section-title">Current PhD Students</h2>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <div class="person-card">
+                                <img src="image/murali.jpg" alt="Murali Padiri">
+                                <h5>Murali Padiri</h5>
+                                <div class="role">PhD Student</div>
+                                <p>Ti-TiB Composites &amp; FGMs</p>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="person-card">
+                                <img src="image/ishu.png" alt="Ishu Yadav">
+                                <h5>Ishu Yadav</h5>
+                                <div class="role">PhD Student</div>
+                                <p>Beta-Ti Biomedical Alloys</p>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="person-card">
+                                <img src="image/1.jpg" alt="Harish Kumar">
+                                <h5>Harish Kumar</h5>
+                                <div class="role">PhD Student</div>
+                                <p>Computational Thermodynamics</p>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="person-card">
+                                <img src="image/server.jpg" alt="Roshan Kumar">
+                                <h5>Roshan Kumar</h5>
+                                <div class="role">PhD Student</div>
+                                <p>Atomistic Simulations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-1">
+                        <a href="People.html" class="btn btn-outline-primary btn-sm">Meet the Full Team &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Join Us CTA -->
+        <section class="cta-banner mb-5">
+            <h2>Join the MML Group</h2>
+            <p class="mb-3">We are seeking motivated PhD students, M.Tech project students, and post-doctoral researchers with a passion for computational materials science and data-driven design.</p>
+            <a href="Openings.html" class="btn-accent mr-3">View Openings</a>
+            <a href="Contact_Us.html" class="btn-outline-primary btn-ghost-white">Contact Us</a>
+        </section>
+
+        <!-- Funders -->
+        <section id="funders" class="mb-5">
+            <h2 class="section-title center">Our Sponsors &amp; Partners</h2>
+            <div class="funders-row">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Official_Logo_of_IIT%28BHU%29%2CVaranasi%2CIndia%2C2013.png" alt="IIT (BHU) Logo">
+                <img src="image/serb_15.gif" alt="SERB Logo">
+                <img src="image/DRDO.jpg" alt="DRDO Logo">
+                <img src="image/iit_logo_original.png" alt="IIT Logo">
+            </div>
+            <p class="text-center text-muted mt-3 funders-note">Funded by IIT(BHU), SERB (CRG), DRDO–ARMREB, SRTMI–SAIL, and IIT(BHU) Challenge Grant</p>
+        </section>
+
     </main>
 
-    <!-- Include Footer -->
     <div id="footer"></div>
 
-    <!-- Bootstrap 4.5.2 JS and Dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script>
-        // Load Header
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data);
-
-        // Load Footer
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
+        fetch('header.html').then(r => r.text()).then(d => document.getElementById('header').innerHTML = d);
+        fetch('footer.html').then(r => r.text()).then(d => document.getElementById('footer').innerHTML = d);
     </script>
 </body>
 </html>

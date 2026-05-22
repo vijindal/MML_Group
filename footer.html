@@ -1,14 +1,35 @@
-<!-- footer.html -->
-<footer class="bg-dark text-white py-4 mt-auto text-center">
+<footer>
     <div class="container">
-        <address>
-            <p>Materials Modeling Lab | IIT (BHU), Varanasi, India</p>
-            <p>Email: <a href="mailto:vjindal.met@iitbhu.ac.in" class="text-white">vjindal.met@iitbhu.ac.in</a> | 
-            Phone: <a href="tel:+915427165640" class="text-white">+91-542-7165640</a></p>
-        </address>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>Address</h5>
+                <address>
+                    Materials Modeling Lab<br>
+                    Department of Metallurgical Engineering<br>
+                    IIT (BHU), Varanasi<br>
+                    Uttar Pradesh, India — 221005
+                </address>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Contact</h5>
+                <p>Email: <a href="mailto:vjindal.met@iitbhu.ac.in">vjindal.met@iitbhu.ac.in</a></p>
+                <p>Phone: <a href="tel:+915427165640">+91-542-7165640</a></p>
+                <p>Office: Room 034, Ground Floor, Met. Engg. Block</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="Publications.html">Publications</a></li>
+                    <li><a href="People.html">People</a></li>
+                    <li><a href="Openings.html">Openings</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=IEVIvqEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; <span id="footer-year"></span> Materials Modeling Lab, IIT (BHU) Varanasi. All rights reserved.
+        </div>
     </div>
+    <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
 </footer>
-
-
-
-
