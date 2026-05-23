@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\admin\\\\Dropbox\\\\Proj\\\\Tools\\\\MML_Group\" -Force)",
+      "Bash(python -c ' *)",
+      "Bash(New-Item -ItemType File -Path \"c:\\\\Users\\\\admin\\\\Dropbox\\\\Proj\\\\Tools\\\\MML_Group\\\\News.html\" -Force)",
+      "Bash(Out-Null)",
+      "PowerShell(New-Item -ItemType File -Path \"c:\\\\Users\\\\admin\\\\Dropbox\\\\Proj\\\\Tools\\\\MML_Group\\\\News.html\" -Force)",
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(git mv *)",
+      "Bash(git config *)",
+      "Bash(git checkout *)",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\admin\\\\Dropbox\\\\Proj\\\\Tools\\\\MML_Group\" | Select-Object Name | Where-Object {$_.Name -match \"\\(?i\\)news\"})",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git commit -m 'Remove citation metrics from hero stats, keep paper count and funding *)",
+      "Bash(git commit -m 'Remove Current Project Topics section from Openings page *)",
+      "Bash(git commit -m 'Remove hero stats block from index page *)",
+      "Bash(git commit -m 'Remove intro paragraph from Teaching page *)",
+      "Bash(git commit -m 'Enforce unified design system across all pages — consistent fonts, colors, spacing, and components *)",
+      "Bash(git commit -m 'Remove stat pills from PI profile in People page *)",
+      "Bash(git commit -m 'Remove unused legacy PHP header and footer files *)"
+    ]
+  }
+}

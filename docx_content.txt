@@ -1,0 +1,311 @@
+Website Update Content
+Dr. Vikas Jindal | MML Group, IIT(BHU) Varanasi
+Prepared: May 2026
+CONTENTS
+PART A: IIT(BHU) Drupal Profile Page (iitbhu.ac.in)
+  A1. Updated Selected Publications (paste into Tab Body)
+  A2. Updated Biography (paste into Tab Body)
+  A3. Updated Research Interests (paste into Tab Body)
+  A4. Updated Professional Experience (paste into Tab Body)
+  A5. Updated Teaching (paste into Tab Body)
+  A6. NEW TAB: Students & Alumni
+  A7. NEW TAB: Grants & Projects
+  A8. NEW TAB: Awards & Recognition
+
+PART B: MML Group GitHub Pages Site (vijindal.github.io/MML_Group)
+  B1. index.html — Home page updates (News + Research Focus)
+  B2. publications.html — Full updated publications list
+  B3. news.html — Updated news entries
+  B4. openings.html — Current openings
+  B5. research.html — Research overview with ML emphasis
+  B6. people.html — Students & Alumni page (new)
+
+PART A
+IIT(BHU) Drupal Profile Page
+📌 Log in at https://iitbhu.ac.in/user/login → go to your profile → Edit → use the Tab sections below
+A1. Selected Publications — Updated Tab Body
+📌 Replace the entire 'Selected Publications' section in your current Tab Body with this content. New papers highlighted.
+Selected Publications:
+
+— 2026 (NEW) —
+[1] S. Kumar, V. Jindal, Mechanistic and data-driven interpretation of Vickers microhardness in refractory high-entropy alloys, Intermetallics. 194 (2026) 109301. https://doi.org/10.1016/j.intermet.2026.109301
+[2] R. Kumar, S. Kumar, V. Jindal, A.J. Kailath, Atomistic simulation of Cu phase transition under constrained compression, J. Mater. Sci. (2026). https://doi.org/10.1007/s10853-026-12687-y
+[3] P. Murali, K. Chattopadhyay, V. Jindal, Comparative Analysis of Ti-TiB Composites and Functionally Graded Materials: Mechanical Properties and Fracture Behavior, J. Mater. Eng. Perform. (2026). https://doi.org/10.1007/s11665-026-13766-6
+[4] R. Kumar, V. Jindal, A.J. Kailath, Strain Rate and Size Effects on Deformation, Dislocation Evolution, and Phase Transformation in Magnesium Single Crystals: An Atomistic Study, J. Mater. Eng. Perform. (2026). https://doi.org/10.1007/s11665-025-12948-y
+
+— 2025 (NEW) —
+[5] S. Kumar, V. Jindal, Integrating machine learning and DFT for hardness prediction in high-entropy alloys, MRS Commun. (2025). https://doi.org/10.1557/s43579-025-00736-7
+[6] V. Jindal, S. Lele, Multicomponent cluster variation method: Application to high entropy alloys, Calphad. 89 (2025) 102825. https://doi.org/10.1016/j.calphad.2025.102825
+
+— Earlier Selected —
+P. Murali, K. Chattopadhyay, V. Jindal, Effect of hot-pressing sintering temperature and pressure on the densification and properties of Ti-TiB composites, J. Alloy. Metall. Syst. (2024) 100132.
+S. Kumar, A. Linda, Y. Shadangi, V. Jindal, Influence of micro-segregation on the microstructure, and microhardness of MoNbTaxTi(1-x)W refractory high entropy alloys, Intermetallics. 164 (2024) 108080.
+S. Kumar, A.K. Thakur, V. Jindal, K. Muralidharan, A Neural Network Driven Approach for Characterizing the Interplay Between Short Range Ordering and Enthalpy of Mixing of Binary Subsystems in the NbTiVZr High Entropy Alloy, J. Phase Equilibria Diffus. 44 (2023) 520–538.
+S. Kumar, V. Jindal, Modeling Short-Range Ordering in Binary BCC Ti-X (X = Nb, V, Zr) Alloys using CE-CVM, J. Phase Equilibria Diffus. 43 (2022) 511–526.
+J. Du, V. Jindal, A.P. Sanders, K.S. Ravi Chandran, CALPHAD-guided alloy design and processing for improved strength and toughness in Titanium Boride (TiB) ceramic alloy containing a ductile phase, Acta Mater. 171 (2019) 18–30.
+V. Jindal, B. Nageswara Sarma, S. Lele, An improved CVM entropy functional for binary fcc alloys, Comput. Mater. Sci. 84 (2014) 129–133.
+📌 Total journal publications: 34. See full list at https://vijindal.github.io/MML_Group/publications.html
+
+A2. Biography — Updated Tab Body
+📌 Replace the current Biography paragraph with this text.
+Vikas Jindal is a Professor in the Department of Metallurgical Engineering at the Indian Institute of Technology (Banaras Hindu University), Varanasi. He holds a Ph.D. in Metallurgical Engineering from IIT(BHU), an M.S. from the Singapore-MIT Alliance (National University of Singapore), and a B.Tech. from IIT Kanpur. Before joining IIT(BHU), he worked as an Engineer at Chartered Semiconductor Manufacturing Ltd., Singapore; as a Project Assistant at IIT Kanpur; as a Quick Hire Fellow at the National Metallurgical Laboratory, Jamshedpur; and as an Assistant Professor at PEC University of Technology, Chandigarh. With extensive experience in academia and industry spanning over 20 years, his research focuses on computational thermodynamics, machine learning in materials design, and the development of models and databases for advanced materials applications. He is an Editorial Board Member of Scientific Reports (Nature Portfolio Journal) since June 2025.
+
+A3. Research Interests — Updated Tab Body
+📌 Replace the current Research Interests bullet list with this expanded version.
+Research Interests:
+Experimental and DFT-based thermochemical data for alloy systems
+Cluster Variation Method (CVM) and Cluster Expansion (CE) based Gibbs energy models
+Development of algorithms and software for phase diagram assessment and optimization
+CALPHAD databases and their applications in novel materials and processes
+Machine learning approaches for materials property prediction and alloy design
+Ti-TiB composites and functionally graded materials for defense and biomedical applications
+High Entropy Alloys: thermodynamic modeling and short-range ordering
+Beta-titanium alloys for biomedical implant applications
+
+A4. Professional Experience — Updated Tab Body
+📌 Replace the current Professional Experience section with this complete version.
+Professional Experience:
+Professor, Department of Metallurgical Engineering, IIT(BHU), Varanasi (December 2024–Present)
+Associate Professor, Department of Metallurgical Engineering, IIT(BHU), Varanasi (July 2016–December 2024)
+Post-doctoral Fellow, Department of Metallurgical Engineering, University of Utah, USA (May 2015–July 2016)
+Assistant Professor, Department of Metallurgical Engineering, IIT(BHU), Varanasi (August 2007–June 2016)
+Assistant Professor, Metallurgical Engineering Department, PEC University of Technology, Chandigarh (March 2006–July 2007)
+Quick Hire Fellow, Materials Science and Technology Division, National Metallurgical Laboratory (NML), Jamshedpur (November 2004–March 2006)
+Engineer, Advanced Module Technology Development, Chartered Semiconductor Manufacturing Ltd., Singapore (June 2002–March 2003)
+
+A5. Teaching — Updated Tab Body
+📌 Replace the current Teaching section. Courses added: MT-5102, MT-4268, MT-2208.
+Teaching:
+MT-561: Computational Methods for Metallurgy (Odd Semester, regular since 2017)
+MT-305: Heat Treatment (Even Semester, regular since 2017)
+MT301: Modeling and Simulation in Metallurgy (Odd Semester, 2016–2017)
+MT-5102: Computer Application in Metallurgy
+MT-4268: Analysis and Automation in Mechanical Processing
+MT-2208: Electrometallurgy and Corrosion
+
+A6. NEW TAB — Students & Alumni
+📌 Add a new Tab in the Drupal editor. Tab Label: 'Students & Alumni'. Copy the content below into Tab Body.
+
+Tab Label (copy exactly):
+Students & Alumni
+
+Tab Body (copy below):
+
+PhD Students (Ongoing):
+Harish Kumar (Registered 2023) — Computational Thermodynamics
+Murali Padiri (Registered 2021) — Ti-TiB Composites and FGMs
+Ishu Yadav (Registered 2020) — Beta-Titanium Biomedical Alloys (Co-supervisor)
+Roshan Kumar (Registered 2024) — Atomistic Simulations (Co-supervisor; Scientist, CSIR-NML Jamshedpur)
+
+PhD Students (Graduated):
+Shanker Kumar (2024) — "Short-range order in high entropy alloys: Thermodynamic modeling and application to Nb-Ti-V-Zr system"
+Ashwani Ranjan (2023) — "Reciprocating Wear of In-situ Synthesized Ti-TiB Composites" (Co-supervisor)
+Rajendra Prasad Gorrey (2021) — "Analytical Approximations to Short Range Order in Binary Alloys using Cluster Variation Method" (Co-supervisor)
+
+M.Tech Students (Selected, Graduated):
+Nitesh Kumar Sah (2024) — Ti-TiB-Fe Composites: Creep and Mechanical Behaviour
+Abhishek Sharma (2023) — Heat Treatment of Refractory High Entropy Alloys
+Akash Patle (2023) — Thermodynamic Assessment of B-Fe-Mo-Ti System
+N. Pawan Subhash (2021) — Thermodynamic Reassessment of W-Zr using SQS
+Albert Linda (2020) — CALPHAD-Assisted Al-Si Alloys for Thermal Energy Storage
+Ishu Yadav (2019) — Thermodynamic Re-assessments of Ti-Zr and Nb-Zr Systems
+Abhishek Kumar Thakur (2018) — Thermodynamic Reassessment of Nb-Ti System
+📌 Full list of 20+ M.Tech students available at the MML Group webpage: https://vijindal.github.io/MML_Group/people.html
+
+A7. NEW TAB — Grants & Projects
+📌 Add a new Tab. Tab Label: 'Grants & Projects'. Copy the content below into Tab Body.
+
+Tab Label (copy exactly):
+Grants & Projects
+
+Tab Body (copy below):
+
+Ongoing Projects:
+Co-PI, "Development of Low Modulus Beta-Titanium Alloy for Dental and Orthopedic Implant Applications," IIT(BHU) Challenge Grant, ₹45 Lakhs (July 2025–March 2027)
+Co-PI, "Molten Metal Electrolysis – An Alternate Route of Steelmaking," funded by Steel Research & Technology Mission of India (SRTMI), SAIL, New Delhi (June 2025–Present)
+
+Completed Projects:
+Principal Investigator, "Development of Functionally Graded Armor Composites (FGACs) Materials," DRDO–ARMREB Grant-in-Aid, ₹91.66 Lakhs (2020–2023)
+Principal Investigator, "Role of Short Range Ordering in Designing High Entropy Alloys," SERB Core Research Grant (CRG/2019/000430), ₹41.36 Lakhs (2019–2022)
+Co-PI, "Development of Low-Cost β-Ti Alloy for Biomedical Applications," SERB Core Research Grant, ₹40.50 Lakhs (2020–2023)
+Investigator, "Phase-diagrams and thermodynamic investigations of Ti-Hf-Zr system using Cluster Variation Method," IIT(BHU) Seed Grant (2018–2020)
+Project Leader, "Free Energy Minimization in Binary Alloy via Genetic Algorithms," UGC XI-Plan Research Grant for New Faculty (2012)
+
+A8. NEW TAB — Awards & Recognition
+📌 Add a new Tab. Tab Label: 'Awards & Recognition'. Copy the content below into Tab Body.
+
+Tab Label (copy exactly):
+Awards & Recognition
+
+Tab Body (copy below):
+
+Research Metrics (Google Scholar):
+Total Citations: 601
+h-index: 14
+i10-index: 14
+ResearchGate Reads: 4,687
+
+Editorial Roles:
+Editorial Board Member, Scientific Reports (Nature Portfolio Journal) — invited June 2025
+Managing Editor, The Banaras Metallurgist, IIT(BHU) (2011–2014)
+
+Honors & Awards:
+Post-doctoral Fellowship, University of Utah, USA (2015–2016)
+Scholarship, Singapore-MIT Alliance, National University of Singapore (2001)
+All India Rank 4 (99.25 percentile) in GATE Metallurgical Engineering (1999)
+Ranked 5th in Materials & Metallurgical Engineering, IIT Kanpur (1999)
+Top 1% in JEE (among 100,000+ students), 1995
+Rank 12 in UP Secondary Examination (among 1,200,000+ students)
+
+PART B
+MML Group GitHub Pages Site
+📌 Repo: https://github.com/vijindal/MML_Group.git  |  Use Claude Code to apply these changes directly, or copy-paste into each HTML file.
+B1. index.html — Home Page Updates
+News Section (replace existing Latest News block)
+📌 Replace everything inside the 'Latest News' section with the entries below.
+
+NEW entries to add at the top of Latest News:
+[NEW] S. Kumar & V. Jindal — Mechanistic and data-driven interpretation of Vickers microhardness in refractory HEAs, Intermetallics 194 (2026). — May 2026
+[NEW] R. Kumar et al. — Atomistic simulation of Cu phase transition, J. Mater. Sci. (2026). — April 2026
+[NEW] P. Murali et al. — Ti-TiB Composites and FGMs: Mechanical Properties and Fracture Behavior, J. Mater. Eng. Perform. (2026). — March 2026
+[NEW] R. Kumar et al. — Strain Rate and Size Effects in Mg Single Crystals, J. Mater. Eng. Perform. (2026). — February 2026
+[NEW] S. Kumar & V. Jindal — Integrating ML and DFT for hardness prediction in HEAs, MRS Commun. (2025). — October 2025
+[NEW] V. Jindal, S. Lele — Multicomponent cluster variation method for high entropy alloys, Calphad 89 (2025). — July 2025
+[NEW] Applications open for Institute Post-Doctoral Fellowship (IPDF). See Openings page. — July 2025
+
+Research Focus Section (update bullet list)
+📌 Update the 'Our Research Focus' bullets to include ML and new directions.
+Computational Thermodynamics (CALPHAD, CVM, CE methods)
+High Entropy Alloys — thermodynamic modeling and short-range ordering
+Ti-TiB Composites and Functionally Graded Materials
+Machine Learning in Materials Design and Property Prediction
+Beta-Titanium Alloys for Biomedical Applications
+DFT-Based Thermochemical Data and Phase Diagram Optimization
+Atomistic Simulations (MD, MC) for Alloy Thermodynamics
+
+B2. publications.html — Full Updated List
+📌 Replace the entire publications list. Add these 4 new 2026 papers at the top. Existing 2022–2025 papers follow.
+
+2026 Papers (NEW — add at top):
+[1] S. Kumar, V. Jindal, Mechanistic and data-driven interpretation of Vickers microhardness in refractory high-entropy alloys, Intermetallics. 194 (2026) 109301. https://doi.org/10.1016/j.intermet.2026.109301
+[2] R. Kumar, S. Kumar, V. Jindal, A.J. Kailath, Atomistic simulation of Cu phase transition under constrained compression, J. Mater. Sci. (2026). https://doi.org/10.1007/s10853-026-12687-y
+[3] P. Murali, K. Chattopadhyay, V. Jindal, Comparative Analysis of Ti-TiB Composites and Functionally Graded Materials: Mechanical Properties and Fracture Behavior, J. Mater. Eng. Perform. (2026). https://doi.org/10.1007/s11665-026-13766-6
+[4] R. Kumar, V. Jindal, A.J. Kailath, Strain Rate and Size Effects on Deformation, Dislocation Evolution, and Phase Transformation in Magnesium Single Crystals: An Atomistic Study, J. Mater. Eng. Perform. (2026). https://doi.org/10.1007/s11665-025-12948-y
+
+2025 Papers:
+[5] S. Kumar, V. Jindal, Integrating machine learning and DFT for hardness prediction in high-entropy alloys, MRS Commun. (2025). https://doi.org/10.1557/s43579-025-00736-7
+[6] V. Jindal, S. Lele, Multicomponent cluster variation method: Application to high entropy alloys, Calphad. 89 (2025) 102825. https://doi.org/10.1016/j.calphad.2025.102825
+
+2024 Papers:
+P. Murali, K. Chattopadhyay, V. Jindal, Effect of hot-pressing sintering temperature and pressure on the densification and properties of Ti-TiB composites, J. Alloy. Metall. Syst. (2024) 100132. https://doi.org/10.1016/j.jalmes.2024.100132
+S. Kumar, A. Linda, Y. Shadangi, V. Jindal, Influence of micro-segregation on the microstructure, and microhardness of MoNbTaxTi(1-x)W refractory high entropy alloys, Intermetallics. 164 (2024) 108080. https://doi.org/10.1016/j.intermet.2023.108080
+
+2023 Papers:
+S. Kumar, A.K. Thakur, V. Jindal, K. Muralidharan, A Neural Network Driven Approach for Characterizing the Interplay Between Short Range Ordering and Enthalpy of Mixing of Binary Subsystems in the NbTiVZr High Entropy Alloy, J. Phase Equilibria Diffus. 44 (2023) 520–538. https://doi.org/10.1007/s11669-023-01055-x
+
+2022 Papers:
+S. Kumar, V. Jindal, Modeling Short-Range Ordering in Binary BCC Ti-X (X = Nb, V, Zr) Alloys using CE-CVM, J. Phase Equilibria Diffus. 43 (2022) 511–526. https://doi.org/10.1007/s11669-022-00989-y
+A. Ranjan, V. Jindal, R. Tyagi, Effect of Load on Tribological Properties of Ti–TiB–Fe Composites Processed via Spark Plasma Sintering (SPS), Trans. Indian Inst. Met. 75 (2022) 2847–2856. https://doi.org/10.1007/s12666-022-02651-0
+S. Kumar, V. Jindal, First-principles calculations and thermodynamic assessment of the Nb–V system using CE-CVM, Calphad. 78 (2022) 102439. https://doi.org/10.1016/j.calphad.2022.102439
+A. Ranjan, R. Tyagi, V. Jindal, Reciprocating Wear of Ti-TiB In Situ Composites Synthesized via Vacuum Arc Melting, J. Mater. Eng. Perform. 31 (2022) 9985–9996. https://doi.org/10.1007/s11665-022-07002-0
+S. Kumar, V. Jindal, Thermodynamic Re-assessment of the Nb-Zr System Using the CE–CVM Model for Solid Solution Phases, J. Phase Equilibria Diffus. 43 (2022) 277–286. https://doi.org/10.1007/s11669-022-00959-4
+📌 Full list (34 papers, 2006–2026) available in CV. Recommend showing all on the website. Provide complete list to Claude Code for full implementation.
+
+B3. news.html — Updated News Entries
+📌 Replace the full Latest News section. Current content is outdated (last real entry: March 2024). Use this updated list.
+
+May 2026 — New paper: Mechanistic and data-driven hardness prediction in refractory HEAs, Intermetallics 194 (2026). [link: https://doi.org/10.1016/j.intermet.2026.109301]
+April 2026 — New paper: Atomistic simulation of Cu phase transition, J. Mater. Sci. (2026). [link: https://doi.org/10.1007/s10853-026-12687-y]
+March 2026 — New paper: Ti-TiB Composites and FGMs — Mechanical Properties and Fracture Behavior, J. Mater. Eng. Perform. (2026). [link: https://doi.org/10.1007/s11665-026-13766-6]
+February 2026 — New paper: Strain Rate and Size Effects in Mg Single Crystals, J. Mater. Eng. Perform. (2026). [link: https://doi.org/10.1007/s11665-025-12948-y]
+October 2025 — New paper: Integrating ML and DFT for hardness prediction in high-entropy alloys, MRS Communications (2025). [link: https://doi.org/10.1557/s43579-025-00736-7]
+July 2025 — New paper: Multicomponent cluster variation method: Application to high entropy alloys, Calphad 89 (2025). [link: https://doi.org/10.1016/j.calphad.2025.102825]
+July 2025 — Applications invited for Institute Post-Doctoral Fellowship (IPDF). See Openings page for details.
+June 2025 — Dr. Vikas Jindal invited as Editorial Board Member, Scientific Reports (Nature Portfolio Journal).
+February 2025 — Murali et al. presented at 50th Annual Technical Meeting of PMAI, Navi Mumbai: Ti-TiB Functionally Graded Materials.
+January 2024 — Shanker Kumar successfully defends PhD thesis on high entropy alloys.
+December 2023 — Paper on NbTiVZr high entropy alloys published in J. Phase Equilibria Diffus. [link: https://doi.org/10.1007/s11669-023-01055-x]
+March 2024 — Paper on Ti-TiB composites published in J. Alloy. Metall. Syst. [link: https://doi.org/10.1016/j.jalmes.2024.100132]
+
+B4. openings.html — Current Openings
+📌 Replace or update the Openings page with the content below.
+
+Institute Post-Doctoral Fellowship (IPDF)
+We invite applications for the Institute Post Doctoral Fellowship (IPDF) at IIT(BHU) Varanasi. Candidates with a strong background in computational thermodynamics, DFT calculations, machine learning in materials science, or experimental metallurgy are encouraged to apply.
+Contact: vjindal.met@iitbhu.ac.in with subject line 'IPDF Application – MML Group'
+
+PhD Positions
+We are looking for motivated PhD students in the following areas:
+Computational Thermodynamics (CALPHAD, CVM, CE methods)
+Machine Learning for Materials Property Prediction
+Ti-TiB Functionally Graded Materials and Composites
+Beta-Titanium Alloys for Biomedical Applications
+Atomistic Simulations (MD/MC) for Alloy Thermodynamics
+Admissions through IIT(BHU) regular PhD program. See https://iitbhu.ac.in/dean/doaa/admission/pg for admission details.
+
+M.Tech & B.Tech Projects
+Multiple project slots available for IIT(BHU) students. Topics include Monte Carlo simulations for alloy thermodynamics, SQS-based DFT calculations, CALPHAD database development, and machine learning models for HEA property prediction. Contact Dr. Jindal directly.
+
+B5. research.html — Research Overview
+📌 Update the Research page to highlight the ML-in-materials theme more prominently. This is a key student attractor. Suggested structure:
+
+Suggested Page Structure:
+Computational Thermodynamics (CT) — Core focus: CVM, CE, CALPHAD
+High Entropy Alloys — Short-range ordering, thermodynamic modeling, experimental validation
+Machine Learning in Materials Design — ML + DFT for property prediction; neural network models for HEA hardness
+Ti-TiB System — Composites, FGMs for defense and biomedical applications
+Beta-Titanium Biomedical Alloys — Low modulus alloys for implants
+Atomistic Simulations — MD/MC for phase transitions and alloy thermodynamics
+
+Key paragraph to add under ML section:
+Recent work from the MML Group integrates machine learning with DFT and experimental data to predict materials properties in high-entropy alloys. A neural network model was developed to characterize the interplay between short-range ordering and enthalpy of mixing in the NbTiVZr system (J. Phase Equilibria Diffus., 2023). More recently, an ML+DFT approach was demonstrated for Vickers hardness prediction in refractory HEAs (MRS Communications, 2025; Intermetallics, 2026). These efforts position the group at the intersection of traditional computational thermodynamics and modern data-driven materials science.
+
+B6. people.html — Students & Alumni (NEW PAGE)
+📌 Create a new page people.html (or team.html). Add a link to it from the navigation bar. Content below.
+
+Page Title: People — MML Group
+
+Principal Investigator:
+Dr. Vikas Jindal, Professor, Department of Metallurgical Engineering, IIT(BHU) Varanasi. [Link to IIT(BHU) profile page]
+
+Current PhD Students:
+Harish Kumar (Registered 2023) — Computational Thermodynamics
+Murali Padiri (Registered 2021) — Ti-TiB Composites and FGMs
+Ishu Yadav (Registered 2020) — Beta-Titanium Biomedical Alloys
+Roshan Kumar (Registered 2024) — Atomistic Simulations (Co-supervisor)
+
+PhD Alumni:
+Dr. Shanker Kumar (2024) — Thesis: Short-range order in high entropy alloys: Thermodynamic modeling and application to Nb-Ti-V-Zr system
+Dr. Ashwani Ranjan (2023) — Thesis: Reciprocating Wear of In-situ Synthesized Ti-TiB Composites
+Dr. Rajendra Prasad Gorrey (2021) — Thesis: Analytical Approximations to Short Range Order in Binary Alloys using CVM
+
+M.Tech Alumni (Selected):
+Nitesh Kumar Sah (2024) — Ti-TiB-Fe Composites
+Abhishek Sharma (2023) — Refractory High Entropy Alloys
+Akash Patle (2023) — Thermodynamic Assessment, B-Fe-Mo-Ti system
+Shiv Shankar (2023) — Diffusion Welding of Ti-6Al-4V and SS-316L
+N. Pawan Subhash (2021) — Thermodynamic Reassessment of W-Zr
+Shibjyoti Biswas (2021) — Cluster Expansion of Nb-Ti-V-Zr alloys
+Albert Linda (2020) — CALPHAD for Phase Change Materials
+Bidipta Dam (2020) — Ti-Fe-Sn Biomedical Alloy
+Anil Prasad (2020) — First-principles study of biomedical materials
+Ishu Yadav (2019) — Thermodynamic re-assessments of Ti-Zr and Nb-Zr
+Naveen Kumar (2019) — Ta-Zr and Ta-Ti thermodynamic assessments
+Abhishek Kumar Thakur (2018) — Nb-Ti thermodynamic reassessment
+📌 Full list of 20+ M.Tech students on record. Add remaining names from CV for completeness.
+
+Next Steps
+IIT(BHU) Drupal Page:
+Log in at https://iitbhu.ac.in/user/login
+Go to your profile → Edit
+Update each Tab Body section using content from Part A above
+Add 3 new tabs: 'Students & Alumni', 'Grants & Projects', 'Awards & Recognition'
+Save and verify the live page
+
+MML Group GitHub Site:
+Install Claude Code (see recommendation above)
+Clone repo: git clone https://github.com/vijindal/MML_Group.git
+Open folder in Claude Code and share this document
+Ask Claude Code to implement all Part B changes
+Review, commit, and push: git push origin main
+Verify live at https://vijindal.github.io/MML_Group/
