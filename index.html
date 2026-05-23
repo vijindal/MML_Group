@@ -11,9 +11,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @media (max-width: 768px) {
+            #research-highlight .rh-layout { flex-direction: column !important; }
+            #research-highlight .rh-left  { flex: 0 0 100% !important; min-width: unset !important; }
+        }
+        @media (max-width: 480px) {
+            #research-highlight .rh-thumbs { flex-direction: column !important; }
+        }
+    </style>
 </head>
 <body>
     <div id="header"></div>
+
+    <!-- Research Highlight -->
+    <section id="research-highlight" style="background:var(--white); border-bottom:1px solid var(--border);">
+        <div class="container" style="padding-top:3rem; padding-bottom:3rem;">
+            <p style="font-size:10px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.1em; margin-bottom:.35rem;">CALPHAD 89 (2025) 102825 &middot; Jindal &amp; Lele</p>
+            <h2 class="section-title" style="margin-bottom:1.75rem;">Research Highlight</h2>
+            <div class="rh-layout" style="display:flex; gap:2rem; flex-wrap:wrap;">
+                <!-- Left column: figures -->
+                <div class="rh-left" style="flex:0 0 55%; min-width:280px;">
+                    <img src="image/fig20_calphad2025.png" alt="Contour plots of configurational entropy, enthalpy and Gibbs energy of mixing for the Nb-Ti-V-Zr high entropy alloy system" style="width:100%; border-radius:var(--radius); box-shadow:var(--shadow);">
+                    <p class="caption" style="font-size:12px; margin-top:.5rem;">Fig. 20. Contour plots of configurational entropy (a), enthalpy (b), and Gibbs energy of mixing (c) at 1273K across the Nb-Ti-V-Zr quaternary composition space. Dotted lines mark the miscibility gap boundary.</p>
+                    <div class="rh-thumbs" style="display:flex; gap:1rem; margin-top:.75rem; flex-wrap:wrap;">
+                        <div style="flex:1; min-width:120px;">
+                            <img src="image/fig19_calphad2025.png" alt="Quasi-ternary isothermal sections at 1273K showing bcc phase stabilisation" style="width:100%; border-radius:var(--radius); box-shadow:var(--shadow);">
+                            <p class="caption" style="font-size:11px; margin-top:.4rem;">Fig. 19. Quasi-ternary isothermal sections at 1273K showing bcc phase stabilisation.</p>
+                        </div>
+                        <div style="flex:1; min-width:120px;">
+                            <img src="image/fig24_calphad2025.png" alt="Cowley-Warren SRO parameters for all six element pairs in Nb-Ti-V-Zr at 1273K" style="width:100%; border-radius:var(--radius); box-shadow:var(--shadow);">
+                            <p class="caption" style="font-size:11px; margin-top:.4rem;">Fig. 24. Cowley-Warren SRO parameters for all six element pairs in Nb-Ti-V-Zr at 1273K.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right column: text -->
+                <div style="flex:1; min-width:260px;">
+                    <h3 style="color:var(--primary); font-size:1.3rem; margin-bottom:.5rem;">Multicomponent Cluster Variation Method: Application to High Entropy Alloys</h3>
+                    <p style="font-size:.9rem; color:var(--text-muted); margin-bottom:1rem;">V. Jindal &amp; S. Lele &middot; <em>Calphad</em> 89 (2025) 102825</p>
+                    <p>A new thermodynamic framework is introduced for extending cluster expansion methods to multicomponent alloys. Unlike existing approaches, the cluster expansion coefficients of binary and ternary subsystems can be directly inherited into higher-order systems &mdash; enabling self-consistent databases analogous to CALPHAD.</p>
+                    <p>Applied to the Nb-Ti-V-Zr refractory high entropy alloy system, the model reveals that both entropy and enthalpy play significant roles in stabilising the single-phase bcc region. Titanium addition is shown to suppress the strong phase-separation tendency of Nb-V-Zr alloys &mdash; a key insight for computational design of stable HEAs.</p>
+                    <ul>
+                        <li>First framework where binary/ternary thermodynamic parameters inherit directly into multicomponent databases</li>
+                        <li>Number of parameters does not grow exponentially with number of components</li>
+                        <li>Entropy and enthalpy both drive bcc stabilisation in Nb-Ti-V-Zr HEAs</li>
+                        <li>Short-range ordering predicts V-rich and Zr-rich clustering &mdash; useful for alloy design</li>
+                    </ul>
+                    <div style="margin-top:1.25rem; display:flex; gap:1rem; flex-wrap:wrap;">
+                        <a href="https://doi.org/10.1016/j.calphad.2025.102825" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Read full paper &nearr;</a>
+                        <a href="poster.html" class="btn btn-outline-primary btn-sm">View research poster &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Hero Banner -->
     <section class="hero-banner">
