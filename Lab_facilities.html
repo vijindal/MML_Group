@@ -14,6 +14,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @media (max-width: 767px) {
+            .equipment-card img { width: 100% !important; height: 220px; }
+        }
+    </style>
 </head>
 <body style="min-height: 100vh; display: flex; flex-direction: column;">
     <!-- Include Header -->
@@ -30,7 +35,7 @@
 
         <section>
             <!-- Computer Server -->
-            <div class="equipment-card flex-row">
+            <div class="equipment-card d-flex flex-column flex-md-row">
                 <img src="image/server.jpg" alt="High-Performance Computer Server at MML">
                 <div class="equipment-info">
                     <h4>Computer Server</h4>
@@ -43,7 +48,7 @@
             </div>
 
             <!-- Vacuum Hot Press -->
-            <div class="equipment-card flex-row-reverse">
+            <div class="equipment-card d-flex flex-column flex-md-row-reverse">
                 <img src="image/vacuum-hot-press.jpg" alt="Vacuum Hot Press at MML">
                 <div class="equipment-info">
                     <h4>Vacuum Hot Press</h4>
@@ -56,7 +61,7 @@
             </div>
 
             <!-- Charpy Impact Tester -->
-            <div class="equipment-card flex-row">
+            <div class="equipment-card d-flex flex-column flex-md-row">
                 <img src="image/charpy-impact-tester.jpg" alt="Charpy Impact Tester at MML">
                 <div class="equipment-info">
                     <h4>Charpy Impact Tester</h4>
@@ -67,7 +72,7 @@
             </div>
 
             <!-- Vacuum Arc Furnace -->
-            <div class="equipment-card flex-row-reverse">
+            <div class="equipment-card d-flex flex-column flex-md-row-reverse">
                 <img src="image/arc-melting-furnace.jpg" alt="Vacuum Arc Furnace with Suction Casting at MML">
                 <div class="equipment-info">
                     <h4>Vacuum Arc Furnace with Suction Casting</h4>
@@ -78,7 +83,7 @@
             </div>
 
             <!-- High Vacuum Furnace -->
-            <div class="equipment-card flex-row">
+            <div class="equipment-card d-flex flex-column flex-md-row">
                 <img src="image/heat-treatment-furnace.jpg" alt="High Vacuum High-Temperature Furnace at MML">
                 <div class="equipment-info">
                     <h4>High Vacuum High-Temperature Furnace</h4>
@@ -90,7 +95,7 @@
             </div>
 
             <!-- Planetary Ball Mill -->
-            <div class="equipment-card flex-row-reverse">
+            <div class="equipment-card d-flex flex-column flex-md-row-reverse">
                 <img src="image/planetary-ball-mill.jpg" alt="Planetary Ball Mill at MML">
                 <div class="equipment-info">
                     <h4>Planetary Ball Mill</h4>
