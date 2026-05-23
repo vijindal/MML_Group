@@ -16,9 +16,6 @@
             #research-highlight .rh-layout { flex-direction: column !important; }
             #research-highlight .rh-left  { flex: 0 0 100% !important; min-width: unset !important; }
         }
-        @media (max-width: 480px) {
-            #research-highlight .rh-thumbs { flex-direction: column !important; }
-        }
     </style>
 </head>
 <body>
@@ -30,20 +27,10 @@
             <p style="font-size:10px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.1em; margin-bottom:.35rem;">CALPHAD 89 (2025) 102825 &middot; Jindal &amp; Lele</p>
             <h2 class="section-title" style="margin-bottom:1.75rem;">Research Highlight</h2>
             <div class="rh-layout" style="display:flex; gap:2rem; flex-wrap:wrap;">
-                <!-- Left column: figures -->
+                <!-- Left column: figure -->
                 <div class="rh-left" style="flex:0 0 55%; min-width:280px;">
                     <img src="image/fig20_calphad2025.png" alt="Contour plots of configurational entropy, enthalpy and Gibbs energy of mixing for the Nb-Ti-V-Zr high entropy alloy system" style="width:100%; border-radius:var(--radius); box-shadow:var(--shadow);">
-                    <p class="caption" style="font-size:12px; margin-top:.5rem;">Fig. 20. Contour plots of configurational entropy (a), enthalpy (b), and Gibbs energy of mixing (c) at 1273K across the Nb-Ti-V-Zr quaternary composition space. Dotted lines mark the miscibility gap boundary.</p>
-                    <div class="rh-thumbs" style="display:flex; gap:1rem; margin-top:.75rem; flex-wrap:wrap;">
-                        <div style="flex:1; min-width:120px;">
-                            <img src="image/fig19_calphad2025.png" alt="Quasi-ternary isothermal sections at 1273K showing bcc phase stabilisation" style="width:100%; border-radius:var(--radius); box-shadow:var(--shadow);">
-                            <p class="caption" style="font-size:11px; margin-top:.4rem;">Fig. 19. Quasi-ternary isothermal sections at 1273K showing bcc phase stabilisation.</p>
-                        </div>
-                        <div style="flex:1; min-width:120px;">
-                            <img src="image/fig24_calphad2025.png" alt="Cowley-Warren SRO parameters for all six element pairs in Nb-Ti-V-Zr at 1273K" style="width:100%; border-radius:var(--radius); box-shadow:var(--shadow);">
-                            <p class="caption" style="font-size:11px; margin-top:.4rem;">Fig. 24. Cowley-Warren SRO parameters for all six element pairs in Nb-Ti-V-Zr at 1273K.</p>
-                        </div>
-                    </div>
+                    <p class="caption" style="font-size:12px; margin-top:.5rem;">Fig. 20. Contour plots of configurational entropy (a), enthalpy (b), and Gibbs energy of mixing (c) at 1273K for the Nb-Ti-V-Zr high entropy alloy system. Dotted lines mark the miscibility gap boundary.</p>
                 </div>
                 <!-- Right column: text -->
                 <div style="flex:1; min-width:260px;">
@@ -66,37 +53,15 @@
         </div>
     </section>
 
-    <!-- Hero Banner -->
-    <section class="hero-banner">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Materials Modeling Lab</h1>
-            <p>Computational Thermodynamics &bull; Machine Learning &bull; Advanced Materials Design<br>
-               Department of Metallurgical Engineering, IIT (BHU) Varanasi</p>
-            <div class="mt-4">
-                <a href="Research.html" class="btn-accent mr-2">Our Research</a>
-                <a href="Openings.html" class="btn-outline-primary btn-ghost-white">Join Us</a>
-            </div>
+    <div style="border-top:1px solid var(--border); background:var(--background);">
+        <div class="container" style="padding-top:1.75rem; padding-bottom:1.75rem;">
+            <p>The <strong>Materials Modeling Lab (MML)</strong> is part of the <a href="https://iitbhu.ac.in/" target="_blank" rel="noopener">Department of Metallurgical Engineering</a> at IIT (BHU), Varanasi. We develop next-generation computational and experimental tools for designing advanced materials — from high-entropy alloys and Ti-TiB composites to beta-titanium biomedical implants and functionally graded armour materials.</p>
+            <p style="margin-bottom:1.25rem;">Our work bridges classical thermodynamic modelling (CALPHAD, CVM, CE) with modern machine learning and atomistic simulations, placing us at the intersection of traditional materials science and data-driven discovery.</p>
+            <a href="Research.html" class="btn btn-primary">Explore Research</a>
         </div>
-    </section>
+    </div>
 
     <main class="container my-5">
-
-        <!-- About -->
-        <section id="about" class="mb-5">
-            <div class="row align-items-center">
-                <div class="col-lg-7">
-                    <h2 class="section-title">Welcome to MML</h2>
-                    <p>The <strong>Materials Modeling Lab (MML)</strong> is part of the <a href="https://iitbhu.ac.in/" target="_blank" rel="noopener">Department of Metallurgical Engineering</a> at IIT (BHU), Varanasi. We develop next-generation computational and experimental tools for designing advanced materials — from high-entropy alloys and Ti-TiB composites to beta-titanium biomedical implants and functionally graded armour materials.</p>
-                    <p>Our work bridges classical thermodynamic modelling (CALPHAD, CVM, CE) with modern machine learning and atomistic simulations, placing us at the intersection of traditional materials science and data-driven discovery.</p>
-                    <a href="Research.html" class="btn btn-primary mt-2">Explore Research</a>
-                </div>
-                <div class="col-lg-5 mt-4 mt-lg-0 text-center">
-                    <img src="image/optimization_1.jpg" alt="Phase diagram research at MML" class="img-fluid rounded shadow-sm">
-                    <p class="caption mt-2">Phase diagram modelling and alloy design at MML</p>
-                </div>
-            </div>
-        </section>
 
         <!-- Research Focus Cards -->
         <section id="research-focus" class="mb-5">
