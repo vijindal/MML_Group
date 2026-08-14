@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research poster: Multicomponent cluster variation method for high entropy alloys, V. Jindal and S. Lele, Calphad 89 (2025) 102825.">
+    <meta name="keywords" content="Materials Modeling Lab, IIT BHU, CALPHAD, Cluster Variation Method, High Entropy Alloys, Nb-Ti-V-Zr, Poster">
+    <meta name="author" content="Materials Modeling Lab">
+    <title>Research Poster: Multicomponent CVM for HEAs | Materials Modeling Lab — IIT (BHU)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .poster-wrap { max-width: 1200px; }
+        .poster-header {
+            background: linear-gradient(135deg, var(--primary), #234e7a);
+            color: var(--white);
+            border-radius: var(--radius);
+            padding: 2rem 2.25rem;
+            margin-bottom: 1.75rem;
+        }
+        .poster-header h1 { color: var(--white); font-size: 1.9rem; margin-bottom: .5rem; }
+        .poster-header .authors { font-size: 1.05rem; opacity: .95; margin-bottom: .25rem; }
+        .poster-header .affil { font-size: .9rem; opacity: .85; }
+        .poster-header .journal-badge {
+            display: inline-block; margin-top: .85rem; background: var(--accent);
+            color: var(--primary); font-weight: 700; padding: .3rem .75rem;
+            border-radius: 999px; font-size: .85rem;
+        }
+        .poster-panel {
+            background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+            box-shadow: var(--shadow); padding: 1.5rem; margin-bottom: 1.5rem; height: 100%;
+        }
+        .poster-panel h2 {
+            font-size: 1.15rem; color: var(--primary); border-bottom: 2px solid var(--accent);
+            padding-bottom: .4rem; margin-bottom: .9rem;
+        }
+        .poster-panel img { width: 100%; border-radius: 6px; border: 1px solid var(--border); }
+        .poster-panel .caption { font-size: .82rem; text-align: left; }
+        .key-findings li { margin-bottom: .6rem; }
+        .cec-table { font-size: .85rem; }
+        .cec-table th { background: var(--background); }
+        .badge-system {
+            display: inline-block; background: var(--background); border: 1px solid var(--border);
+            border-radius: 6px; padding: .35rem .7rem; font-size: .82rem; margin: .2rem .3rem .2rem 0;
+        }
+        .poster-actions .btn { margin-right: .6rem; margin-bottom: .6rem; }
+        @media print {
+            .no-print { display: none !important; }
+            #header, #footer { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div id="header" class="no-print"></div>
+
+    <main class="container poster-wrap my-5">
+
+        <!-- Poster header -->
+        <div class="poster-header">
+            <h1>Multicomponent Cluster Variation Method: Application to High Entropy Alloys</h1>
+            <p class="authors"><strong>Vikas Jindal</strong> &amp; Shrikant Lele</p>
+            <p class="affil">Department of Metallurgical Engineering, IIT (BHU), Varanasi, 221005, India</p>
+            <span class="journal-badge">Calphad 89 (2025) 102825</span>
+        </div>
+
+        <div class="poster-actions no-print mb-4">
+            <a href="https://doi.org/10.1016/j.calphad.2025.102825" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Read full paper &nearr;</a>
+            <a href="pdf/2025-calphad-Jindal-Lele-Multicomponent%20cluster%20variation%20method%20Application%20to%20high%20%20entropy%20alloys.pdf" target="_blank" class="btn btn-outline-primary btn-sm">Download PDF</a>
+            <a href="Publications.html" class="btn btn-outline-secondary btn-sm">All publications</a>
+            <button onclick="window.print()" class="btn btn-outline-secondary btn-sm">Print / Save as PDF</button>
+        </div>
+
+        <div class="row">
+            <!-- Background / Motivation -->
+            <div class="col-lg-6 mb-4">
+                <div class="poster-panel">
+                    <h2>Background &amp; Motivation</h2>
+                    <p>Cluster expansion (CE) methods express the configurational thermodynamics of alloys using correlation functions (CFs) and cluster expansion coefficients (CECs). Most CE work has been limited to binary alloys.</p>
+                    <p>A key problem: when extending from binary to multicomponent systems, the choice of basis changes &mdash; so CFs and CECs of a subsystem <em>cannot</em> simply be reused in a higher-order system. This is a major obstacle to building self-consistent multicomponent thermodynamic databases, unlike the CALPHAD approach.</p>
+                </div>
+            </div>
+
+            <!-- New Framework -->
+            <div class="col-lg-6 mb-4">
+                <div class="poster-panel">
+                    <h2>The New Framework</h2>
+                    <p>This work introduces <strong>cluster variables (CVs)</strong> &mdash; the fraction of cluster configurations of various types &mdash; as a basis-independent alternative to conventional correlation functions.</p>
+                    <p>A carefully selected, symmetric/anti-symmetric subset of independent CVs is chosen as CFs, such that:</p>
+                    <ul class="key-findings">
+                        <li><strong>Lower-order CECs are directly inherited</strong> into higher-order systems, without transformation.</li>
+                        <li>The number of CFs/CECs does <strong>not grow exponentially</strong> with the number of components.</li>
+                        <li>Existing CALPHAD-style databases can be adapted to this CE-CVM approach.</li>
+                    </ul>
+                    <p>Derivations are given for disordered bcc, fcc, and hcp structures using the tetrahedron (bcc/fcc) and triangle&ndash;tetrahedron (hcp) cluster approximations.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case study -->
+        <div class="poster-panel mb-4">
+            <h2>Case Study: The Nb&ndash;Ti&ndash;V&ndash;Zr Refractory HEA System</h2>
+            <p>The framework was demonstrated by building a self-consistent set of CECs for the disordered bcc phase of the Nb-Ti-V-Zr system, using optimized binary and ternary subsystem CECs as building blocks:</p>
+            <p>
+                <span class="badge-system">Nb&ndash;Ti</span>
+                <span class="badge-system">Nb&ndash;V</span>
+                <span class="badge-system">Nb&ndash;Zr</span>
+                <span class="badge-system">Ti&ndash;V</span>
+                <span class="badge-system">Ti&ndash;Zr</span>
+                <span class="badge-system">V&ndash;Zr</span>
+                <span class="badge-system">Nb&ndash;Ti&ndash;V</span>
+                <span class="badge-system">Nb&ndash;Ti&ndash;Zr</span>
+                <span class="badge-system">Nb&ndash;V&ndash;Zr</span>
+                <span class="badge-system">Ti&ndash;V&ndash;Zr</span>
+                <span class="badge-system">&rarr; Nb&ndash;Ti&ndash;V&ndash;Zr</span>
+            </p>
+            <p class="mb-0">No quaternary interaction terms were required &mdash; the quaternary CE was built entirely from binary and ternary CECs, illustrating the central advantage of the method.</p>
+        </div>
+
+        <!-- Figures -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="poster-panel">
+                    <h2>Ternary &amp; Quasi-ternary Sections</h2>
+                    <img src="image/fig19_calphad2025.png" alt="Ternary and quasi-ternary isothermal sections of (Nb,Ti)-V-Zr at 1273K">
+                    <p class="caption">Isothermal sections at 1273 K for (Nb<sub>x</sub>Ti<sub>1&minus;x</sub>)-V-Zr. The bcc miscibility gap with the Laves_C15 phase gradually vanishes as Nb substitutes for Ti.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="poster-panel">
+                    <h2>Thermodynamic Contour Maps</h2>
+                    <img src="image/fig20_calphad2025.png" alt="Contour plots of configurational entropy, enthalpy and Gibbs energy of mixing for the Nb-Ti-V-Zr HEA system">
+                    <p class="caption">Configurational entropy, enthalpy, and Gibbs energy of mixing at 1273 K across the Nb-Ti-V-Zr composition space.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="poster-panel">
+                    <h2>Short-Range Order (SRO)</h2>
+                    <img src="image/fig24_calphad2025.png" alt="Cowley-Warren first-neighbor SRO parameters for Nb-Ti, Nb-V, Nb-Zr, Ti-V, Ti-Zr, and V-Zr pairs">
+                    <p class="caption">Cowley&ndash;Warren first-neighbor SRO parameters, predicting Nb&ndash;V and Ti&ndash;Zr co-clustering tendencies within the quaternary alloy.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Key results -->
+            <div class="col-lg-7 mb-4">
+                <div class="poster-panel">
+                    <h2>Key Results</h2>
+                    <ul class="key-findings">
+                        <li><strong>Entropy stabilization:</strong> Maximum configurational entropy of mixing (11.09 J/mol&middot;K) occurs near the equiatomic composition &mdash; about 4% below the ideal value.</li>
+                        <li><strong>Enthalpy drives phase separation:</strong> Positive enthalpy of mixing across the composition space, strongest in Nb-V-Zr alloys; Ti addition counteracts this tendency and stabilizes the solid solution.</li>
+                        <li><strong>Gibbs energy minimum</strong> is shifted toward the Ti-rich region (x<sub>Nb</sub>=0.115, x<sub>Ti</sub>=0.46, x<sub>V</sub>=0.085, x<sub>Zr</sub>=0.34), where enthalpy of mixing is nearly zero.</li>
+                        <li><strong>SRO predicts clustering:</strong> Nb and V atoms preferentially co-segregate, while Ti and Zr tend to stay close together &mdash; at 573 K, an equiatomic alloy is predicted to separate into a V-rich and a Zr-rich bcc phase.</li>
+                        <li><strong>Maximum stabilization</strong> of the quaternary bcc solution occurs relative to pure components, with meaningful stabilization retained relative to ternary subsystems &mdash; consistent with prior statistical analyses of HEA formation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Method highlights -->
+            <div class="col-lg-5 mb-4">
+                <div class="poster-panel">
+                    <h2>Why It Matters</h2>
+                    <table class="table table-sm cec-table mb-0">
+                        <tbody>
+                            <tr><th style="width:45%;">Conventional CE</th><td>Basis changes with system order &rarr; CECs must be re-derived for each new alloy system.</td></tr>
+                            <tr><th>This work (CVCF basis)</th><td>Basis is invariant &rarr; binary/ternary CECs plug directly into any higher-order system.</td></tr>
+                            <tr><th>Practical outcome</th><td>Enables construction of self-consistent, extensible CE-CVM databases &mdash; analogous to CALPHAD databases &mdash; for rapid multicomponent alloy design.</td></tr>
+                            <tr><th>Bonus capability</th><td>Cowley&ndash;Warren SRO parameters fall out directly from the Gibbs energy minimization, with no extra calculation needed.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="poster-panel mb-4">
+            <h2>Conclusions</h2>
+            <p class="mb-0">This work establishes a basis-independent cluster expansion formalism in which cluster expansion coefficients of all subsystems can be directly incorporated into the cluster expansion of any higher-order system &mdash; contrary to the common belief that the number of parameters grows exponentially with the number of components. Demonstrated on the Nb-Ti-V-Zr refractory HEA system, the approach shows that both entropy and enthalpy govern bcc stabilization, and enables systematic, quantitative SRO-guided alloy design without requiring an experimental study of every new composition.</p>
+        </div>
+
+        <!-- Citation -->
+        <div class="poster-panel">
+            <h2>Citation</h2>
+            <p class="mb-2">V. Jindal, S. Lele, Multicomponent cluster variation method: Application to high entropy alloys, <em>Calphad</em> 89 (2025) 102825. <a href="https://doi.org/10.1016/j.calphad.2025.102825" target="_blank" rel="noopener">https://doi.org/10.1016/j.calphad.2025.102825</a></p>
+            <p class="mb-0">Correspondence: <a href="mailto:vjindal.met@iitbhu.ac.in">vjindal.met@iitbhu.ac.in</a></p>
+        </div>
+
+    </main>
+
+    <div id="footer" class="no-print"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        fetch('header.html').then(r => r.text()).then(d => document.getElementById('header').innerHTML = d);
+        fetch('footer.html').then(r => r.text()).then(d => document.getElementById('footer').innerHTML = d);
+    </script>
+</body>
+</html>
