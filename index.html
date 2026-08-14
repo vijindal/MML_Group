@@ -3,20 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Materials Modeling Lab (MML) at IIT (BHU) Varanasi — research in computational thermodynamics, high entropy alloys, machine learning in materials design, and Ti-TiB composites.">
+    <meta name="description" content="Materials Modeling Lab (MML) at IIT (BHU) Varanasi: research in computational thermodynamics, high entropy alloys, machine learning in materials design, and Ti-TiB composites.">
     <meta name="keywords" content="Materials Modeling Lab, IIT BHU, Computational Thermodynamics, High Entropy Alloys, CALPHAD, Machine Learning, Phase Diagrams">
     <meta name="author" content="Materials Modeling Lab, IIT (BHU)">
-    <title>Home | Materials Modeling Lab — IIT (BHU)</title>
+    <title>Home | Materials Modeling Lab, IIT (BHU)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://vijindal.github.io/MML_Group/index.html">
     <style>
         @media (max-width: 768px) {
             #research-highlight .rh-layout { flex-direction: column !important; }
             #research-highlight .rh-left  { flex: 0 0 100% !important; min-width: unset !important; }
         }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ResearchOrganization",
+        "name": "Materials Modeling Lab",
+        "alternateName": "MML",
+        "url": "https://vijindal.github.io/MML_Group/index.html",
+        "description": "Research lab at IIT (BHU) Varanasi working on computational thermodynamics, high entropy alloys, machine learning in materials design, and Ti-TiB composites.",
+        "parentOrganization": {
+            "@type": "CollegeOrUniversity",
+            "name": "Indian Institute of Technology (BHU), Varanasi",
+            "url": "https://iitbhu.ac.in/"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Vikas Jindal",
+            "url": "https://vijindal.github.io/MML_Group/People.html#pi"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Department of Metallurgical Engineering, IIT (BHU)",
+            "addressLocality": "Varanasi",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "221005",
+            "addressCountry": "IN"
+        },
+        "email": "vjindal.met@iitbhu.ac.in"
+    }
+    </script>
 </head>
 <body>
     <div id="header"></div>
@@ -28,17 +58,17 @@
             <h2 class="section-title" style="margin-bottom:1rem;">Research Highlight</h2>
             <div class="rh-layout" style="display:flex; gap:1.5rem; flex-wrap:wrap;">
                 <!-- Left column: figure -->
-                <div class="rh-left" style="flex:0 0 42%; min-width:240px;">
-                    <img src="image/fig20_calphad2025.png" alt="Contour plots of configurational entropy, enthalpy and Gibbs energy of mixing for the Nb-Ti-V-Zr high entropy alloy system" style="width:100%; border-radius:var(--radius); box-shadow:var(--shadow);">
-                    <p class="caption" style="font-size:11px; margin-top:.35rem;">Fig. 20. Configurational entropy (a), enthalpy (b), and Gibbs energy of mixing (c) at 1273K for the Nb-Ti-V-Zr high entropy alloy system.</p>
+                <div class="rh-left" style="flex:0 0 48%; min-width:280px; align-self:center;">
+                    <img src="image/fig20_grid_calphad2025.png" alt="Contour plots of configurational entropy, enthalpy, and Gibbs energy of mixing for the Nb-Ti-V-Zr high entropy alloy system" style="width:100%; border-radius:var(--radius); box-shadow:var(--shadow);">
+                    <p class="caption" style="font-size:11px; margin-top:.35rem;">Fig. 20. Configurational entropy, enthalpy, and Gibbs energy of mixing at 1273K for the Nb-Ti-V-Zr high entropy alloy system.</p>
                 </div>
                 <!-- Right column: text -->
                 <div style="flex:1; min-width:260px;">
                     <h3 style="color:var(--primary); font-size:1.15rem; margin-bottom:.35rem;">Multicomponent Cluster Variation Method: Application to High Entropy Alloys</h3>
                     <p style="font-size:.85rem; color:var(--text-muted); margin-bottom:.6rem;">V. Jindal &amp; S. Lele &middot; <em>Calphad</em> 89 (2025) 102825</p>
-                    <p style="margin-bottom:.6rem;">A new thermodynamic framework lets cluster expansion coefficients of binary and ternary subsystems be directly inherited into higher-order systems &mdash; enabling self-consistent databases analogous to CALPHAD. Applied to the Nb-Ti-V-Zr refractory high entropy alloy system, the model shows that both entropy and enthalpy stabilise the single-phase bcc region, with Ti addition suppressing the phase-separation tendency of Nb-V-Zr alloys.</p>
+                    <p style="margin-bottom:.6rem;">A new framework lets cluster expansion coefficients of binary and ternary subsystems be directly inherited into higher-order systems, enabling self-consistent databases analogous to CALPHAD. Applied to the Nb-Ti-V-Zr refractory HEA system, the model shows entropy and enthalpy both stabilise the single-phase bcc region, with Ti addition suppressing phase separation.</p>
                     <ul style="margin-bottom:.75rem;">
-                        <li>Binary/ternary parameters inherit directly into multicomponent databases &mdash; no exponential growth in CFs/CECs</li>
+                        <li>Binary/ternary parameters inherit directly into multicomponent databases, with no exponential growth in CFs/CECs</li>
                         <li>Entropy and enthalpy both drive bcc stabilisation in Nb-Ti-V-Zr HEAs</li>
                     </ul>
                     <div style="display:flex; gap:1rem; flex-wrap:wrap;">
@@ -52,7 +82,8 @@
 
     <div style="border-top:1px solid var(--border); background:var(--background);">
         <div class="container" style="padding-top:1.75rem; padding-bottom:1.75rem;">
-            <p>The <strong>Materials Modeling Lab (MML)</strong> is part of the <a href="https://iitbhu.ac.in/" target="_blank" rel="noopener">Department of Metallurgical Engineering</a> at IIT (BHU), Varanasi. We develop next-generation computational and experimental tools for designing advanced materials — from high-entropy alloys and Ti-TiB composites to beta-titanium biomedical implants and functionally graded armour materials.</p>
+            <h2 class="section-title">Materials Modeling Lab (MML)</h2>
+            <p>The Materials Modeling Lab is part of the <a href="https://iitbhu.ac.in/" target="_blank" rel="noopener">Department of Metallurgical Engineering</a> at IIT (BHU), Varanasi. We develop next-generation computational and experimental tools for designing advanced materials, from high-entropy alloys and Ti-TiB composites to beta-titanium biomedical implants and functionally graded armour materials.</p>
             <p style="margin-bottom:1.25rem;">Our work bridges classical thermodynamic modelling (CALPHAD, CVM, CE) with modern machine learning and atomistic simulations, placing us at the intersection of traditional materials science and data-driven discovery.</p>
         </div>
     </div>
@@ -95,7 +126,7 @@
                     <div class="research-card">
                         <div class="rc-icon">&#10010;</div>
                         <h4>Beta-Ti Biomedical Alloys</h4>
-                        <p>Low-modulus beta-titanium alloys for dental and orthopaedic implants — thermodynamic design and experimental characterisation.</p>
+                        <p>Low-modulus beta-titanium alloys for dental and orthopaedic implants, using thermodynamic design and experimental characterisation.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
@@ -121,10 +152,10 @@
                         <div class="card-body p-3">
 
                             <div class="news-entry">
-                                <span class="news-date">May 2026</span>
+                                <span class="news-date">Jun 2026</span>
                                 <div class="news-text">
                                     <span class="news-badge badge-paper">Paper</span>
-                                    <a href="https://doi.org/10.1088/1361-651X/ae6ba1" target="_blank" rel="noopener">Hybrid CE-ML framework for predicting enthalpy of mixing in BCC refractory binary alloys — <em>Model. Simul. Mater. Sci. Eng.</em> (2026)</a>
+                                    <a href="https://doi.org/10.1007/s12666-026-03955-1" target="_blank" rel="noopener">Comparative study of microstructure and hardness in Ti-TiB composites and FGMs, <em>Trans. Indian Inst. Met.</em> 79 (2026)</a>
                                 </div>
                             </div>
 
@@ -132,7 +163,15 @@
                                 <span class="news-date">May 2026</span>
                                 <div class="news-text">
                                     <span class="news-badge badge-paper">Paper</span>
-                                    <a href="https://doi.org/10.1016/j.intermet.2026.109301" target="_blank" rel="noopener">Mechanistic &amp; data-driven hardness prediction in refractory HEAs — <em>Intermetallics</em> 194 (2026)</a>
+                                    <a href="https://doi.org/10.1088/1361-651X/ae6ba1" target="_blank" rel="noopener">Hybrid CE-ML framework for predicting enthalpy of mixing in BCC refractory binary alloys, <em>Model. Simul. Mater. Sci. Eng.</em> (2026)</a>
+                                </div>
+                            </div>
+
+                            <div class="news-entry">
+                                <span class="news-date">May 2026</span>
+                                <div class="news-text">
+                                    <span class="news-badge badge-paper">Paper</span>
+                                    <a href="https://doi.org/10.1016/j.intermet.2026.109301" target="_blank" rel="noopener">Mechanistic &amp; data-driven hardness prediction in refractory HEAs, <em>Intermetallics</em> 194 (2026)</a>
                                 </div>
                             </div>
 
@@ -140,7 +179,7 @@
                                 <span class="news-date">Apr 2026</span>
                                 <div class="news-text">
                                     <span class="news-badge badge-paper">Paper</span>
-                                    <a href="https://doi.org/10.1007/s10853-026-12687-y" target="_blank" rel="noopener">Atomistic simulation of Cu phase transition — <em>J. Mater. Sci.</em> (2026)</a>
+                                    <a href="https://doi.org/10.1007/s10853-026-12687-y" target="_blank" rel="noopener">Atomistic simulation of Cu phase transition, <em>J. Mater. Sci.</em> (2026)</a>
                                 </div>
                             </div>
 
@@ -148,23 +187,7 @@
                                 <span class="news-date">Mar 2026</span>
                                 <div class="news-text">
                                     <span class="news-badge badge-paper">Paper</span>
-                                    <a href="https://doi.org/10.1007/s11665-026-13766-6" target="_blank" rel="noopener">Ti-TiB Composites and FGMs — Mechanical Properties &amp; Fracture Behavior — <em>J. Mater. Eng. Perform.</em> (2026)</a>
-                                </div>
-                            </div>
-
-                            <div class="news-entry">
-                                <span class="news-date">Feb 2026</span>
-                                <div class="news-text">
-                                    <span class="news-badge badge-paper">Paper</span>
-                                    <a href="https://doi.org/10.1007/s11665-025-12948-y" target="_blank" rel="noopener">Strain Rate &amp; Size Effects in Mg Single Crystals — <em>J. Mater. Eng. Perform.</em> (2026)</a>
-                                </div>
-                            </div>
-
-                            <div class="news-entry">
-                                <span class="news-date">Oct 2025</span>
-                                <div class="news-text">
-                                    <span class="news-badge badge-paper">Paper</span>
-                                    <a href="https://doi.org/10.1557/s43579-025-00736-7" target="_blank" rel="noopener">Integrating ML &amp; DFT for hardness prediction in HEAs — <em>MRS Commun.</em> (2025)</a>
+                                    <a href="https://doi.org/10.1007/s11665-026-13766-6" target="_blank" rel="noopener">Ti-TiB Composites and FGMs: Mechanical Properties &amp; Fracture Behavior, <em>J. Mater. Eng. Perform.</em> (2026)</a>
                                 </div>
                             </div>
 

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vijindal.github.io/MML_Group/sitemap.xml
